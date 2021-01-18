@@ -1,0 +1,184 @@
+.main {
+  width: 100%; }
+
+.header {
+  width: 100%;
+  height: 409px;
+  margin: 0 auto;
+  background: #5a646e; }
+  @media screen and (min-width: 767px) {
+    .header {
+      height: 384px;
+      background-image: url(../../assets/images/Hero-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; } }
+
+.top-menu {
+  width: 100%;
+  height: 72px;
+  background-color: rgba(40, 50, 60, 0.8);
+  padding: 24px 0; }
+  .top-menu__container {
+    max-width: 888px;
+    margin: 0 32px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (min-width: 1024px) {
+      .top-menu__container {
+        margin: 0 auto; } }
+  .top-menu__image_horizontal {
+    display: none; }
+    @media screen and (min-width: 767px) {
+      .top-menu__image_horizontal {
+        display: block; } }
+  .top-menu__image_small-logo {
+    display: block; }
+    @media screen and (min-width: 767px) {
+      .top-menu__image_small-logo {
+        display: none; } }
+  .top-menu__select {
+    font-family: Gerbera;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff; }
+    .top-menu__select_item {
+      background-color: rgba(40, 50, 60, 0.8); }
+
+.top-block {
+  max-width: 888px;
+  margin: 48px 24px 0; }
+  @media screen and (min-width: 1024px) {
+    .top-block {
+      margin: 48px auto 0; } }
+  .top-block__title {
+    color: #ffffff;
+    width: 240px; }
+    @media screen and (min-width: 767px) {
+      .top-block__title {
+        width: 100%;
+        font-size: 34px;
+        line-height: 48px; } }
+  .top-block__text {
+    color: #ffffff;
+    margin-top: 24px;
+    width: 220px; }
+    @media screen and (min-width: 767px) {
+      .top-block__text {
+        width: 52%;
+        font-size: 16px;
+        line-height: 24px; } }
+    @media screen and (min-width: 1024px) {
+      .top-block__text {
+        width: 43%;
+        width: 43%; } }
+  .top-block__button {
+    max-width: 327px;
+    margin: 48px 0; }
+    @media screen and (min-width: 767px) {
+      .top-block__button {
+        max-width: 300px;
+        margin: 48px 0 0 0; } }
+
+.pricing {
+  max-width: 888px;
+  margin: 24px auto;
+  padding: 24px 0; }
+  @media screen and (min-width: 767px) {
+    .pricing {
+      margin: 48px auto;
+      padding: 48px 0; } }
+
+.pricing-header {
+  display: none; }
+  @media screen and (min-width: 767px) {
+    .pricing-header {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  .pricing-header__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f5f7;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 36px; }
+  .pricing-header__item {
+    padding: 19px 27px;
+    margin: 5px;
+    color: #5a646e;
+    background: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(26, 65, 101, 0.15);
+    border-radius: 31px; }
+    .pricing-header__item :active {
+      border: 2px solid #00d2ff; }
+
+.pricing__container {
+  max-width: 888px;
+  margin: 23px auto 0;
+  padding-top: 1px; }
+
+.pricing__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.pricing__column {
+  background: #ffffff; }
+  .pricing__column:hover .pricing__wrapper {
+    box-shadow: 0px 12px 24px rgba(26, 65, 101, 0.25); }
+  .pricing__column:hover .pricing__button {
+    color: white;
+    background-color: #50287d; }
+
+.pricing__wrapper {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #e6f0fa;
+  box-sizing: border-box; }
+
+.pricing__name {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px; }
+  .pricing__name_item {
+    color: #96a0aa; }
+  .pricing__name_popular {
+    background: #fcc8be;
+    border-radius: 12px;
+    padding: 0 9px;
+    color: #ffffff;
+    margin-left: 40px; }
+
+.pricing__price {
+  margin-bottom: 24px; }
+
+.pricing__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px; }
+  .pricing__item_01 {
+    color: #5a646e;
+    margin-left: 12px; }
+  .pricing__item_02 {
+    color: #5a646e;
+    margin-left: 12px; }
+  .pricing__item_03 {
+    color: #5a646e;
+    margin-left: 12px; }
+  .pricing__item_04 {
+    color: #5a646e;
+    margin-left: 12px; }
+
+.pricing__button {
+  cursor: pointer;
+  max-width: 100%;
+  border-radius: 0;
+  color: #50287d;
+  background: #ffffff; }

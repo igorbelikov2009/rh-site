@@ -1,0 +1,168 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+  background-color: #e5e5e5; }
+  @media screen and (min-width: 767px) {
+    .main {
+      margin-left: 80px; } }
+  @media screen and (min-width: 1299px) {
+    .main {
+      margin-left: 355px; } }
+
+.header {
+  display: none; }
+  @media screen and (min-width: 767px) {
+    .header {
+      width: calc(100% - 80px);
+      background-color: #ffffff;
+      height: 72px;
+      position: fixed;
+      top: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; } }
+  @media screen and (min-width: 1299px) {
+    .header {
+      width: calc(100% - 355px); } }
+  .header__icon {
+    margin-right: 30px; }
+
+.menu-mobile {
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #e6f0fa; }
+  @media screen and (min-width: 767px) {
+    .menu-mobile {
+      display: none; } }
+  .menu-mobile__logo-small {
+    width: 24px;
+    height: 24px; }
+  .menu-mobile__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff; }
+    .menu-mobile__dots_item {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%; }
+      .menu-mobile__dots_item:nth-child(1) {
+        background-color: #506478; }
+      .menu-mobile__dots_item:nth-child(2) {
+        margin: 0 2px;
+        background-color: rgba(80, 100, 120, 0.6); }
+      .menu-mobile__dots_item:nth-child(3) {
+        background-color: rgba(80, 100, 120, 0.3); }
+
+.top-block {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 92px 0 27px 24px; }
+  @media screen and (min-width: 375px) {
+    .top-block {
+      padding-bottom: 67px; } }
+  @media screen and (min-width: 767px) {
+    .top-block {
+      padding-left: 28px; } }
+  .top-block__help {
+    font-family: Gerbera;
+    font-size: 34px;
+    line-height: 48px;
+    align-items: center;
+    color: #ff005a;
+    margin-bottom: 79px; }
+  .top-block__phone-label {
+    font-family: Gerbera;
+    font-size: 16px;
+    line-height: 24px;
+    color: #96a0aa; }
+  .top-block__phone-value {
+    font-family: Gerbera;
+    font-size: 34px;
+    line-height: 48px;
+    color: #28323c;
+    margin-bottom: 32px; }
+  .top-block__policy {
+    font-family: Gerbera;
+    font-size: 16px;
+    line-height: 24px;
+    color: #96a0aa;
+    margin-bottom: 10px; }
+  .top-block__policy-value {
+    font-family: Gerbera;
+    font-size: 18px;
+    line-height: 24px;
+    color: #96a0aa; }
+
+.attention {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 55px 28px 47px;
+  display: flex; }
+  @media screen and (min-width: 1440px) {
+    .attention {
+      justify-content: flex-start; } }
+
+.list {
+  width: 100%;
+  margin-right: 24px; }
+  @media screen and (min-width: 767px) {
+    .list {
+      width: 50%; } }
+  @media screen and (min-width: 1440px) {
+    .list {
+      width: 33.33%; } }
+
+.list-title {
+  font-family: Gerbera;
+  font-size: 16px;
+  line-height: 24px;
+  color: #96a0aa;
+  margin-bottom: 14px; }
+
+.list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 14px; }
+  .list-item__dot {
+    width: 6px;
+    height: 6px;
+    background-color: #50287d;
+    border-radius: 50%;
+    margin-right: 17px; }
+  .list-item__text {
+    font-family: Gerbera;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5a646e; }
+
+.info-block {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 24px;
+  display: none; }
+  @media screen and (min-width: 767px) {
+    .info-block {
+      display: block; } }
+  @media screen and (min-width: 1440px) {
+    .info-block {
+      width: 33.3%; } }
+  .info-block__icon {
+    margin-bottom: 24px; }
+  .info-block__text {
+    font-family: Gerbera;
+    font-size: 16px;
+    line-height: 24px;
+    color: #96a0aa; }
