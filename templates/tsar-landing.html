@@ -11,50 +11,34 @@
   </head>
   <body>
     <main class="main">
-      <section class="header">
-        <!-- top-menu -->
-        <div class="top-menu">
-          <div class="top-menu__container">
-            <img
-              src="../assets/logotype/Horizontal.svg"
-              class="top-menu__image_horizontal"
-            />
-            <img
-              src="../assets/logotype/small-logo.svg"
-              class="top-menu__image_small-logo"
-            />
-            <form action="" method="post" class="top-menu__form">
-              <select class="top-menu__select" name="sity">
-                <option class="top-menu__select_item" value="Москва">
-                  Москва
-                </option>
-                <option value="Санкт-Петербург">Санкт-Петербург</option>
-                <option value="Самара">Самара</option>
-                <option value="Другие регионы">Другие регионы</option>
-              </select>
-            </form>
+      <!-- top-block -->
+      <section
+        class="top-block"
+        style="background-image: url(../../assets/images/Hero-1.jpg)"
+      >
+        <div class="top-block__container container">
+          <div class="row">
+            <h1 class="top-block__title col-9 col-cm-12 col-md-12 web-h2">
+              Персональная медицинская помощь у вас дома
+            </h1>
+            <p class="top-block__text col-9 col-cm-9 col-md-6 web-small-text">
+              Получайте квалифицированную медицинскую помощь не выходя из дома.
+            </p>
+            <div class="col-12 col-cm-6 col-md-12">
+              <button class="top-block__button primary-button">
+                Выбрать пакет
+              </button>
+            </div>
           </div>
         </div>
-        <!-- top-menu -->
-
-        <!-- top-block -->
-        <div class="top-block">
-          <div class="top-block__title web-h2">
-            Персональная медицинская помощь у вас дома
-          </div>
-          <div class="top-block__text web-small-text">
-            Получайте квалифицированную медицинскую помощь не выходя из дома.
-          </div>
-          <button class="top-block__button primary-button">
-            Выбрать пакет
-          </button>
-        </div>
-        <!-- top-block -->
       </section>
+      <!-- top-block -->
+
       <!-- pricing -->
       <section class="pricing">
-        <div class="pricing-header">
-          <div class="pricing-header__row">
+        <!-- pricing-header -->
+        <div class="pricing-header container">
+          <div class="pricing-header__row row">
             <div class="pricing-header__item web-normal-text">На 1 месяц</div>
             <div class="pricing-header__item web-normal-text">На 3 месяца</div>
             <div class="pricing-header__item web-normal-text">
@@ -62,166 +46,187 @@
             </div>
           </div>
         </div>
-        <div class="pricing__container container">
-          <div class="pricing__row row">
-            <!-- pricing__column -->
-            <div class="pricing__column col-12 col-lg-4">
-              <div class="pricing__wrapper">
-                <div class="pricing__name">
-                  <div class="pricing__name_item web-normal-text">Базовый</div>
-                  <div class="pricing__name_popular web-very-small-text">
-                    Самый популярный
-                  </div>
+        <!-- pricing-header -->
+        <!-- pricing-block -->
+        <div class="pricing-block__container container">
+          <div class="pricing-block__row">
+            <!-- pricing-block__column -->
+            <div class="pricing-block__column">
+              <div class="pricing-block__wrapper">
+                <div class="pricing-block__name">
+                  <p class="pricing-block__name_item web-normal-text">
+                    Базовый
+                  </p>
+                  <img
+                    class="pricing-block__name_icon"
+                    src="../assets/icons/rosette.svg"
+                    alt=""
+                  />
                 </div>
-                <div class="pricing__price web-h1">900 ₽</div>
-                <div class="pricing__item">
+                <p class="pricing-block__price web-h1">900 ₽</p>
+                <div class="pricing-block__item">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_01 web-normal-text">
-                    Консультации с врачами онлайн без ограничений
-                  </div>
+
+                  <a class="pricing-block__discription web-normal-text" href=""
+                    >Консультации с врачами онлайн без ограничений</a
+                  >
                 </div>
-                <div class="pricing__item">
+                <div class="pricing-block__item">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_02 web-normal-text">
+                  <a class="pricing-block__discription web-normal-text" href="">
                     Доставка лекарств
-                  </div>
+                  </a>
                 </div>
-                <div class="pricing__item Hidden">
+                <div class="pricing-block__item Hidden">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_03 web-normal-text">пусто</div>
                 </div>
-                <div class="pricing__item Hidden">
+                <div class="pricing-block__item Hidden">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_04 web-normal-text">пусто</div>
                 </div>
               </div>
 
-              <button class="pricing__button primary-button">
-                Выбрать на 1 месяц
+              <button class="pricing-block__button primary-button">
+                Выбрать
               </button>
             </div>
-            <!-- pricing__column -->
+            <!-- pricing-block__column -->
 
-            <!-- pricing__column -->
-            <div class="pricing__column col-12 col-lg-4">
-              <div class="pricing__wrapper">
-                <div class="pricing__name">
-                  <div class="pricing__name_item web-normal-text">
+            <!-- pricing-block__column -->
+            <div class="pricing-block__column">
+              <div class="pricing-block__wrapper">
+                <div class="pricing-block__name">
+                  <p class="pricing-block__name_item web-normal-text">
                     Расширенный
-                  </div>
+                  </p>
+                  <img
+                    class="pricing-block__name_icon"
+                    src="../assets/icons/rosette.svg"
+                    alt=""
+                  />
                 </div>
-                <div class="pricing__price web-h1">5 200 ₽</div>
-                <div class="pricing__item">
+                <p class="pricing-block__price web-h1">5 200 ₽</p>
+                <div class="pricing-block__item">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_01 web-normal-text">
+                  <a class="pricing-block__discription web-normal-text" href="">
                     Консультации с врачами онлайн без ограничений
-                  </div>
+                  </a>
                 </div>
-                <div class="pricing__item">
+                <div class="pricing-block__item">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_02 web-normal-text">
+                  <a class="pricing-block__discription web-normal-text" href="">
                     Доставка лекарств
-                  </div>
+                  </a>
                 </div>
-                <div class="pricing__item">
+                <div class="pricing-block__item">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_03 web-normal-text">
+                  <a class="pricing-block__discription web-normal-text" href="">
                     Вызовы врачей на дом
-                  </div>
+                  </a>
                 </div>
-                <div class="pricing__item Hidden">
+                <div class="pricing-block__item Hidden">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_04 web-normal-text">пусто</div>
                 </div>
               </div>
-              <button class="pricing__button primary-button">
-                Выбрать на 3 месяца
+              <button class="pricing-block__button primary-button">
+                Выбрать
               </button>
             </div>
-            <!-- pricing__column -->
+            <!-- pricing-block__column -->
 
-            <!-- pricing__column -->
-            <div class="pricing__column col-12 col-lg-4">
-              <div class="pricing__wrapper">
-                <div class="pricing__name">
-                  <div class="pricing__name_item web-normal-text">Полный</div>
+            <!-- pricing-block__column -->
+            <div class="pricing-block__column">
+              <div class="pricing-block__wrapper">
+                <div class="pricing-block__name">
+                  <p class="pricing-block__name_item web-normal-text">Полный</p>
+                  <img
+                    class="pricing-block__name_icon"
+                    src="../assets/icons/rosette.svg"
+                    alt=""
+                  />
                 </div>
-                <div class="pricing__price web-h1">900 ₽</div>
-                <div class="pricing__item">
+                <p class="pricing-block__price web-h1">900 ₽</p>
+                <div class="pricing-block__item">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_01 web-normal-text">
+                  <a class="pricing-block__discription web-normal-text" href="">
                     Консультации с врачами онлайн без ограничений
-                  </div>
+                  </a>
                 </div>
-                <div class="pricing__item">
+                <div class="pricing-block__item">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_02 web-normal-text">
+                  <a class="pricing-block__discription web-normal-text" href="">
                     Доставка лекарств
-                  </div>
+                  </a>
                 </div>
-                <div class="pricing__item">
+                <div class="pricing-block__item">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_03 web-normal-text">
+                  <a class="pricing-block__discription web-normal-text" href="">
                     Вызовы врачей на дом
-                  </div>
+                  </a>
                 </div>
-                <div class="pricing__item">
+                <div class="pricing-block__item">
                   <img src="../assets/icons/Icon-helper.svg" alt="" />
-                  <div class="pricing__item_04 web-normal-text">
+                  <a class="pricing-block__discription web-normal-text" href="">
                     Страховка от COVID-19
-                  </div>
+                  </a>
                 </div>
               </div>
-              <button class="pricing__button primary-button">
-                Выбрать на 12 месяцев
+              <button class="pricing-block__button primary-button">
+                Выбрать
               </button>
             </div>
-            <!-- pricing__column -->
+            <!-- pricing-block__column -->
           </div>
         </div>
+        <!-- pricing-block -->
       </section>
       <!-- pricing -->
 
       <!-- content-top -->
       <section class="content-top">
-        <div class="content-top__block">
-          <div class="content-top__title web-h2">
+        <div class="container">
+          <h1 class="content-top__title web-h2">
             Консультации с врачами онлайн
-          </div>
-          <div class="content-top__container container">
-            <div class="content-top__row row">
-              <div class="content-top__column col-12 col-md-7">
-                <div class="content-top__wrapper">
-                  <div class="content-top__text web-small-text">
-                    Не ходите лишний раз в поликлинику. Онлайн-консультации с
-                    квалифицированными врачами — безопасный способ решить
-                    медицинские вопросы.
-                  </div>
-                  <div
-                    class="content-top__text content-top__text_center web-small-text"
-                  >
-                    Обратитесь к терапевту, кардиологу, неврологу, лору и многим
-                    другим специалистам в личном кабинете Ренессанс здоровье. В
-                    приложении или на сайте.
-                  </div>
-                  <div
-                    class="content-top__text content-top__text_bottom web-small-text"
-                  >
-                    Ответим на вопросы о симптомах, расшифруем результаты
-                    анализов, проконсультируем по назначенным при лечении
-                    препаратами, предоставим «второе мнение», если сомневаетесь
-                    в диагнозе.
-                  </div>
-                </div>
+          </h1>
+          <div class="row">
+            <div class="content-top__column col-12 col-md-7">
+              <div class="content-top__wrapper">
+                <p class="content-top__text web-small-text">
+                  Не ходите лишний раз в поликлинику. Онлайн-консультации с
+                  квалифицированными врачами — безопасный способ решить
+                  медицинские вопросы.
+                </p>
+                <p
+                  class="content-top__text content-top__text_center web-small-text"
+                >
+                  Обратитесь к терапевту, кардиологу, неврологу, лору и многим
+                  другим специалистам в личном кабинете Ренессанс здоровье. В
+                  приложении или на сайте.
+                </p>
+                <p
+                  class="content-top__text content-top__text_bottom web-small-text"
+                >
+                  Ответим на вопросы о симптомах, расшифруем результаты
+                  анализов, проконсультируем по назначенным при лечении
+                  препаратами, предоставим «второе мнение», если сомневаетесь в
+                  диагнозе.
+                </p>
               </div>
-              <div class="content-top__column col-12 col-md-5">
-                <div class="content-top__img">
-                  <div class="content-top__img_01"></div>
-                  <div class="content-top__img_02"></div>
-                </div>
+            </div>
+            <div class="content-top__column col-12 col-md-5">
+              <div class="content-top__pictures">
+                <div
+                  style="background-image: url(../assets/images/content-01.jpg)"
+                  class="content-top__img content-top__img_01"
+                ></div>
+                <div
+                  style="background-image: url(../assets/images/content-02.jpg)"
+                  class="content-top__img content-top__img_02"
+                ></div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="container">
           <button class="content-top__button primary-button">
             Показать список врачей
           </button>
@@ -229,54 +234,56 @@
       </section>
       <!-- content-top -->
 
-      <!-- content-bottom -->
-      <section class="content-bottom">
-        <div class="content-bottom__container container">
-          <div class="content-bottom__row row">
-            <div class="content-bottom__column col-xl-4">
-              <div class="content-bottom__img">
+      <!-- content -->
+      <section class="content">
+        <div class="container">
+          <div class="content__row row">
+            <!-- col-12 col-md-4 -->
+            <div class="content__col-m-d-4">
+              <div class="content__img">
                 <div
-                  class="content-bottom__item-img content-bottom__item-img_01"
+                  style="background-image: url(../assets/images/content-03.jpg)"
+                  class="content__item-img content__item-img_01"
                 >
-                  <div class="content-bottom__img-title web-h2">
-                    Доставка лекарств
-                  </div>
+                  <h2 class="content__img-title web-h2">Доставка лекарств</h2>
                 </div>
               </div>
-              <div class="content-bottom__discription web-normal-text">
+              <div class="content__discription web-normal-text">
                 Специальные условия на онлайн-заказ и доставку лекарств в
-                <span class="content-bottom__link primary-link">eapteka.ru</span
-                >для клиентов «Ренессанс здоровье». Берегите время и здоровье,
+                <a class="content__link primary-link" href="">eapteka.ru </a>
+                для клиентов «Ренессанс здоровье». Берегите время и здоровье,
                 избегая лишних походов в аптеку.
                 <!-- почему eapteka.ru переходит на новую строку -->
               </div>
             </div>
-            <div class="content-bottom__column col-xl-4">
-              <div class="content-bottom__img">
+            <div class="content__col-m-d-4">
+              <div class="content__img">
                 <div
-                  class="content-bottom__item-img content-bottom__item-img_02"
+                  style="background-image: url(../assets/images/content-04.jpg)"
+                  class="content__item-img content__item-img_02"
                 >
-                  <div class="content-bottom__img-title web-h2">
+                  <h2 class="content__img-title web-h2">
                     Вызовы врачей на дом
-                  </div>
+                  </h2>
                 </div>
               </div>
-              <div class="content-bottom__discription web-normal-text">
+              <div class="content__discription web-normal-text">
                 Если онлайн консультации недостаточно, вы сможете вызвать
                 терапевта на дом. Провести дополнительный осмотр или уточнить
                 диагноз. Для базового тарифа вызов врача доступен при оплате за
                 вызов.
               </div>
             </div>
-            <div class="content-bottom__column col-xl-4">
-              <div class="content-bottom__img">
+            <div class="content__col-m-d-4">
+              <div class="content__img">
                 <div
-                  class="content-bottom__item-img content-bottom__item-img_03"
+                  style="background-image: url(../assets/images/content-05.jpg)"
+                  class="content__item-img content__item-img_03"
                 >
-                  <div class="content-bottom__img-title web-h2">АнтиВирус</div>
+                  <h2 class="content__img-title web-h2">АнтиВирус</h2>
                 </div>
               </div>
-              <div class="content-bottom__discription web-normal-text">
+              <div class="content__discription web-normal-text">
                 Страховка на случай инфекционного заболевания, включая COVID-19.
                 Выплаты по больничному листу в результате болезни или смерти
                 застрахованного.
@@ -285,7 +292,283 @@
           </div>
         </div>
       </section>
-      <!-- content-bottom -->
+      <!-- content -->
+
+      <!-- block-reasons -->
+      <section class="block-reasons">
+        <div class="container">
+          <div class="block-reasons__header">
+            <h2 class="block-reasons__title web-h2">
+              Ренессанс здоровье —
+              <span class="block-reasons__title_span">
+                входит в группу компаний
+                <a class="block-reasons__title_link" href="">
+                  Ренессанс страхование</a
+                ></span
+              >
+            </h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="block-reasons__row">
+            <div class="block-reasons__column">
+              <div class="block-reasons__wrapper">
+                <img
+                  src="../assets/icons/People.svg"
+                  alt=""
+                  class="block-reasons__icon"
+                />
+                <h1 class="block-reasons__quantity web-h2">220 000</h1>
+                <p class="block-reasons__discription web-small-text">
+                  Клиентов по всей России
+                </p>
+              </div>
+            </div>
+            <div class="block-reasons__column">
+              <div class="block-reasons__wrapper">
+                <img
+                  src="../assets/icons/Video-Camera.svg"
+                  alt=""
+                  class="block-reasons__icon"
+                />
+                <h1 class="block-reasons__quantity web-h2">2 000</h1>
+                <p class="block-reasons__discription web-small-text">
+                  Онлайн- <br />
+                  консультаций в месяц
+                </p>
+              </div>
+            </div>
+            <div class="block-reasons__column">
+              <div class="block-reasons__wrapper">
+                <img
+                  src="../assets/icons/House.svg"
+                  alt=""
+                  class="block-reasons__icon"
+                />
+                <h1 class="block-reasons__quantity web-h2">2 000</h1>
+                <p class="block-reasons__discription web-small-text">
+                  Выездных <br />
+                  консультаций
+                </p>
+              </div>
+            </div>
+            <div class="block-reasons__column">
+              <div class="block-reasons__wrapper">
+                <img
+                  src="../assets/icons/Doctor.svg"
+                  alt=""
+                  class="block-reasons__icon"
+                />
+                <h1 class="block-reasons__quantity web-h2">500</h1>
+                <p class="block-reasons__discription web-small-text">Врачей</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- block-reasons -->
+
+      <!-- how-works -->
+      <section class="how-works">
+        <div class="container">
+          <h1 class="how-works__title web-h1">Как это работает</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <ol class="opder-list">
+                <li class="opder-list__step">
+                  <p class="opder-list__number web-normal-text">1</p>
+                  <p class="web-normal-text">
+                    Оформите подходящий пакет — на 1, 3 или 12 месяцев.
+                  </p>
+                </li>
+                <li class="opder-list__step">
+                  <p class="opder-list__number web-normal-text">2</p>
+                  <p class="web-normal-text">
+                    Войдите по номеру телефона в личный кабинет «Ренессанс
+                    здоровье». На сайте или в приложении.
+                  </p>
+                </li>
+                <li class="opder-list__step">
+                  <p class="opder-list__number web-normal-text">3</p>
+                  <p class="web-normal-text">
+                    Выберите врача в разделе «Онлайн-консультации».
+                  </p>
+                </li>
+                <li class="opder-list__step">
+                  <p class="opder-list__number web-normal-text">4</p>
+                  <p class="web-normal-text">
+                    Общайтесь в удобном для вас формате
+                  </p>
+                </li>
+              </ol>
+            </div>
+            <div class="col-12 col-md-6">
+              <div
+                style="
+                  background-image: url(../assets/images/poster-mother.webp);
+                "
+                class="renaissance-video"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- how-works -->
+
+      <!-- package-form -->
+      <section class="package-form">
+        <div class="package-form__container-top container">
+          <div class="package-form__headering">
+            <h1 class="package-form__title web-h2">
+              Оформить пакет медицинской помощи
+            </h1>
+          </div>
+        </div>
+        <div class="package-form__container container">
+          <div class="package-form__wrapper">
+            <!-- secondary-input -->
+            <label class="package-form__input secondary-input">
+              <div class="secondary-input__label">Фамилия</div>
+              <input class="secondary-input__field" />
+            </label>
+            <!-- secondary-input -->
+
+            <!-- secondary-input -->
+            <label class="package-form__input secondary-input">
+              <div class="secondary-input__label">Имя</div>
+              <input class="secondary-input__field" />
+            </label>
+            <!-- secondary-input -->
+
+            <!-- secondary-input -->
+            <label class="package-form__input secondary-input">
+              <div class="secondary-input__label">Отчество</div>
+              <input class="secondary-input__field" />
+            </label>
+            <!-- secondary-input -->
+
+            <!-- secondary-input -->
+            <label class="package-form__input secondary-input">
+              <div class="secondary-input__label">Мобильный телефон</div>
+              <input class="secondary-input__field" />
+            </label>
+            <!-- secondary-input -->
+
+            <!-- tertiary-input -->
+            <label class="package-form__input tertiary-input">
+              <div class="tertiary-input__block">
+                <div class="tertiary-input__top-label">Пакет</div>
+                <div class="tertiary-input__bottom">
+                  <div class="tertiary-input__label">
+                    Базовый, на 1 месяц — 900 ₽
+                  </div>
+
+                  <img
+                    class="tertiary-input__icon"
+                    src="../assets/icons/triangle.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <input class="tertiary-input__field" />
+            </label>
+            <!-- tertiary-input -->
+
+            <!-- primary-checkbox -->
+            <label
+              tabindex="0"
+              role="checkbox"
+              id=""
+              class="package-form__checkbox primary-checkbox"
+            >
+              <div class="primary-checkbox__icon">
+                <span class="primary-checkbox__checker"></span>
+                <input
+                  id="Checkbox"
+                  type="checkbox"
+                  class="primary-checkbox__input"
+                />
+              </div>
+              <div class="package-form__label primary-checkbox__label">
+                Продолжая, я соглашаюсь с
+                <a class="package-form__link primary-checkbox__link" href=""
+                  >правилами
+                </a>
+                и
+                <a class="package-form__link primary-checkbox__link" href=""
+                  >программой</a
+                >
+                оказания услуг.
+              </div>
+            </label>
+            <!-- primary-checkbox -->
+
+            <!-- primary-button -->
+            <button class="package-form__button primary-button">
+              Оформить
+            </button>
+            <!-- primary-button -->
+          </div>
+        </div>
+      </section>
+      <!-- package-form -->
+
+      <!-- footer -->
+      <footer class="package-footer">
+        <div class="package-footer__container container">
+          <div class="package-footer__content">
+            <div class="package-footer__text web-very-small-text">
+              Медицинские услуги оказываются партнерами:
+            </div>
+            <div class="package-footer__text web-very-small-text">
+              ООО «Медкорп», Лицензия № ЛО-50-01-009076 от 10 Октября 2017 года.
+
+              <span class="package-footer__text package-footer__text_span">
+                Адрес: 115114, г. Москва, Дербеневская наб. д. 7, стр. 22</span
+              >
+            </div>
+            <div class="package-footer__text web-very-small-text">
+              ООО «Доктор Рядом», Лицензия № ЛО-77-01-013560 от 29 Ноября 2016
+              года.
+              <span class="package-footer__text package-footer__text_span">
+                Адрес: 107076, г. Москва, ул. Краснобогатырская, д. 44, стр.
+                1</span
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+      <!-- header -->
+      <section class="header">
+        <div class="header__fixed">
+          <div class="header__container container">
+            <div class="header__row row">
+              <img
+                class="header__image p-l header__image_horizontal"
+                src="../assets/logotype/Horizontal.svg"
+              />
+              <img
+                class="header__image p-l header__image_small-logo"
+                src="../assets/logotype/small-logo.svg"
+              />
+              <form action="" method="post" class="header__form">
+                <select class="header__select p-r web-normal-text" name="sity">
+                  <option class="header__select_item" value="Москва">
+                    Москва
+                  </option>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Самара">Самара</option>
+                  <option value="Другие регионы">Другие регионы</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- header -->
     </main>
   </body>
 </html>
