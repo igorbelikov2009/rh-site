@@ -38,69 +38,6 @@
   box-sizing: border-box;
 }
 
-//  <!-- header -->
-.header {
-  width: 100%;
-
-  &__fixed {
-    width: 100%;
-    height: 72px;
-    position: fixed;
-    top: 0;
-    background: rgba(40, 50, 60, 0.8);
-  }
-
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  &__images {
-    &_horisontal {
-      display: none;
-
-      @media screen and (min-width: 576px) {
-        display: block;
-      }
-    }
-
-    &_small {
-      display: block;
-
-      @media screen and (min-width: 576px) {
-        display: none;
-      }
-    }
-  }
-
-  &__form {
-    height: 24px;
-    // background: rgba(40, 50, 60, 0.8);
-
-    // &:active {
-    //   color: cyan;
-    // }
-  }
-
-  &__select {
-    color: #ffffff;
-
-    // &_item {
-    //   &:active {
-    //     color: chartreuse;
-    //   }
-    // }
-
-    &:active {
-      color: black;
-    }
-  }
-}
-//  <!-- header -->
-
 .page {
   width: 100%;
 }
@@ -108,6 +45,9 @@
 // <!-- top-block -->
 .top-block {
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 624px;
   padding-top: 72px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
   background-size: cover;
@@ -115,16 +55,14 @@
   background-repeat: no-repeat;
 
   &__container {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   &__headering {
-    color: #ffffff;
-    margin-bottom: 24px;
-  }
-
-  &__offer {
     color: #ffffff;
     margin-bottom: 48px;
 
@@ -132,13 +70,20 @@
       display: block;
     }
   }
-  &__button {
-    &_item {
-      width: 100%;
 
-      @media screen and (min-width: 375px) {
-        width: 300px;
-      }
+  &__offer {
+    color: #ffffff;
+    margin-bottom: 72px;
+
+    &_span {
+      display: block;
+    }
+  }
+  &__button {
+    width: 100%;
+
+    @media screen and (min-width: 375px) {
+      width: 300px;
     }
   }
 }
@@ -164,11 +109,6 @@
   }
 
   &__title {
-    @media screen and (min-width: 576px) {
-      font-size: 18px;
-      line-height: 24px;
-    }
-
     &_span {
       display: block;
       text-align: center;
@@ -272,6 +212,8 @@
 
   &__icon {
     margin-bottom: 24px;
+    width: 48px;
+    height: 48px;
   }
 
   &__title {
@@ -288,8 +230,6 @@
 .content {
   width: 100%;
   background-color: #ffffff;
-  // padding-top: 48px;
-  // padding-bottom: 72px;
 
   &__container-top {
     margin-bottom: 48px;
@@ -311,11 +251,7 @@
 .content-list {
   padding-left: 12px;
   padding-right: 12px;
-  margin-bottom: 48px;
-
-  &__wrapper {
-    // padding: 24px 0;
-  }
+  margin-bottom: 24px;
 
   &__item {
     position: relative;
@@ -361,10 +297,13 @@
 
   &__wrapper {
     width: 100%;
-    // height: 100%;
-    height: 336px;
+    height: 225px;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width: 767px) {
+      height: 100%;
+    }
   }
 }
 //  <!-- content__image -->
@@ -383,12 +322,6 @@
     padding-top: 72px;
   }
 
-  &__container {
-    padding-bottom: 72px;
-    padding-top: 72px;
-    background: #f3f5f7;
-  }
-
   &__headering {
     display: flex;
     justify-content: center;
@@ -398,6 +331,12 @@
 
   &__title {
     color: #000000;
+  }
+
+  &__container {
+    padding-bottom: 72px;
+    padding-top: 72px;
+    background: #f3f5f7;
   }
 
   &__wrapper {
@@ -419,6 +358,63 @@
 }
 // <!-- policy-form-->
 
+//  <!-- header -->
+.header {
+  width: 100%;
+
+  &__fixed {
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    top: 0;
+    background: rgba(40, 50, 60, 0.8);
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__images {
+    padding-left: 12px;
+    box-sizing: border-box;
+
+    &_horisontal {
+      display: none;
+
+      @media screen and (min-width: 576px) {
+        display: block;
+      }
+    }
+
+    &_small {
+      display: block;
+
+      @media screen and (min-width: 576px) {
+        display: none;
+      }
+    }
+  }
+
+  &__form {
+    height: 24px;
+  }
+
+  &__select {
+    padding-right: 12px;
+    box-sizing: border-box;
+    color: #ffffff;
+
+    &:active {
+      color: black;
+    }
+  }
+}
+//  <!-- header -->
+
 // <!-- footer -->
 .footer {
   width: 100%;
@@ -426,10 +422,7 @@
   padding-top: 48px;
   padding-bottom: 72px;
 
-  @media screen and (min-width: 576px) {
-  }
-
-  &__content {
+  &__block {
     padding-left: 0;
 
     @media screen and (min-width: 767px) {
@@ -437,15 +430,11 @@
     }
   }
 
-  &__stroka {
+  &__string {
     color: #b5bdc8;
 
     &:first-child {
       margin-bottom: 24px;
-    }
-
-    &:last-child {
-      // margin-top: 48px;
     }
 
     &_span {

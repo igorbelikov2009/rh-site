@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../styles/css/general.css" />
     <link rel="stylesheet" href="../styles/css/grids.css" />
+    <link rel="stylesheet" href="../styles/css/typography.css" />
     <link rel="stylesheet" href="../styles/css/telemed.css" />
     <link rel="stylesheet" href="../styles/css/reset.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,22 +16,23 @@
         <!-- top-block -->
         <div
           class="top-block"
-          style="background-image: url(../assets/images/telemedTopBlock.jpg)"
+          style="
+            background-image: url(../assets/images/telemed/telemedTopBlock.jpg);
+          "
         >
           <div class="top-block__container container">
-            <div class="top-block__row row">
-              <h1 class="top-block__headering col-12 web-h2">
-                Консультации с врачами онлайн
+            <div class="row">
+              <h1 class="top-block__headering col-12 col-sm-9 col-md-7 h1-font">
+                Консультации с врачами
+                <span class="top-block__headering_span"> онлайн</span>
               </h1>
-              <p class="top-block__offer col-12 web-small-text">
+              <p class="top-block__offer col-12 col-sm-9 col-md-7 sm-font-md">
                 Получите квалифицированную помощь без посещения поликлиники.
-                <span class="top-block__offer_span">
-                  Срочные вопросы, расшифровка анализов и обследований
-                  круглосуточно из дома.</span
-                >
+                Срочные вопросы, расшифровка анализов
+                <span> и обследований круглосуточно из дома.</span>
               </p>
-              <div class="top-block__button col-12">
-                <button class="top-block__button_item primary-button">
+              <div class="col-12">
+                <button class="top-block__button primary-button">
                   Выбрать полис
                 </button>
               </div>
@@ -44,10 +46,10 @@
           <!-- prising__header -->
           <div class="prising-header container">
             <div class="prising-header__headering">
-              <h1 class="prising-header__title web-h2">
+              <h1 class="prising-header__title h2-font">
                 Консультации с врачами онлайн без ограничений.
 
-                <span class="prising-header__title_span">
+                <span class="prising-header__title_span h2-font">
                   Доставка лекарств</span
                 >
               </h1>
@@ -61,17 +63,17 @@
               <!-- prising__column -->
               <div
                 class="prising__column"
-                style="background-image: url(../assets/icons/Clouds_1.svg)"
+                style="background-image: url(../assets/icons/clouds1.svg)"
               >
                 <div class="prising__wrapper">
                   <div class="prising__time">
-                    <p class="prising__time_number web-h1">1</p>
-                    <p class="prising__time_data web-normal-text">месяц</p>
+                    <p class="prising__time_number h1-font">1</p>
+                    <p class="prising__time_data md-font">месяц</p>
                   </div>
-                  <p class="prising__price web-normal-text">100 ₽</p>
-                  <p class="prising__name web-small-text">Самый популярный</p>
+                  <p class="prising__price md-font">100 ₽</p>
+                  <p class="prising__name sm-font-md">Самый популярный</p>
                 </div>
-                <div class="prising__footer">
+                <div>
                   <button class="prising__button primary-button">
                     Выбрать
                   </button>
@@ -82,17 +84,17 @@
               <!-- prising__column -->
               <div
                 class="prising__column"
-                style="background-image: url(../assets/icons/Clouds_2.svg)"
+                style="background-image: url(../assets/icons/clouds2.svg)"
               >
                 <div class="prising__wrapper">
                   <div class="prising__time">
-                    <p class="prising__time_number web-h1">3</p>
-                    <p class="prising__time_data web-normal-text">месяца</p>
+                    <p class="prising__time_number h1-font">3</p>
+                    <p class="prising__time_data md-font">месяца</p>
                   </div>
-                  <p class="prising__price web-normal-text">700 ₽</p>
-                  <p class="prising__name web-small-text">Практичный</p>
+                  <p class="prising__price md-font">700 ₽</p>
+                  <p class="prising__name sm-font-md">Практичный</p>
                 </div>
-                <div class="prising__footer">
+                <div>
                   <button class="prising__button primary-button">
                     Выбрать
                   </button>
@@ -103,17 +105,17 @@
               <!-- prising__column -->
               <div
                 class="prising__column"
-                style="background-image: url(../assets/icons/Clouds_3.svg)"
+                style="background-image: url(../assets/icons/clouds3.svg)"
               >
                 <div class="prising__wrapper">
                   <div class="prising__time">
-                    <p class="prising__time_number web-h1">12</p>
-                    <p class="prising__time_data web-normal-text">месяцев</p>
+                    <p class="prising__time_number h1-font">12</p>
+                    <p class="prising__time_data md-font">месяцев</p>
                   </div>
-                  <p class="prising__price web-normal-text">900 ₽</p>
-                  <p class="prising__name web-small-text">Выгодный</p>
+                  <p class="prising__price md-font">900 ₽</p>
+                  <p class="prising__name sm-font-md">Выгодный</p>
                 </div>
-                <div class="prising__footer">
+                <div>
                   <button class="prising__button primary-button">
                     Выбрать
                   </button>
@@ -128,21 +130,21 @@
 
         <!-- services -->
         <section class="services">
-          <div class="services__container container">
+          <div class="container">
             <div class="services__row row">
               <!-- services__column -->
-              <div class="services__column col-12 col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="services__wrapper">
                   <img
                     class="services__icon"
-                    src="../assets/icons/Ambulance.svg"
+                    src="../assets/icons/clock.svg"
                     alt=""
                   />
 
-                  <p class="services__title web-normal-text">
+                  <p class="services__title md-font">
                     Круглосуточно и без выходных
                   </p>
-                  <p class="services__discription web-normal-text">
+                  <p class="services__discription md-font">
                     Онлайн-консультация терапевта и врачей специалистов 24/7
                   </p>
                 </div>
@@ -150,18 +152,16 @@
               <!-- services__column -->
 
               <!-- services__column -->
-              <div class="services__column col-12 col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="services__wrapper">
                   <img
                     class="services__icon"
-                    src="../assets/icons/Ambulance.svg"
+                    src="../assets/icons/house.svg"
                     alt=""
                   />
 
-                  <p class="services__title web-normal-text">
-                    Не выходя из дома
-                  </p>
-                  <p class="services__discription web-normal-text">
+                  <p class="services__title md-font">Не выходя из дома</p>
+                  <p class="services__discription md-font">
                     Консультация в чате или по аудио или видеосвязи
                   </p>
                 </div>
@@ -169,18 +169,18 @@
               <!-- services__column -->
 
               <!-- services__column -->
-              <div class="services__column col-12 col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="services__wrapper">
                   <img
                     class="services__icon"
-                    src="../assets/icons/Ambulance.svg"
+                    src="../assets/icons/clock.svg"
                     alt=""
                   />
 
-                  <p class="services__title web-normal-text">
+                  <p class="services__title md-font">
                     Безлимитные консультации
                   </p>
-                  <p class="services__discription web-normal-text">
+                  <p class="services__discription md-font">
                     Вы платите один раз и можете получать консультации у
                     специалистов в течение года
                   </p>
@@ -196,33 +196,31 @@
         <section class="content">
           <div class="content__container-top container">
             <div class="content__headering">
-              <h1 class="content__title web-h2">Как это работает</h1>
+              <h1 class="content__title h1-font">Как это работает</h1>
             </div>
           </div>
-          <div class="content__container container">
-            <div class="content__row row">
+          <div class="container">
+            <div class="row">
               <!-- content-list -->
               <div class="content-list col-12 col-md-6">
-                <ul class="content-list__wrapper">
-                  <li class="content-list__item web-normal-text">
+                <ul>
+                  <li class="content-list__item md-font">
                     Оформите подходящий пакет на 1, 3 или 12 месяцев.
                   </li>
-                  <li class="content-list__item web-normal-text">
+                  <li class="content-list__item md-font">
                     Войдите по номеру телефона в личный кабинет «Ренессанс
                     здоровье». На
-                    <a class="content-list__link web-normal-text" href=""
-                      >сайте</a
-                    >
+                    <a class="content-list__link md-font" href="">сайте</a>
                     или в приложении.
                   </li>
-                  <li class="content-list__item web-normal-text">
+                  <li class="content-list__item md-font">
                     Выберите врача в разделе «Онлайн-консультации».
                   </li>
-                  <li class="content-list__item web-normal-text">
+                  <li class="content-list__item md-font">
                     Общайтесь в удобном для вас формате
                   </li>
                 </ul>
-                <p class="online-consultation web-normal-text">
+                <p class="online-consultation md-font">
                   Онлайн-консультации — безопасный способ решить медицинские
                   вопросы. Квалифицированные врачи помогут разобраться с
                   симптомами, назначенными при лечении препаратами, дадут
@@ -236,7 +234,7 @@
                 <div
                   class="content-image__wrapper"
                   style="
-                    background-image: url(../assets/images/telemedHowWork.png);
+                    background-image: url(../assets/images/telemed/telemedHowWork.png);
                   "
                 ></div>
               </div>
@@ -250,7 +248,7 @@
         <section class="policy-form">
           <div class="policy-form__container-top container">
             <div class="policy-form__headering">
-              <h1 class="policy-form__title web-h2">Оформить полис</h1>
+              <h1 class="policy-form__title h1-font">Оформить полис</h1>
             </div>
           </div>
           <div class="policy-form__container container">
@@ -325,22 +323,22 @@
 
       <!-- footer -->
       <footer class="footer">
-        <div class="footer__container container">
-          <div class="footer__content">
-            <p class="footer__stroka web-normal-text">
+        <div class="container">
+          <div class="footer__block">
+            <p class="footer__string md-font">
               Медицинские услуги оказываются партнерами:
             </p>
-            <p class="footer__stroka web-normal-text">
+            <p class="footer__string md-font">
               ООО «Медкорп», Лицензия № ЛО-50-01-009076 от 10 Октября 2017 года.
 
-              <span class="footer__stroka footer__stroka_span">
+              <span class="footer__string footer__string_span">
                 Адрес: 115114, г. Москва, Дербеневская наб. д. 7, стр. 22</span
               >
             </p>
-            <p class="footer__stroka web-normal-text">
+            <p class="footer__string md-font">
               ООО «Доктор Рядом», Лицензия № ЛО-77-01-013560 от 29 Ноября 2016
               года.
-              <span class="footer__stroka footer__stroka_span">
+              <span class="footer__string footer__string_span">
                 Адрес: 107076, г. Москва, ул. Краснобогатырская, д. 44, стр.
                 1</span
               >
@@ -350,22 +348,23 @@
       </footer>
       <!-- footer -->
 
+      <!-- header -->
       <header class="header">
         <div class="header__fixed">
-          <div class="header__container container">
+          <div class="container">
             <div class="header__row row">
               <img
-                class="header__images p-l header__images_horisontal"
-                src="../assets/logotype/Horizontal.svg"
+                class="header__images header__images_horisontal"
+                src="../assets/logotype/horizontal.svg"
                 alt=""
               />
               <img
-                class="header__images p-l header__images_small"
-                src="../assets/logotype/small-logo.svg"
+                class="header__images header__images_small"
+                src="../assets/logotype/smallLogo.svg"
                 alt=""
               />
               <form action="" method="post" class="header__form">
-                <select class="header__select p-r web-normal-text" name="sity">
+                <select class="header__select md-font" name="sity">
                   <option class="header__select_item" value="Москва">
                     Москва
                   </option>
@@ -378,6 +377,7 @@
           </div>
         </div>
       </header>
+      <!-- header -->
     </main>
   </body>
 </html>
