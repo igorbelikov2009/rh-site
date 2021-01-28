@@ -1,7 +1,6 @@
 .primary-input {
   width: 100%; }
   .primary-input__label {
-    font-family: Gerbera;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -12,6 +11,109 @@
     height: 29px;
     border-bottom: 2px solid #50287d; }
 
+.secondary-input {
+  width: 100%; }
+  .secondary-input__label {
+    font-family: Gerbera;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 21px;
+    color: #b5bdc8;
+    margin-top: 20px; }
+    @media screen and (min-width: 576px) {
+      .secondary-input__label {
+        font-size: 16px; } }
+  .secondary-input__field {
+    width: 100%;
+    height: 10px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #b5bdc8; }
+  .secondary-input:active .secondary-input__field {
+    height: 29px;
+    border-bottom: 2px solid #50287d; }
+  .secondary-input:active .secondary-input__label {
+    font-size: 11px;
+    color: #000000;
+    margin-top: 7px; }
+
+.tertiary-input {
+  width: 100%; }
+  .tertiary-input__block {
+    margin-top: 18px; }
+  .tertiary-input__top-label {
+    font-family: Gerbera;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 24px;
+    color: #b5bdc8; }
+  .tertiary-input__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .tertiary-input__label {
+    font-family: Gerbera;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 21px;
+    color: #28323c; }
+    @media screen and (min-width: 576px) {
+      .tertiary-input__label {
+        font-size: 16px; } }
+  .tertiary-input__field {
+    width: 100%;
+    height: 8px;
+    border-bottom: 1px solid #b5bdc8; }
+  .tertiary-input:active .tertiary-input__field {
+    border-bottom: 2px solid #ffffff; }
+  .tertiary-input:active .tertiary-input__label {
+    color: #000000; }
+
+.primary-checkbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+  .primary-checkbox__icon {
+    padding: 2px;
+    height: 24px;
+    display: flex;
+    align-self: flex-start;
+    margin-right: 18px;
+    flex: none; }
+  .primary-checkbox__checker {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #95bef0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .primary-checkbox__checker::before {
+      content: "";
+      width: 1px;
+      height: 1px;
+      display: inline-block;
+      border-radius: 2px;
+      transition: background-color 0.3s, width 0.3s, height 0.3s; }
+  .primary-checkbox__input {
+    display: none; }
+  .primary-checkbox__label {
+    font-family: Gerbera;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5a646e; }
+  .primary-checkbox__link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #50287d;
+    width: 100%;
+    text-decoration: none; }
+
 .primary-button {
   cursor: pointer;
   width: 100%;
@@ -21,7 +123,8 @@
   color: white;
   background-color: #50287d;
   border-radius: 24px;
-  text-align: center; }
+  text-align: center;
+  box-sizing: border-box; }
 
 .label {
   width: 100%;
@@ -41,35 +144,56 @@
   width: 100%;
   text-decoration: none; }
 
-.title-h1 {
-  font-family: Gerbera;
+.web-h1 {
+  font-style: normal;
+  font-weight: normal;
   font-size: 34px;
   line-height: 48px;
   color: #28323c; }
 
-.title-h2 {
-  font-family: Gerbera;
+.web-h2 {
   font-style: normal;
   font-weight: normal;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 24px;
   color: #28323c; }
-
-.small-font {
-  font-family: Gerbera;
-  font-size: 17px;
-  line-height: 24px;
-  color: #28323c; }
+  @media screen and (min-width: 576px) {
+    .web-h2 {
+      font-size: 34px;
+      line-height: 48px; } }
 
 .web-normal-text {
-  font-family: Gerbera;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  color: #28323c; }
 
-.medium-font {
+.web-small-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #28323c; }
+  @media screen and (min-width: 576px) {
+    .web-small-text {
+      font-size: 16px;
+      line-height: 24px; } }
+
+.web-very-small-text {
   font-family: Gerbera;
-  font-size: 26px;
-  line-height: 48px;
-  color: #96a0aa; }
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 24px;
+  color: #28323c; }
+  @media screen and (min-width: 576px) {
+    .web-very-small-text {
+      font-size: 13px;
+      line-height: 24px; } }
+
+.Visible {
+  visibility: visible; }
+
+.Hidden {
+  visibility: hidden; }

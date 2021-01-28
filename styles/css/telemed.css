@@ -1,0 +1,278 @@
+.main {
+  min-height: 100vh; }
+
+.container {
+  width: 100%;
+  max-width: 944px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px; }
+  @media screen and (min-width: 576px) {
+    .container {
+      padding-left: 28px;
+      padding-right: 28px; } }
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px; }
+
+.p-l {
+  padding-left: 12px;
+  box-sizing: border-box; }
+
+.p-r {
+  padding-right: 12px;
+  box-sizing: border-box; }
+
+.header {
+  width: 100%; }
+  .header__fixed {
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    top: 0;
+    background: rgba(40, 50, 60, 0.8); }
+  .header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px; }
+  .header__images_horisontal {
+    display: none; }
+    @media screen and (min-width: 576px) {
+      .header__images_horisontal {
+        display: block; } }
+  .header__images_small {
+    display: block; }
+    @media screen and (min-width: 576px) {
+      .header__images_small {
+        display: none; } }
+  .header__form {
+    height: 24px; }
+  .header__select {
+    color: #ffffff; }
+    .header__select:active {
+      color: black; }
+
+.page {
+  width: 100%; }
+
+.top-block {
+  width: 100%;
+  padding-top: 72px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .top-block__container {
+    padding-top: 48px;
+    padding-bottom: 48px; }
+  .top-block__headering {
+    color: #ffffff;
+    margin-bottom: 24px; }
+  .top-block__offer {
+    color: #ffffff;
+    margin-bottom: 48px; }
+    .top-block__offer_span {
+      display: block; }
+  .top-block__button_item {
+    width: 100%; }
+    @media screen and (min-width: 375px) {
+      .top-block__button_item {
+        width: 300px; } }
+
+.prising-header {
+  margin-bottom: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px; }
+  .prising-header__headering {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: -12px;
+    margin-left: -12px;
+    padding-top: 12px;
+    padding-bottom: 12px; }
+  @media screen and (min-width: 576px) {
+    .prising-header__title {
+      font-size: 18px;
+      line-height: 24px; } }
+  .prising-header__title_span {
+    display: block;
+    text-align: center; }
+
+.prising {
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background: #ffffff;
+  border-bottom: 1px solid #d2dce6; }
+  .prising__row {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -12px;
+    margin-left: -12px;
+    justify-content: space-between;
+    overflow-x: scroll; }
+    @media screen and (min-width: 576px) {
+      .prising__row {
+        overflow-x: hidden; } }
+  .prising__column {
+    cursor: pointer;
+    min-width: 280px;
+    margin-left: 12px;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e6f0fa;
+    box-sizing: border-box; }
+    .prising__column:hover {
+      box-shadow: 0px 12px 24px rgba(26, 65, 101, 0.25);
+      border-radius: 4px; }
+    .prising__column:hover .prising__button {
+      color: #ffffff;
+      background-color: #50287d; }
+  .prising__wrapper {
+    padding: 24px; }
+  .prising__time_number {
+    padding: 24px 0; }
+  .prising__time_data {
+    color: #5a646e; }
+  .prising__price {
+    margin-bottom: 72px; }
+  .prising__name {
+    font-size: 13px;
+    line-height: 24px;
+    color: #5a646e; }
+  .prising__button {
+    border-radius: 0px;
+    text-align: start;
+    padding: 24px;
+    color: #50287d;
+    background-color: #ffffff; }
+
+.services {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 48px;
+  padding-bottom: 48px; }
+  .services__row {
+    justify-content: space-between; }
+  .services__wrapper {
+    padding: 24px 0; }
+  .services__icon {
+    margin-bottom: 24px; }
+  .services__title {
+    margin-bottom: 24px; }
+  .services__discription {
+    color: #5a646e; }
+
+.content {
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 72px; }
+  .content__container-top {
+    margin-bottom: 48px; }
+  .content__headering {
+    box-sizing: border-box;
+    margin-right: -12px;
+    margin-left: -12px; }
+  .content__title {
+    margin-right: 12px;
+    margin-left: 12px; }
+
+.content-list {
+  padding-left: 12px;
+  padding-right: 12px; }
+  .content-list__item {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 24px; }
+    .content-list__item:last-child {
+      margin-bottom: 0; }
+    .content-list__item::before {
+      content: " ";
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background: #50287d;
+      position: absolute;
+      left: 9px;
+      top: 9px; }
+  .content-list__link {
+    color: #50287d;
+    text-decoration: none; }
+
+.online-consultation {
+  margin-top: 24px;
+  margin-left: 24px; }
+
+.content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .content-image__wrapper {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover; }
+
+.policy-form {
+  width: 100%;
+  background-color: white;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  border-top: 1px solid #d2dce6; }
+  .policy-form__container-top {
+    background-color: white;
+    padding-top: 72px; }
+  .policy-form__container {
+    padding-bottom: 72px;
+    padding-top: 72px;
+    background: #f3f5f7; }
+  .policy-form__headering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px; }
+  .policy-form__title {
+    color: #000000; }
+  .policy-form__wrapper {
+    max-width: 431px;
+    margin: 0 auto; }
+  .policy-form__checkbox {
+    margin-top: 36px;
+    margin-bottom: 84px; }
+  .policy-form__button {
+    background: #d2dce6;
+    color: #96a0aa;
+    font-size: 16px;
+    line-height: 24px; }
+
+.footer {
+  width: 100%;
+  background: #f3f5f7;
+  padding-top: 48px;
+  padding-bottom: 72px; }
+  .footer__content {
+    padding-left: 0; }
+    @media screen and (min-width: 767px) {
+      .footer__content {
+        padding-left: 28px; } }
+  .footer__stroka {
+    color: #b5bdc8; }
+    .footer__stroka:first-child {
+      margin-bottom: 24px; }
+    .footer__stroka_span {
+      display: block; }

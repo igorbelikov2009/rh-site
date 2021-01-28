@@ -134,16 +134,13 @@
 
 .pricing-block {
   &__container {
-    // max-width: 944px;
-    // padding-left: 28px;
-    // padding-right: 28px;
-    // white-space: nowrap;
-    // position: relative;
-    overflow-x: scroll;
-
-    @media screen and (min-width: 767px) {
-      overflow-x: hidden;
-    }
+    width: 100%;
+    max-width: 944px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 
   &__row {
@@ -152,6 +149,11 @@
     margin-right: -12px;
     margin-left: -12px;
     flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 576px) {
+      overflow-x: hidden;
+    }
   }
 
   &__column {
@@ -160,10 +162,7 @@
     margin-right: 12px;
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
-
     white-space: nowrap;
-    // align-content: space-between;
     justify-content: space-between;
     position: relative;
     text-align: left;
@@ -486,7 +485,7 @@
 
   &__column {
     width: 50%;
-    height: 216px;
+    // height: 216px;
     border: 2px solid white;
     box-sizing: border-box;
 
@@ -605,6 +604,7 @@
 
   &__container {
     padding-bottom: 72px;
+    padding-top: 72px;
     background: #f3f5f7;
   }
 
@@ -639,21 +639,24 @@
 // <!-- package-form-->
 
 // <!-- footer -->
-.package-footer {
-  display: none;
+.footer {
   width: 100%;
   background: #f3f5f7;
   padding-top: 48px;
   padding-bottom: 72px;
 
   @media screen and (min-width: 576px) {
-    display: block;
   }
 
   &__content {
-    padding-left: 28px;
+    padding-left: 0;
+
+    @media screen and (min-width: 767px) {
+      padding-left: 28px;
+    }
   }
-  &__text {
+
+  &__stroka {
     color: #b5bdc8;
 
     &:first-child {
