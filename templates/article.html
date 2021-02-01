@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../styles/css/reset.css" />
     <link rel="stylesheet" href="../styles/css/general.css" />
+    <link rel="stylesheet" href="../styles/css/typography.css" />
     <link rel="stylesheet" href="../styles/css/menu.css" />
     <link rel="stylesheet" href="../styles/css/article.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,37 +15,34 @@
     <nav class="menu">
       <img
         class="menu__logotype-wide"
-        src="../assets/logotype/wide-logotype.svg"
+        src="../assets/logotype/wideLogotype.svg"
         alt=""
       />
       <img
-        src="../assets/logotype/small-logo.svg"
+        src="../assets/logotype/smallLogo.svg"
         class="menu__logotype-small"
       />
-      <div class="menu-item">
-        <img
-          src="../assets/images/daria_ivanovna.jpg"
-          class="menu-item__icon"
-        />
-        <div class="menu-item__label">Дарья Иванова</div>
-      </div>
+      <form class="menu-item" method="post" action=" ">
+        <img src="../assets/images/menuDaria.jpg" class="menu-item__icon" />
+        <p class="menu-item__label md-font">Дарья Иванова</p>
+      </form>
 
-      <div class="sub-header">Страховки</div>
+      <a class="sub-header primary-link" href="">Страховки</a>
 
-      <div class="menu-item">
+      <a class="menu-item" href="">
         <img src="../assets/icons/mediscinckaia.svg" class="menu-item__icon" />
-        <div class="menu-item__label">Медицинская</div>
-      </div>
+        <p class="menu-item__label md-font">Медицинская</p></a
+      >
 
-      <div class="menu-item">
+      <a class="menu-item" href="">
         <img src="../assets/icons/departure.svg" class="menu-item__icon" />
-        <div class="menu-item__label">Для выезда за рубеж</div>
-      </div>
+        <p class="menu-item__label md-font">Для выезда за рубеж</p>
+      </a>
 
-      <div class="menu-item">
-        <img src="../assets/icons/a_plus.svg" class="menu-item__icon" />
-        <div class="menu-item__label">Добавить</div>
-      </div>
+      <a class="menu-item" href="">
+        <img src="../assets/icons/aPlus.svg" class="menu-item__icon" />
+        <p class="menu-item__label md-font">Добавить</p>
+      </a>
     </nav>
     <!-- menu -->
 
@@ -59,7 +57,7 @@
       <!-- menu-mobile -->
       <div class="menu-mobile">
         <img
-          src="../assets/logotype/small-logo.svg"
+          src="../assets/logotype/smallLogo.svg"
           class="menu-mobile__logo-small"
         />
         <div class="menu-mobile__dots">
@@ -72,15 +70,20 @@
 
       <!-- article -->
       <article class="article">
-        <div class="article__title title-h1">Джозеф Листер и антисептик</div>
-        <div class="article__image-antiseptic"></div>
+        <h1 class="article__title h1-font">Джозеф Листер и антисептик</h1>
+        <div
+          class="article__image-dhsosefLister"
+          style="
+            background-image: url(../assets/images/articles/dhsosefLister1.jpg);
+          "
+        ></div>
 
-        <div class="article__paragraph article__paragraph_first medium-font">
+        <p class="article__paragraph article__paragraph_first md-font">
           Использование антисептика сейчас кажется таким же элементарным
           действием, как и ежедневная чистка зубов. Многие хранят в тумбочке
           санитайзер.
-        </div>
-        <div class="article__paragraph article__paragraph_second small-font">
+        </p>
+        <p class="article__paragraph article__paragraph_second sm-font">
           Психосоматика устойчиво отчуждает гендерный тест, следовательно
           основной закон психофизики: ощущение изменяется пропорционально
           логарифму раздражителя . С феноменологической точки зрения, субъект
@@ -89,12 +92,17 @@
           материалистический аутотренинг. Здесь автор сталкивает два таких
           достаточно далёких друг от друга явления как поведенческая терапия
           конфронтально отчуждает ролевой.
-        </div>
-        <div class="article__image-people"></div>
-        <div class="article__paragraph article__paragraph_third title-h2">
+        </p>
+        <div
+          class="article__image-dhsosefLister"
+          style="
+            background-image: url(../assets/images/articles/dhsosefLister2.jpg);
+          "
+        ></div>
+        <h2 class="article__paragraph article__paragraph_third h2-font">
           Заголовок второго уровня
-        </div>
-        <div class="article__paragraph article__paragraph_fourth small-font">
+        </h2>
+        <p class="article__paragraph article__paragraph_fourth sm-font">
           Психосоматика устойчиво отчуждает гендерный тест, следовательно
           основной закон психофизики: ощущение изменяется пропорционально
           логарифму раздражителя . С феноменологической точки зрения, субъект
@@ -103,20 +111,20 @@
           материалистический аутотренинг. Здесь автор сталкивает два таких
           достаточно далёких друг от друга явления как поведенческая терапия
           конфронтально отчуждает ролевой.
-        </div>
-        <div class="article__paragraph article__paragraph_fifth small-font">
+        </p>
+        <p class="article__paragraph article__paragraph_fifth sm-font">
           Примерно до середины XIX века дезинфекция не проводилась даже перед
           операцией. Разумеется, часто случались серьезные заражения, и
           смертность от хирургических вмешательств просто зашкаливала. Впрочем,
           большинство врачей воспринимали такой ход событий как данность:
           считалось, что человек просто не предназначен для вскрытия, поэтому
           плохо переносит всякие там надрезы.
-        </div>
-        <div class="article__paragraph article__paragraph_sixth small-font">
+        </p>
+        <p class="article__paragraph article__paragraph_sixth sm-font">
           Результат работы Листера был мгновенно оценен: смертность после
           операций снизилась в разы. А имя Джозефа Листера увековечили, назвав в
           его честь бренд ополаскивателей для полости рта.
-        </div>
+        </p>
       </article>
 
       <!-- article -->
@@ -127,14 +135,15 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <div class="footer__title title-h2">Другие материалы</div>
+        <h2 class="footer__title h2-font">Другие материалы</h2>
         <div class="footer__row">
           <div class="footer__column">
             <!-- article-wrapper__secondary-habits -->
 
             <div class="articles-wrapper">
               <div
-                class="articles-wrapper__img articles-wrapper__img_ice"
+                class="articles-wrapper__img"
+                style="background-image: url(../assets/images/articles/ice.jpg)"
               ></div>
               <div class="article-item">
                 <div
@@ -142,12 +151,10 @@
                 >
                   Привычки
                 </div>
-                <div class="title-h2 article-item__title">
+                <h2 class="article-item__title h2-font">
                   Привычка недели: уходить в офлайн
-                </div>
-                <div class="article-item__description">
-                  Кратко о цифровом детоксе
-                </div>
+                </h2>
+                <div class="sm-font">Кратко о цифровом детоксе</div>
               </div>
             </div>
             <!-- article-wrapper__secondary-habits -->
@@ -162,12 +169,10 @@
                 >
                   Страхование
                 </div>
-                <div class="title-h2 article-item__title">
+                <h2 class="article-item__title h2-font">
                   7 прав пациента, которые полезно знать каждому
-                </div>
-                <div class="article-item__description">
-                  Законы крепкого здоровья
-                </div>
+                </h2>
+                <p class="sm-font">Законы крепкого здоровья</p>
               </div>
             </div>
             <!-- article-wrapper__insurance -->

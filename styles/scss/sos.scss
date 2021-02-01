@@ -97,41 +97,25 @@
   }
 
   &__help {
-    font-family: Gerbera;
-    font-size: 34px;
-    line-height: 48px;
     align-items: center;
     color: #ff005a;
     margin-bottom: 79px;
   }
 
   &__phone-label {
-    font-family: Gerbera;
-    font-size: 16px;
-    line-height: 24px;
     color: #96a0aa;
   }
 
   &__phone-value {
-    font-family: Gerbera;
-    font-size: 34px;
-    line-height: 48px;
-    color: #28323c;
     margin-bottom: 32px;
   }
 
   &__policy {
-    font-family: Gerbera;
-    font-size: 16px;
-    line-height: 24px;
     color: #96a0aa;
     margin-bottom: 10px;
   }
 
   &__policy-value {
-    font-family: Gerbera;
-    font-size: 18px;
-    line-height: 24px;
     color: #96a0aa;
   }
 }
@@ -142,12 +126,8 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 55px 28px 47px;
-  // display: none;
   display: flex;
 
-  @media screen and (min-width: 375px) {
-    // display: flex;
-  }
   @media screen and (min-width: 1440px) {
     justify-content: flex-start;
   }
@@ -156,6 +136,7 @@
 .list {
   width: 100%;
   margin-right: 24px;
+
   @media screen and (min-width: 767px) {
     width: 50%;
   }
@@ -165,9 +146,6 @@
 }
 
 .list-title {
-  font-family: Gerbera;
-  font-size: 16px;
-  line-height: 24px;
   color: #96a0aa;
   margin-bottom: 14px;
 }
@@ -187,9 +165,6 @@
   }
 
   &__text {
-    font-family: Gerbera;
-    font-size: 16px;
-    line-height: 24px;
     color: #5a646e;
   }
 }
@@ -213,9 +188,6 @@
   }
 
   &__text {
-    font-family: Gerbera;
-    font-size: 16px;
-    line-height: 24px;
     color: #96a0aa;
   }
 }

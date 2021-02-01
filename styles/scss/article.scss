@@ -102,26 +102,11 @@
   }
 
   // картинка
-  &__image-antiseptic {
+  &__image-dhsosefLister {
     height: 122px;
-    background-image: url("../../assets/images/dhsosef_lister_01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 44px;
-
-    @media screen and (min-width: 767px) {
-      height: 288px;
-    }
-  }
-
-  // картинка
-  &__image-people {
-    height: 122px;
-    max-width: 736px;
-    background-image: url(../../assets/images/dhsosef_lister_02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 
     @media screen and (min-width: 767px) {
       height: 288px;
@@ -209,6 +194,7 @@
 .articles-wrapper {
   width: 100%;
   cursor: pointer;
+
   &:hover .article-item {
     box-shadow: 0px 12px 24px rgba(26, 65, 101, 0.25);
   }
@@ -222,10 +208,6 @@
     height: 168px;
     background-size: contain;
     background-repeat: no-repeat;
-
-    &_ice {
-      background-image: url(../../assets/images/ice.jpg);
-    }
   }
 }
 .article-item {
@@ -242,12 +224,6 @@
 
   &__title {
     margin: 24px 0 36px;
-  }
-
-  &__description {
-    font-size: 13px;
-    line-height: 24px;
-    color: #28323c;
   }
 
   &__label {

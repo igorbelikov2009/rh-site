@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="../styles/css/typography.css" />
     <link rel="stylesheet" href="../styles/css/sos.css" />
     <link rel="stylesheet" href="../styles/css/general.css" />
     <link rel="stylesheet" href="../styles/css/menu.css" />
@@ -14,37 +15,34 @@
     <nav class="menu">
       <img
         class="menu__logotype-wide"
-        src="../assets/logotype/wide-logotype.svg"
+        src="../assets/logotype/wideLogotype.svg"
         alt=""
       />
       <img
-        src="../assets/logotype/small-logo.svg"
+        src="../assets/logotype/smallLogo.svg"
         class="menu__logotype-small"
       />
-      <div class="menu-item">
-        <img
-          src="../assets/images/daria_ivanovna.jpg"
-          class="menu-item__icon"
-        />
-        <div class="menu-item__label">Дарья Иванова</div>
-      </div>
+      <form class="menu-item" method="post" action=" ">
+        <img src="../assets/images/menuDaria.jpg" class="menu-item__icon" />
+        <p class="menu-item__label md-font">Дарья Иванова</p>
+      </form>
 
-      <div class="sub-header">Страховки</div>
+      <a class="sub-header primary-link" href="">Страховки</a>
 
-      <div class="menu-item">
+      <a class="menu-item" href="">
         <img src="../assets/icons/mediscinckaia.svg" class="menu-item__icon" />
-        <div class="menu-item__label">Медицинская</div>
-      </div>
+        <p class="menu-item__label md-font">Медицинская</p></a
+      >
 
-      <div class="menu-item">
+      <a class="menu-item" href="">
         <img src="../assets/icons/departure.svg" class="menu-item__icon" />
-        <div class="menu-item__label">Для выезда за рубеж</div>
-      </div>
+        <p class="menu-item__label md-font">Для выезда за рубеж</p>
+      </a>
 
-      <div class="menu-item">
-        <img src="../assets/icons/a_plus.svg" class="menu-item__icon" />
-        <div class="menu-item__label">Добавить</div>
-      </div>
+      <a class="menu-item" href="">
+        <img src="../assets/icons/aPlus.svg" class="menu-item__icon" />
+        <p class="menu-item__label md-font">Добавить</p>
+      </a>
     </nav>
     <!-- menu -->
 
@@ -52,15 +50,14 @@
     <main class="main">
       <!-- main__header -->
       <header class="header">
-        <img src="../assets/icons/sos_red.svg" class="header__icon" />
+        <img src="../assets/icons/sosRed.svg" class="header__icon" />
       </header>
-
       <!-- main__header -->
 
       <!-- menu-mobile -->
       <div class="menu-mobile">
         <img
-          src="../assets/logotype/small-logo.svg"
+          src="../assets/logotype/smallLogo.svg"
           class="menu-mobile__logo-small"
         />
         <div class="menu-mobile__dots">
@@ -74,11 +71,11 @@
       <!-- top-block -->
 
       <div class="top-block">
-        <div class="top-block__help">Скорая помощь</div>
-        <div class="top-block__phone-label">Телефон для вызова скорой</div>
-        <div class="top-block__phone-value">+7 (495) 725–10–10</div>
-        <div class="top-block__policy">Номер вашего полиса ДМС</div>
-        <div class="top-block__policy-value">001ДМС34240118/175</div>
+        <h1 class="top-block__help h1-font">Скорая помощь</h1>
+        <p class="top-block__phone-label md-font">Телефон для вызова скорой</p>
+        <h1 class="top-block__phone-value h1-font">+7 (495) 725–10–10</h1>
+        <p class="top-block__policy md-font">Номер вашего полиса ДМС</p>
+        <p class="top-block__policy-value md-font">001ДМС34240118/175</p>
       </div>
       <!-- top-block -->
 
@@ -87,51 +84,54 @@
         <!-- list -->
 
         <ul class="list">
-          <p class="list-title">Когда стоит вызвать скорую помощь?</p>
+          <p class="list-title md-font">Когда стоит вызвать скорую помощь?</p>
 
           <li class="list-item">
             <div class="list-item__dot"></div>
-            <div class="list-item__text">Перегрев, тепловой удар</div>
+            <p class="list-item__text md-font">Перегрев, тепловой удар</p>
           </li>
           <li class="list-item">
             <div class="list-item__dot"></div>
-            <div class="list-item__text">Обморок, потеря сознания</div>
+            <p class="list-item__text md-font">Обморок, потеря сознания</p>
           </li>
           <li class="list-item">
             <div class="list-item__dot"></div>
-            <div class="list-item__text">
+            <p class="list-item__text md-font">
               Травмы, кровотечения, ожоги, укусы
-            </div>
+            </p>
           </li>
           <li class="list-item">
             <div class="list-item__dot"></div>
-            <div class="list-item__text">
+            <p class="list-item__text md-font">
               Отравления лекарствами и другими веществами
-            </div>
+            </p>
           </li>
           <li class="list-item">
             <div class="list-item__dot"></div>
-            <div class="list-item__text">Удушье, слабый или неровный пульс</div>
+            <p class="list-item__text md-font">
+              Удушье, слабый или неровный пульс
+            </p>
           </li>
           <li class="list-item">
             <div class="list-item__dot"></div>
-            <div class="list-item__text">
+            <p class="list-item__text md-font">
               Роды или угроза прерывания беременности
-            </div>
+            </p>
           </li>
           <li class="list-item">
             <div class="list-item__dot"></div>
-            <div class="list-item__text">Инородный предмет в организме</div>
+            <p class="list-item__text md-font">Инородный предмет в организме</p>
           </li>
         </ul>
         <!-- list -->
+
         <!-- info-block -->
         <div class="info-block">
           <img src="../assets/icons/attention.svg" class="info-block__icon" />
-          <div class="info-block__text">
+          <p class="info-block__text md-font">
             Если у вас болит в груди или животе, внезапно возникли отеки или
             онемела часть тела, лучше свяжитесь с врачом для консультации.
-          </div>
+          </p>
         </div>
       </div>
       <!-- info-block -->

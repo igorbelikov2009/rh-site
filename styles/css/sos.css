@@ -74,33 +74,17 @@
     .top-block {
       padding-left: 28px; } }
   .top-block__help {
-    font-family: Gerbera;
-    font-size: 34px;
-    line-height: 48px;
     align-items: center;
     color: #ff005a;
     margin-bottom: 79px; }
   .top-block__phone-label {
-    font-family: Gerbera;
-    font-size: 16px;
-    line-height: 24px;
     color: #96a0aa; }
   .top-block__phone-value {
-    font-family: Gerbera;
-    font-size: 34px;
-    line-height: 48px;
-    color: #28323c;
     margin-bottom: 32px; }
   .top-block__policy {
-    font-family: Gerbera;
-    font-size: 16px;
-    line-height: 24px;
     color: #96a0aa;
     margin-bottom: 10px; }
   .top-block__policy-value {
-    font-family: Gerbera;
-    font-size: 18px;
-    line-height: 24px;
     color: #96a0aa; }
 
 .attention {
@@ -125,9 +109,6 @@
       width: 33.33%; } }
 
 .list-title {
-  font-family: Gerbera;
-  font-size: 16px;
-  line-height: 24px;
   color: #96a0aa;
   margin-bottom: 14px; }
 
@@ -143,9 +124,6 @@
     border-radius: 50%;
     margin-right: 17px; }
   .list-item__text {
-    font-family: Gerbera;
-    font-size: 16px;
-    line-height: 24px;
     color: #5a646e; }
 
 .info-block {
@@ -162,7 +140,4 @@
   .info-block__icon {
     margin-bottom: 24px; }
   .info-block__text {
-    font-family: Gerbera;
-    font-size: 16px;
-    line-height: 24px;
     color: #96a0aa; }
