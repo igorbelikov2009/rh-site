@@ -186,38 +186,49 @@
     border: 1px solid #d2dce6;
     transform: matrix(1, 0, 0, 1, 0, 0); }
 
-.consultations {
+.buy-policy {
   width: 100%;
-  margin-bottom: 84px;
-  background-color: #06999a; }
-  .consultations__wrapper {
+  margin-bottom: 84px; }
+  .buy-policy_pearl {
+    background: #06999a;
+    box-shadow: 0px 4px 6px rgba(26, 65, 101, 0.15); }
+  .buy-policy_gray {
+    background: #e6f0fa;
+    box-shadow: 0px 4px 6px rgba(26, 65, 101, 0.15); }
+  .buy-policy__wrapper {
     width: 100%;
     padding: 24px 24px 0; }
-  .consultations__icon {
+  .buy-policy__icon {
     margin-bottom: 48px; }
-  .consultations__item {
+  .buy-policy__item {
     width: 48px;
     height: 48px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
-  .consultations__consultations {
-    color: #ffffff;
+  .buy-policy__first-paragraph {
     margin-bottom: 24px; }
-  .consultations__span {
+    .buy-policy__first-paragraph_white {
+      color: #ffffff; }
+    .buy-policy__first-paragraph_black {
+      color: #28323c; }
+  .buy-policy__span {
     display: block; }
-  .consultations__for-family {
-    color: #ffffff;
+  .buy-policy__second-paragraph {
     margin-bottom: 48px; }
-  .consultations__image {
+    .buy-policy__second-paragraph_white {
+      color: #ffffff; }
+    .buy-policy__second-paragraph_gray {
+      color: #78828c; }
+  .buy-policy__image {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 74px; }
-    .consultations__image_item {
+    .buy-policy__image_item {
       width: 248px;
       height: 262px; }
-  .consultations__button {
+  .buy-policy__button {
     height: 48px;
     border-radius: 0; }
 

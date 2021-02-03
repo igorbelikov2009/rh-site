@@ -279,12 +279,20 @@
 }
 //  <!-- policy -->
 
-// <!-- consultations -->
-.consultations {
+// <!-- buy-policy -->
+.buy-policy {
   width: 100%;
-  // position: relative;
   margin-bottom: 84px;
-  background-color: #06999a;
+
+  &_pearl {
+    background: #06999a;
+    box-shadow: 0px 4px 6px rgba(26, 65, 101, 0.15);
+  }
+
+  &_gray {
+    background: #e6f0fa;
+    box-shadow: 0px 4px 6px rgba(26, 65, 101, 0.15);
+  }
 
   &__wrapper {
     width: 100%;
@@ -303,18 +311,32 @@
     background-repeat: no-repeat;
   }
 
-  &__consultations {
-    color: #ffffff;
+  &__first-paragraph {
     margin-bottom: 24px;
+
+    &_white {
+      color: #ffffff;
+    }
+
+    &_black {
+      color: #28323c;
+    }
   }
 
   &__span {
     display: block;
   }
 
-  &__for-family {
-    color: #ffffff;
+  &__second-paragraph {
     margin-bottom: 48px;
+
+    &_white {
+      color: #ffffff;
+    }
+
+    &_gray {
+      color: #78828c;
+    }
   }
 
   &__image {
@@ -332,11 +354,9 @@
   &__button {
     height: 48px;
     border-radius: 0;
-    // color: ;
-    // background-color: ;
   }
 }
-// <!-- consultations -->
+// <!-- buy-policy -->
 
 //  <!-- article -->
 

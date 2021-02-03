@@ -1,6 +1,7 @@
 .primary-input {
   width: 100%; }
   .primary-input__label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -14,7 +15,7 @@
 .secondary-input {
   width: 100%; }
   .secondary-input__label {
-    font-family: Gerbera;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -42,7 +43,7 @@
   .tertiary-input__block {
     margin-top: 18px; }
   .tertiary-input__top-label {
-    font-family: Gerbera;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -53,7 +54,7 @@
     justify-content: space-between;
     align-items: center; }
   .tertiary-input__label {
-    font-family: Gerbera;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -70,6 +71,68 @@
     border-bottom: 2px solid #ffffff; }
   .tertiary-input:active .tertiary-input__label {
     color: #000000; }
+
+.input-date {
+  width: 100%; }
+  .input-date__label {
+    color: #b5bdc8; }
+  .input-date__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .input-date__field {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 34px;
+    color: #b5bdc8;
+    border-bottom: 1px solid #b5bdc8; }
+  .input-date__icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+  .input-date__triangle {
+    width: 8px;
+    height: 6px;
+    background-position: center;
+    background-size: cover; }
+
+.input-prompt {
+  width: 100%; }
+  .input-prompt__field {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 47px;
+    color: #b5bdc8;
+    border-bottom: 1px solid #b5bdc8;
+    box-sizing: border-box; }
+
+.input-subtitle {
+  width: 100%; }
+  .input-subtitle__field {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 47px;
+    color: #b5bdc8;
+    border-bottom: 1px solid #b5bdc8;
+    box-sizing: border-box; }
+  .input-subtitle__subtitle {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    line-height: 24px;
+    color: #b5bdc8; }
 
 .primary-checkbox {
   width: 100%;
@@ -101,15 +164,8 @@
   .primary-checkbox__input {
     display: none; }
   .primary-checkbox__label {
-    font-family: Gerbera;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
     color: #5a646e; }
   .primary-checkbox__link {
-    font-size: 16px;
-    line-height: 24px;
     color: #50287d;
     width: 100%;
     text-decoration: none; }
@@ -118,6 +174,7 @@
   cursor: pointer;
   width: 100%;
   padding: 12px 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: white;
@@ -137,6 +194,7 @@
   text-align: center; }
 
 .primary-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #50287d;

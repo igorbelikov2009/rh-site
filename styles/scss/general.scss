@@ -2,6 +2,7 @@
   width: 100%;
 
   &__label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -20,7 +21,7 @@
   width: 100%;
 
   &__label {
-    font-family: Gerbera;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -60,7 +61,7 @@
   }
 
   &__top-label {
-    font-family: Gerbera;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -75,7 +76,7 @@
   }
 
   &__label {
-    font-family: Gerbera;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -101,6 +102,94 @@
     color: #000000;
   }
 }
+
+// поле выбора даты с иконкой "треугольник" input-date
+.input-date {
+  width: 100%;
+
+  &__label {
+    color: #b5bdc8;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__field {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 34px;
+    color: #b5bdc8;
+    border-bottom: 1px solid #b5bdc8;
+  }
+
+  &__icon {
+    // высота блока зависит от высоты line-height field
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__triangle {
+    width: 8px;
+    height: 6px;
+    background-position: center;
+    background-size: cover;
+  }
+}
+// поле выбора даты с иконкой "треугольник" date-picker
+
+// поле с подсказкой
+.input-prompt {
+  width: 100%;
+
+  &__field {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 47px;
+    color: #b5bdc8;
+    border-bottom: 1px solid #b5bdc8;
+    box-sizing: border-box;
+  }
+}
+// поле с подсказкой
+
+// поле с подсказкой и подзаголовком
+.input-subtitle {
+  width: 100%;
+
+  &__field {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 47px;
+    color: #b5bdc8;
+    border-bottom: 1px solid #b5bdc8;
+    box-sizing: border-box;
+  }
+
+  &__subtitle {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    line-height: 24px;
+    color: #b5bdc8;
+  }
+}
+// поле с подсказкой и подзаголовком
 
 .primary-checkbox {
   width: 100%;
@@ -141,17 +230,10 @@
   }
 
   &__label {
-    font-family: Gerbera;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
     color: #5a646e;
   }
 
   &__link {
-    font-size: 16px;
-    line-height: 24px;
     color: #50287d;
     width: 100%;
     text-decoration: none;
@@ -162,6 +244,7 @@
   cursor: pointer;
   width: 100%;
   padding: 12px 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: white;
@@ -183,6 +266,7 @@
 }
 
 .primary-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #50287d;
