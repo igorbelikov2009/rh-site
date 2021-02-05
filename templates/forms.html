@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/css/general.css" />
+    <link rel="stylesheet" href="../styles/css/grids.css" />
+    <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="../styles/css/typography.css" />
+    <link rel="stylesheet" href="../styles/css/forms.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <article class="article">
+        <!-- information-about-forms  Информация о формах -->
+        <section class="information-about-forms">
+          <h1 class="information-about-forms__heading h1-font">
+            Форма
+            <a
+              class="information-about-forms__link h1-font"
+              href="http://htmlbook.ru/html/form"
+            >
+              "form"</a
+            >
+          </h1>
+
+          <p class="information-about-forms__text md-font">
+            Тег <em>form</em> устанавливает форму на веб-странице. Форма
+            предназначена для обмена данными между пользователем и сервером.
+            Область применения форм не ограничена отправкой данных на сервер, с
+            помощью клиентских скриптов можно получить доступ к любому элементу
+            формы, изменять его и применять по своему усмотрению.
+          </p>
+
+          <p class="information-about-forms__text md-font">
+            Документ может содержать любое количество форм, но одновременно на
+            сервер может быть отправлена только одна форма. По этой причине
+            данные форм должны быть независимы друг от друга.
+          </p>
+
+          <p class="information-about-forms__text md-font">
+            Для отправки формы на сервер используется кнопка <em>Submit</em>,
+            того же можно добиться, если нажать клавишу <em>Enter</em> в
+            пределах формы. Если кнопка <em>Submit</em> отсутствует в форме,
+            клавиша <em>Enter</em> имитирует ее использование.
+          </p>
+
+          <p class="information-about-forms__text md-font">
+            Когда форма отправляется на сервер, управление данными передается
+            программе, заданной атрибутом <em>action</em> тега <em>form</em>.
+            <em>Action</em> задаёт адрес, <em>URL</em>, отправки формы.
+            Предварительно браузер подготавливает информацию в виде пары
+            «имя=значение», где имя определяется атрибутом name тега
+            <em>input</em>, а значение введено пользователем или установлено в
+            поле формы по умолчанию.
+          </p>
+
+          <p class="information-about-forms__text md-font">
+            <em>Method</em> задаёт метод отправки формы. Для отправки формы
+            обычно используют методы <em>get</em> или <em>post</em>. Если не
+            указать атрибут <em>method</em>, то будет использован <em>get</em>.
+            Метод <em>get</em> посылает данные формы в строке запроса, то есть
+            они видны в адресной строке браузера и следуют после знака вопроса.
+          </p>
+        </section>
+        <!-- information-about-forms  Информация о формах -->
+
+        <!-- information-about-inputs Информация о полях -->
+        <section class="information-about-inputs">
+          <h1 class="information-about-inputs__heading h1-font">
+            Поля
+            <a
+              class="information-about-inputs__link"
+              href="http://htmlbook.ru/html/input"
+              >"input"</a
+            >
+          </h1>
+          <p class="information-about-inputs__text md-font">
+            Тег <em>input</em> является одним из разносторонних элементов формы
+            и позволяет создавать разные элементы интерфейса и обеспечить
+            взаимодействие с пользователем. Главным образом
+            <em>input</em> предназначен для создания текстовых полей, различных
+            кнопок, переключателей и флажков. Хотя элемент <em>input</em> не
+            требуется помещать внутрь контейнера <em>form</em>, определяющего
+            форму, но если введенные пользователем данные должны быть отправлены
+            на сервер, где их обрабатывает серверная программа, то указывать
+            <em>form</em> обязательно. То же самое обстоит и в случае обработки
+            данных с помощью клиентских приложений, например, скриптов на языке
+            <em>JavaScript</em>. Заготовки различных полей <em>input</em> можно
+            делать, не вкладывая их в <em>form</em>, что бы в процессе работы
+            можно было собирать множество <em>input</em>ов в единый или в
+            несколько <em>form</em>.
+          </p>
+          <p class="information-about-inputs__text md-font">
+            Основной атрибут тега <em>input</em>, определяющий вид элемента —
+            <a
+              class="information-about-inputs__link md-font"
+              href="http://htmlbook.ru/html/input/type"
+              >type.</a
+            >
+            Он позволяет задавать следующие элементы формы: текстовое поле
+            <b>(text)</b>, поле с паролем <b>(password)</b>, переключатель
+            (<b>radio)</b>, флажок <b>(checkbox)</b>, скрытое поле
+            <b>(hidden)</b>, кнопка <b>(button)</b>, кнопка для отправки формы
+            <b>(submit)</b>, кнопка для очистки формы <b>(reset)</b>, поле для
+            отправки файла <b>(file)</b> и кнопка с изображением <b>(image)</b>.
+            Для каждого элемента существует свой список атрибутов, которые
+            определяют его вид и характеристики. Кроме того, в
+            <em>HTML5</em> добавлено еще более десятка новых элементов.
+          </p>
+        </section>
+        <!-- information-about-inputs Информация о полях -->
+
+        <!-- information-type-inputs  Информация о типах полей -->
+        <section class="information-type-input">
+          <h1 class="information-type-inputs__heading h1-font">
+            Типы форм
+            <a
+              class="information-type-inputs__link"
+              href="http://htmlbook.ru/html/input/type"
+              >"type forms"</a
+            >
+          </h1>
+          <div class="type-input">
+            <!-- subheading подзаголовки колонок -->
+            <div class="subheading-row row">
+              <p class="type-input__type_subheading col-3 col-md-2 h2-font">
+                Тип
+              </p>
+              <p
+                class="type-input__disctiption_subheading col-9 col-md-5 h2-font"
+              >
+                Описание
+              </p>
+              <p
+                class="type-input__appearance_subheading col-12 col-md-5 h2-font"
+              >
+                Вид
+              </p>
+            </div>
+            <!-- subheading подзаголовки колонок -->
+
+            <!-- button -->
+            <div class="button-row row">
+              <p class="type-input__type col-3 col-md-2 md-font">
+                <em>button</em>.
+              </p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                Кнопку на веб-странице можно создать двумя способами — с помощью
+                тега <em>button</em> и тега <em>input</em>.
+                <br />
+                Пeрвый вариант предлагает расширенные возможности по созданию
+                кнопок. Например, на подобной кнопке можно размещать любые
+                элементы HTML включая изображения и таблицы.
+              </p>
+              <div class="type-input__appearance col-12 col-md-5 md-font">
+                <!-- <button type=" "> -->
+                <button class="location__button primary-button">
+                  Самая простая кнопка button
+                </button>
+                <!-- <button type=" "> -->
+              </div>
+            </div>
+            <!-- button -->
+
+            <!-- button type="submit"-->
+            <div class="button-row row">
+              <p class="type-input__type col-3 col-md-2 md-font">
+                <em>button</em> type= <em>"submit"</em>
+              </p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                Тег <em>input </em> для кнопки лучше не использовать. <br />
+                Оба тега используют одинаковые типы. <br />
+                Для отправки данных на сервер предназначена специальная кнопка
+                type="submit". Её вид ничем не отличается от обычных кнопок, но
+                при нажатии на нее происходит выполнение серверной программы,
+                указанной атрибутом action тега <em>form</em>. Эта программа,
+                называемая еще обработчиком формы, получает данные, введенные
+                пользователем в полях формы, производит с ними необходимые
+                манипуляции, после чего возвращает результат в виде
+                HTML-документа. Что именно делает обработчик, зависит от автора
+                сайта, например, подобная технология применяется при создании
+                опросов, форумов, тестов и многих других вещей. <br />
+                Значениями атрибута type также могут быть button и reset. Кнопка
+                button со значением type="reset" аналогично input type="reset"
+                сбрасывает значения полей формы к изначальным. <br />
+                А вот значение type="button" избавит кнопку от всей изначальной
+                функциональности. То есть кнопка просто будет выглядеть как
+                кнопка, но ничего по умолчанию не делать. Это удобно, если вы
+                хотите сами добавить кнопке дополнительное действие с помощью
+                JavaScript.
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">
+                <!-- <button type="submit"> -->
+                <button class="location__submit primary-button" type="submit">
+                  Нажми меня нежно
+                  <img
+                    src="../assets/images/tsarLanding/tsarLandingWomenCall.jpg"
+                    alt=""
+                  />
+                </button>
+
+                <!-- <button type="submit"> -->
+              </div>
+            </div>
+            <!-- button type="submit"-->
+
+            <!-- button  type="reset"-->
+            <div class="submit-row row">
+              <p class="type-input__type col-3 col-md-2 md-font">
+                <em>button</em> type= <em>"reset"</em>
+              </p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                В сетке, да и так, все виды кнопок желательно помещать в
+                <em>div</em>, иначе левый падинг кнопки будет вылазить за левый
+                край. <br />
+                Если родителю ( <em>form</em> или <em>input</em>) задан
+                <em>display:flex;</em>, то потомку надо задать
+                <em>flex: auto;</em> или <em>flex:none;</em> <br />
+                Обратить внимание, что к указанным кнопкам применена одна и таже
+                стилизация, по одному классу в css. Ко второй кнопке во внутрь
+                button добален img
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">
+                <!--  <button  type="reset"> -->
+                <button class="location__submit primary-button" type="reset">
+                  Сброс введенных значений
+                </button>
+                <!--  <button  type="reset"> -->
+              </div>
+            </div>
+            <!-- button  type="reset" -->
+
+            <!-- input type="radio" -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div
+                class="type-input__appearance type-input__appearance_radio type-input__appearance_radio col-12 col-md-5"
+              >
+                <p><b>Каким браузером в основном пользуетесь:</b><br /></p>
+                <div class="location-radio primary-radio">
+                  <label class="primary-radio__item" for="">
+                    <input
+                      class="primary-radio__field"
+                      type="radio"
+                      name="browser"
+                      value="ie"
+                    />
+                    <div class="primary-radio__title sm-font">Explorer</div>
+                  </label>
+
+                  <label class="primary-radio__item" for="">
+                    <input
+                      class="primary-radio__field"
+                      type="radio"
+                      name="browser"
+                      value="ie"
+                    />
+                    <div class="primary-radio__title sm-font">Opera</div>
+                  </label>
+
+                  <label class="primary-radio__item" for="">
+                    <input
+                      class="primary-radio__field"
+                      type="radio"
+                      name="browser"
+                      value="ie"
+                    />
+                    <div class="primary-radio__title sm-font">Firefox</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- input type="radio" -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5"></div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+
+            <!-- type- -->
+            <div class="row">
+              <p class="type-input__type col-3 col-md-2 md-font">type</p>
+              <p class="type-input__disctiption col-9 col-md-5 md-font">
+                disctiption
+              </p>
+              <div class="type-input__appearance col-12 col-md-5">xxx</div>
+            </div>
+            <!-- type- -->
+          </div>
+          <p class="information-type-inputs__text md-font"></p>
+        </section>
+        <!-- information-type-inputs  Информация о типах полей -->
+      </article>
+
+      <!-- header  -->
+      <header class="header">
+        <div class="header__fixed">
+          <div class="header__block">
+            <img class="header__icon" src="../assets/icons/aPlus.svg" alt="" />
+            <h1 class="header__title h1-font">Формы</h1>
+            <img class="header__icon" src="../assets/icons/sos.svg" alt="" />
+          </div>
+        </div>
+      </header>
+      <!-- header  -->
+    </main>
+  </body>
+</html>

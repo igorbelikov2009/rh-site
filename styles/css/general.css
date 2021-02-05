@@ -173,6 +173,7 @@
 .primary-button {
   cursor: pointer;
   width: 100%;
+  max-width: 365px;
   padding: 12px 8px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;

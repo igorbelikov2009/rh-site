@@ -242,7 +242,11 @@
 
 .primary-button {
   cursor: pointer;
+
+  // эти две ширины обеспечивают
   width: 100%;
+  max-width: 365px;
+  // адаптацию ширины кнопки без медиа
   padding: 12px 8px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;

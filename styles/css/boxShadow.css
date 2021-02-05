@@ -1,0 +1,240 @@
+.main {
+  min-height: 100vh; }
+
+.article {
+  width: 100%;
+  padding-top: 96px;
+  max-width: 944px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px; }
+  @media screen and (min-width: 576px) {
+    .article {
+      padding-left: 28px;
+      padding-right: 28px; } }
+
+em {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-style: oblique;
+  font-size: 18px;
+  line-height: 24px; }
+
+b {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-style: oblique;
+  font-size: 18px;
+  line-height: 24px;
+  color: green; }
+
+.display-block {
+  display: block; }
+
+.box-shadow {
+  box-sizing: border-box;
+  margin-right: -12px;
+  margin-left: -12px;
+  margin-bottom: 48px; }
+  .box-shadow__heading {
+    margin-bottom: 24px;
+    text-align: center; }
+    @media screen and (min-width: 576px) {
+      .box-shadow__heading {
+        text-align: start; } }
+    .box-shadow__heading_span {
+      display: block; }
+      @media screen and (min-width: 576px) {
+        .box-shadow__heading_span {
+          display: inline; } }
+  .box-shadow__subheading {
+    margin-bottom: 24px; }
+  .box-shadow__value {
+    margin-bottom: 24px;
+    color: #089b08; }
+  .box-shadow__discription {
+    margin-bottom: 24px; }
+  .box-shadow__text {
+    margin-bottom: 24px; }
+    .box-shadow__text_location {
+      text-align: center;
+      margin-bottom: 24px; }
+  .box-shadow__link {
+    text-decoration: none;
+    color: blueviolet; }
+
+.box-shadow-example__heading {
+  box-sizing: border-box;
+  margin-right: -12px;
+  margin-left: -12px;
+  margin-bottom: 24px; }
+
+.example {
+  margin-bottom: 48px; }
+  .example__type {
+    background-color: #ffffff;
+    color: black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    padding: 6px; }
+    .example__type_subheading {
+      display: none; }
+      @media screen and (min-width: 767px) {
+        .example__type_subheading {
+          display: block;
+          background-color: gray;
+          color: black;
+          border-top: 1px solid black;
+          border-left: 1px solid black;
+          padding: 6px;
+          text-align: center; } }
+  .example__disctiption {
+    background-color: #ffffff;
+    color: gray;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 6px; }
+    @media screen and (min-width: 767px) {
+      .example__disctiption {
+        border-right: none; } }
+    .example__disctiption_subheading {
+      display: none; }
+      @media screen and (min-width: 767px) {
+        .example__disctiption_subheading {
+          display: block;
+          background-color: gray;
+          color: black;
+          border-top: 1px solid black;
+          border-left: 1px solid black;
+          padding: 6px;
+          text-align: center; } }
+  .example__appearance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding: 12px 6px;
+    text-align: center; }
+    .example__appearance_subheading {
+      display: none; }
+      @media screen and (min-width: 767px) {
+        .example__appearance_subheading {
+          display: block;
+          background-color: gray;
+          color: black;
+          border-top: 1px solid black;
+          border-right: 1px solid black;
+          border-left: 1px solid black;
+          padding: 6px;
+          text-align: center; } }
+    .example__appearance_down {
+      padding-bottom: 80px; }
+  .example__button {
+    box-sizing: content-box; }
+    .example__button_02 {
+      box-shadow: 5px 5px black; }
+    .example__button_03 {
+      box-shadow: -5px -5px black; }
+    .example__button_04 {
+      box-shadow: 0 0 5px black; }
+    .example__button_05 {
+      box-shadow: 0 0 5px 2px black; }
+    .example__button_06 {
+      box-shadow: 0 0 5px 2px red; }
+    .example__button_07 {
+      box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5); }
+    .example__button_08 {
+      box-shadow: inset 0 0 6px; }
+    .example__button_09 {
+      box-shadow: 0 0 6px -2px #34495e; }
+    .example__button_10 {
+      box-shadow: 0 0 6px 0 #34495e; }
+    .example__button_11 {
+      box-shadow: 0 0 6px 3px #34495e; }
+    .example__button_12 {
+      box-shadow: 0 0 3px 6px #34495e; }
+    .example__button_13 {
+      box-shadow: inset 5px 5px 0 0 #34495e; }
+    .example__button_14 {
+      box-shadow: inset 0 0 5px 0 #34495e; }
+    .example__button_15 {
+      box-shadow: inset 0 0 5px 3px #34495e; }
+    .example__button_16 {
+      box-shadow: 0 70px 0px 0 #34495e; }
+    .example__button_17 {
+      box-shadow: 0 70px 10px 0 #34495e; }
+    .example__button_18 {
+      box-shadow: 0 70px 0 -5px #34495e; }
+    .example__button_19 {
+      box-shadow: 0 0 0 15px rgba(39, 174, 96, 0.5); }
+    .example__button_20 {
+      box-shadow: 0 0 0 15px rgba(231, 76, 60, 0.5); }
+    .example__button_21 {
+      box-shadow: 0 -5px 10px -3px #3498db, 0 5px 10px -3px #2ecc71; }
+    .example__button_22 {
+      box-shadow: 0 0 0 5px #e74c3c, 0 0 0 10px #f1c40f, 0 0 0 15px #2ecc71; }
+    .example__button_23 {
+      margin: 10px auto;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: inset -5px -5px 5px 3px white, inset 0 0 0 9px #6c6d70, inset 0 0 0 10px black; }
+    .example__button_24 {
+      box-shadow: 5px 5px; }
+    .example__button_25 {
+      box-shadow: 5px 5px; }
+    .example__button_26 {
+      box-shadow: 5px 5px; }
+    .example__button_27 {
+      box-shadow: 5px 5px; }
+    .example__button_28 {
+      box-shadow: 5px 5px; }
+    .example__button_29 {
+      box-shadow: 5px 5px; }
+    .example__button_30 {
+      box-shadow: 5px 5px; }
+    .example__button_31 {
+      box-shadow: 5px 5px; }
+    .example__button_32 {
+      box-shadow: 5px 5px; }
+    .example__button_33 {
+      box-shadow: 5px 5px; }
+
+.primary-button {
+  cursor: pointer;
+  width: 100%;
+  max-width: 365px;
+  padding: 12px 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  background-color: #50287d;
+  border-radius: 24px;
+  text-align: center;
+  box-sizing: border-box;
+  flex: auto; }
+
+.header {
+  width: 100%; }
+  .header__fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(164, 74, 182, 0.8); }
+  .header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px; }
+    @media screen and (min-width: 576px) {
+      .header__block {
+        padding: 12px 28px; } }
+  .header__icon {
+    width: 24px;
+    height: 24px; }

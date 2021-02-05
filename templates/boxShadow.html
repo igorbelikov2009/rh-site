@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/css/general.css" />
+    <link rel="stylesheet" href="../styles/css/grids.css" />
+    <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="../styles/css/typography.css" />
+    <link rel="stylesheet" href="../styles/css/boxShadow.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <article class="article">
+        <!-- box-shadow  Информация  -->
+        <section class="box-shadow">
+          <h1 class="box-shadow__heading h1-font">
+            Свойство
+            <span class="box-shadow__heading_span">
+              <a
+                class="box-shadow__link h1-font"
+                href="http://htmlbook.ru/css/box-shadow"
+              >
+                "box-shadow"</a
+              >
+            </span>
+          </h1>
+
+          <h2 class="box-shadow__subheading h2-font">Описание</h2>
+          <p class="box-shadow__text md-font">
+            CSS-свойства box-shadow добавляет тень к элементу. Допускается
+            использовать несколько теней, указывая их параметры через запятую,
+            при наложении теней первая тень в списке будет выше, последняя ниже.
+            Если для элемента задается радиус скругления через свойство
+            border-radius, то тень также получится с закругленными уголками.
+            Добавление тени увеличивает ширину элемента, поэтому возможно
+            появление горизонтальной полосы прокрутки в браузере.
+          </p>
+          <h2 class="box-shadow__subheading h2-font">Синтаксис</h2>
+
+          <p class="box-shadow__text md-font">
+            box-shadow: none | <тень> [,<тень>]* где <тень>: inset <сдвиг по x>
+            <сдвиг по y> <радиус размытия> <растяжение> <цвет>
+          </p>
+          <p class="box-shadow__text_location h2-font">
+            <b> box-shadow: inset 5px 5px 10px 3px #ccc</b>
+          </p>
+
+          <p class="box-shadow__text md-font">
+            Обязательно следует указать только сдвиг по горизонтали и вертикали,
+            все остальные параметры будут приниматься по умолчанию. В этом
+            случае тень будет резкой без размытия и чёрного цвета.
+          </p>
+
+          <h2 class="box-shadow__subheading h2-font">Значения</h2>
+          <div class="row">
+            <div class="box-shadow__value col-12 col-md-2 md-font">none</div>
+            <div class="box-shadow__discription col-12 col-md-10 md-font">
+              Отменяет добавление тени.
+            </div>
+          </div>
+          <div class="row">
+            <div class="box-shadow__value col-12 col-md-2 md-font">inset</div>
+            <div class="box-shadow__discription col-12 col-md-10 md-font">
+              Ключевое слово inset устанавливает тень внутри элемента.
+              Необязательный параметр.
+            </div>
+          </div>
+          <div class="row">
+            <div class="box-shadow__value col-12 col-md-2 md-font">
+              сдвиг по x
+            </div>
+            <div class="box-shadow__discription col-12 col-md-10 md-font">
+              Сдвиг тени по горизонтали относительно элемента. Положительное
+              значение этого параметра задает сдвиг тени вправо, отрицательное —
+              влево. (5px — вправо, -5px — влево). Обязательный параметр.
+            </div>
+          </div>
+          <div class="row">
+            <div class="box-shadow__value col-12 col-md-2 md-font">
+              сдвиг по y
+            </div>
+            <div class="box-shadow__discription col-12 col-md-10 md-font">
+              Смещение тени по вертикали относительно элемента. Положительное
+              значение задает сдвиг тени вниз, отрицательное — вверх. (5px —
+              вниз, -5px — вверх). Обязательный параметр.
+            </div>
+          </div>
+          <div class="row">
+            <div class="box-shadow__value col-12 col-md-2 md-font">
+              размытие
+            </div>
+            <div class="box-shadow__discription col-12 col-md-10 md-font">
+              Задает радиус размытия тени. Чем больше это значение, тем сильнее
+              тень сглаживается, становится шире и светлее. Если этот параметр
+              не задан, по умолчанию устанавливается равным 0, тень при этом
+              будет четкой, а не размытой. Радиус размытия тени (0 — резкая
+              тень).
+            </div>
+          </div>
+          <div class="row">
+            <div class="box-shadow__value col-12 col-md-2 md-font">
+              растяжение
+            </div>
+            <div class="box-shadow__discription col-12 col-md-10 md-font">
+              Положительное значение растягивает тень, отрицательное, наоборот,
+              ее сжимает. Если этот параметр не задан, по умолчанию
+              устанавливается 0, при этом тень будет того же размера, что и
+              элемент. Растяжение тени (5px — растяжение, -5px — сжатие).
+            </div>
+          </div>
+          <div class="row">
+            <div class="box-shadow__value col-12 col-md-2 md-font">цвет</div>
+            <div class="box-shadow__discription col-12 col-md-10 md-font">
+              Цвет тени в любом доступном CSS формате, по умолчанию тень черная.
+              Необязательный параметр.
+            </div>
+          </div>
+          <p class="box-shadow__text md-font">
+            Допускается указывать несколько теней, разделяя их параметры между
+            собой запятой. Учитывается следующий порядок: первая тень в списке
+            размещается на самом верху, последняя в списке — в самом низу.
+            <br />
+            За счёт комбинаций разных параметров и их значений можно получить
+            широкое разнообразие видов теней.
+          </p>
+        </section>
+        <!-- box-shadow  Информация  -->
+
+        <!-- examples  Примеры теней-->
+        <section class="box-shadow-example">
+          <h2 class="box-shadow-example__heading h2-font">
+            В таблице представлен код и результат, к которому он приводит.
+          </h2>
+          <div class="example">
+            <!-- subheading подзаголовки колонок -->
+            <div class="row">
+              <p class="example__type_subheading col-6 col-md-3 h2-font">Код</p>
+              <p class="example__disctiption_subheading col-6 col-md-3 h2-font">
+                Описание
+              </p>
+              <p class="example__appearance_subheading col-12 col-md-6 h2-font">
+                Вид
+              </p>
+            </div>
+            <!-- subheading подзаголовки колонок -->
+
+            <!-- example-COD 01  Без тени -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0px 0px;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Без тени
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_01 primary-button"
+                >
+                  Простая кнопка, без тени
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 01  Без тени -->
+
+            <!-- example-COD 02  Резкая тень справа и снизу -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 5px 5px black;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Резкая тень справа и снизу.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_02 primary-button"
+                >
+                  Резкая тень справа и снизу.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 02  Резкая тень справа и снизу -->
+
+            <!-- example-COD 03  Резкая тень слева и сверху -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: -5px -5px black;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Резкая тень слева и сверху.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_03 primary-button"
+                >
+                  Резкая тень слева и сверху.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 03  Резкая тень слева и сверху -->
+
+            <!-- example-COD 04  Размытая тень вокруг элемента -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 0 5px black;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Размытая тень вокруг элемента.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_04 primary-button"
+                >
+                  Размытая тень вокруг элемента.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 04  Размытая тень вокруг элемента -->
+
+            <!-- example-COD 05  Расширение тени на 2 пиксела -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 0 5px 2px black;;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Расширение тени на 2 пиксела.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_05 primary-button"
+                >
+                  Расширение тени на 2 пиксела.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 05  Расширение тени на 2 пиксела -->
+
+            <!-- example-COD 06  Красное свечение вокруг элемента -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 0 5px 2px red;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Красное свечение вокруг элемента.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_06 primary-button"
+                >
+                  Красное свечение вокруг элемента.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 06  Красное свечение вокруг элемента -->
+
+            <!-- example-COD 07  Полупрозрачная тень -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Полупрозрачная тень.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_07 primary-button"
+                >
+                  Полупрозрачная тень.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 07  Полупрозрачная тень -->
+
+            <!-- example-COD 08  Тень внутри -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: inset 0 0 6px;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Тень внутри.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_08 primary-button"
+                >
+                  Тень внутри.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 08  Тень внутри -->
+
+            <!-- example-COD 09  Pазмытие есть, растяжение отрицательное — тень очень светлая -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 0 6px -2px #34495e; <br />
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Размытие + растяжение.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_09 primary-button"
+                >
+                  Pазмытие есть, растяжение отрицательное — тень очень светлая.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 09  Pазмытие есть, растяжение отрицательное — тень очень светлая -->
+
+            <!-- example-COD 10  Pазмытие есть, растяжения нет — тень обычная -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 0 6px 0 #34495e;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Размытие и растяжение иногда используют друг с другом.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_10 primary-button"
+                >
+                  Pазмытие есть, растяжения нет — тень обычная.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 10  Pазмытие есть, растяжения нет — тень обычная -->
+
+            <!-- example-COD 11  Pазмытие больше растяжения — тень темнее обычного -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 0 6px 3px #34495e;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Это позволяет управлять насыщенностью тени.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_11 primary-button"
+                >
+                  Pазмытие больше растяжения — тень темнее обычного.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 11  Pазмытие больше растяжения — тень темнее обычного -->
+
+            <!-- example-COD 12  Pазмытие меньше растяжения — тень очень темная -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 0 3px 6px #34495e;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Внешний вид тени будет зависеть от соотношения величин размытия
+                и растяжения.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_12 primary-button"
+                >
+                  Pазмытие меньше растяжения — тень очень темная.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 12  Pазмытие меньше растяжения — тень очень темная -->
+
+            <!-- example-COD 13  Тень внутри -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: inset 5px 5px 0 0 #34495e;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Тень внутри
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_13 primary-button"
+                >
+                  Тень внутри
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 13  Тень внутри -->
+
+            <!-- example-COD 14  Тень внутри -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: inset 0 0 5px 0 #34495e;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Тень внутри
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_14 primary-button"
+                >
+                  Тень внутри
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 14  Тень внутри -->
+
+            <!-- example-COD 15  Тень внутри -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: inset 0 0 5px 3px #34495e;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Тень внутри
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_15 primary-button"
+                >
+                  Тень внутри
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 15  Тень внутри -->
+
+            <!-- example-COD 16  Тень сдинута вниз, -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 70px 0px 0 #34495e;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Тень сдинута вниз, без смещения влево вправо по горизонтали,
+                размытия и растяжения. Полностью повторяет контур объекта.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_16 primary-button"
+                >
+                  Нет отступа снизу, тень уходит за пределы.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 16  Тень сдинута вниз, -->
+
+            <!-- example-COD 17  Добавили размытие на 10px -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 70px 10px 0 #34495e;
+              </p>
+              <p
+                class="example__disctiption example__appearance_down col-6 col-md-3 md-font"
+              >
+                Добавили размытие на 10px
+                <br />
+                Тень не занимает место в пространстве, не влияет на другие
+                объекты. Если бы, в данном случае, не увеличили отступ снизу, её
+                бы не было видно, как вверху
+              </p>
+              <div
+                class="example__appearance example__appearance col-12 col-md-6"
+              >
+                <button
+                  class="example__button example__button_17 primary-button"
+                >
+                  box-shadow: 0 70px 10px 0 #34495e;
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 17  Добавили размытие на 10px -->
+
+            <!-- example-COD 18  Убрали размытие, добавили сужение тени -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 70px 0 -5px #34495e;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                убрали размытие, добавили сужение тени
+              </p>
+              <div
+                class="example__appearance example__appearance_down col-12 col-md-6"
+              >
+                <button
+                  class="example__button example__button_18 primary-button"
+                >
+                  box-shadow: 0 70px 0 -5px #34495e;
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 18  Убрали размытие, добавили сужение тени -->
+
+            <!-- example-COD 19  Полупрозрачная тень -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 0 0 15px rgba(39, 174, 96, 0.5);
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Полупрозрачная тень. <br />
+                Если у тени ненулевой радиус размытия, то она автоматически
+                становится полупрозрачной. Но иногда нужно сделать
+                полупрозрачной тень без радиуса размытия.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_19 primary-button"
+                >
+                  Полупрозрачная тень.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 19  Полупрозрачная тень -->
+
+            <!-- example-COD 20  Полупрозрачная тень -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: 0 0 0 15px rgba(231, 76, 60, 0.5);
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Для этого можно использовать новый формат записи цветов в CSS —
+                rgba. Пример: color: red; color: #ff0000; color: rgba(255, 0, 0,
+                0.5); Все записи цвета в примере задают красный цвет, но в
+                последней записи задан красный с 50% прозрачностью. В rgba
+                первые три значения задают цвет и могут быть целым числом от 0
+                до 255. Последнее значение задаёт уровень прозрачности и может
+                быть дробным числом от 0 (полная прозрачность) до 1. Задавать
+                полупрозрачный цвет с помощью rgba можно не только теням, но и
+                остальным свойствам с цветом: рамкам, фону и так далее.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_20 primary-button"
+                >
+                  Полупрозрачная тень.
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 20  Полупрозрачная тень -->
+
+            <!-- example-COD 21  Множественные тени -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: <br />
+                0 -5px 10px -3px #3498db, <br />
+                0 5px 10px -3px #2ecc71;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Свойство box-shadow позволяет задавать одному элементу несколько
+                теней. Для этого нужно перечислить значения теней через запятую,
+                например: <br />
+                box-shadow: <br />
+                0 0 5px 0 red, <br />
+                0 0 10px 0 white; <br />
+                Тени, которые расположены в списке выше, будут перекрывать тени,
+                которые расположены ниже.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_21 primary-button"
+                >
+                  Множественные тени
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 21  Множественные тени -->
+
+            <!-- example-COD 22  Множественные рамки -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                box-shadow: <br />
+                0 0 0 5px #e74c3c, <br />
+                0 0 0 10px #f1c40f, <br />
+                0 0 0 15px #2ecc71;
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                С помощью множественных теней можно создавать различные
+                интересные эффекты. Например, можно имитировать множественные
+                рамки у элемента. Для этого нужно добавить элементу несколько
+                теней с положительным растяжением и с нулевыми смещениями и
+                размытием. <br />
+                Но тут есть одна тонкость. Настоящие рамки увеличивают размер
+                элемента, а рамки-тени — нет. Поэтому надо следить, чтобы вокруг
+                элемента было достаточно свободного пространства, иначе он может
+                перекрыть соседние элементы.
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <button
+                  class="example__button example__button_22 primary-button"
+                >
+                  Несколько рамок у одного элемента
+                </button>
+              </div>
+            </div>
+            <!-- example-COD 22  Множественные рамки -->
+
+            <!-- example-COD 23  Теневое исскуство -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">
+                Теневое исскуство
+              </p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                Теневое исскуство
+              </p>
+              <div class="example__appearance col-12 col-md-6">
+                <div class="example__button_23"></div>
+              </div>
+            </div>
+            <!-- example-COD 23  Теневое исскуство -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+
+            <!-- example-COD -->
+            <div class="row">
+              <p class="example__type col-6 col-md-3 md-font">type</p>
+              <p class="example__disctiption col-6 col-md-3 md-font">
+                disctiption
+              </p>
+              <div class="example__appearance col-12 col-md-6">xxx</div>
+            </div>
+            <!-- example-COD -->
+          </div>
+          <p class="information-box-shadow__examples__text md-font"></p>
+        </section>
+        <!-- examples  Примеры теней-->
+      </article>
+
+      <!-- header  -->
+      <header class="header">
+        <div class="header__fixed">
+          <div class="header__block">
+            <img class="header__icon" src="../assets/icons/aPlus.svg" alt="" />
+            <h1 class="header__title h1-font">box-shadow</h1>
+            <img class="header__icon" src="../assets/icons/sos.svg" alt="" />
+          </div>
+        </div>
+      </header>
+      <!-- header  -->
+    </main>
+  </body>
+</html>
