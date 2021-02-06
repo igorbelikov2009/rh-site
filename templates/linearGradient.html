@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/css/general.css" />
+    <link rel="stylesheet" href="../styles/css/grids.css" />
+    <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="../styles/css/typography.css" />
+    <link rel="stylesheet" href="../styles/css/linearGradient..css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <article class="article">
+        <!-- linear-gradient  Информация  -->
+        <section class="linear-gradient">
+          <div class="compression">
+            <h1 class="linear-gradient__heading h2-font-h1">
+              Свойство <i> background-image</i> или универсальное свойство
+              <i>background</i> со значением:
+              <span class="linear-gradient__heading_span">
+                <a
+                  class="linear-gradient__link h2-font-h1"
+                  href="http://htmlbook.ru/css3-na-primerakh/lineinyi-gradient"
+                >
+                  "Линейный градиент"</a
+                >
+              </span>
+            </h1>
+            <!-- Описание -->
+            <h2 class="linear-gradient__subheading h2-font">Описание</h2>
+            <p class="linear-gradient__text md-font">
+              Градиентом называют плавный переход от одного цвета к другому,
+              причём самих цветов и переходов между ними может быть несколько. С
+              помощью градиентов создаются самые причудливые эффекты
+              веб-дизайна, например, псевдотрёхмерность, блики, фон и др. Также
+              с градиентом элементы смотрятся более симпатично, чем однотонные.
+            </p>
+
+            <p class="linear-gradient__text md-font">
+              Отдельного свойства для добавления градиента нет, поскольку он
+              считается фоновым изображением, поэтому добавляется через свойство
+              <i>background-image</i> или универсальное свойство
+              <i>background</i>
+            </p>
+
+            <p class="linear-gradient__text md-font">
+              В самом простом случае с двумя цветами, в начале пишется позиция,
+              от которой будет начинаться градиент, затем начальный и конечный
+              цвет.
+            </p>
+            <div class="linear-gradient__sample">
+              border-color: yellow; <br />
+              <br />
+              background-image: linear-gradient(yellow, green);
+            </div>
+
+            <p class="linear-gradient__text md-font">
+              Сам градиент создаётся функцией <i>linear-gradient</i>, в
+              параметрах которой указываются направление градиента и набор
+              цветов. Направление можно не указывать, тогда будет использовано
+              значение по умолчанию — сверху вниз. Цветов может быть любое
+              количество.
+            </p>
+            <p class="linear-gradient__text md-font"></p>
+            <!-- Описание -->
+
+            <!-- Синтаксис -->
+            <h2 class="linear-gradient__subheading h2-font">Синтаксис</h2>
+            <h2 class="linear-gradient__syntax h2-font">
+              background-image: linear-gradient (
+              <span class="linear-gradient__syntax_span">позиция</span>
+
+              to top rigth,
+              <span class="linear-gradient__syntax_span">начальный цвет</span>
+              #000, #fff
+              <span class="linear-gradient__syntax_span">конечный цвет</span>);
+            </h2>
+            <p class="linear-gradient__text md-font">
+              Для записи позиции вначале пишется <i>to</i>, а затем добавляются
+              ключевые слова <i>top</i>, <i>bottom</i> и <i>left</i>,
+              <i>right</i>, а также их сочетания. Порядок слов не важен, можно
+              написать <i>to left top</i> или <i>to top left</i>. В табл. 1
+              приведены разные позиции и тип получаемого градиента для цветов
+              <i>#000</i> и <i>#fff</i>, по другому от чёрного к белому.
+            </p>
+            <!-- Синтаксис -->
+          </div>
+        </section>
+        <!-- linear-gradient  Информация  -->
+
+        <!-- examples  Примеры переходов цветов из чёрного в белое -->
+        <section class="examples">
+          <h1 class="examples__heading compression h2-font-h1">
+            Примеры переходов цветов
+          </h1>
+          <h2 class="examples__subheading compression h2-font">
+            Примеры прямых переходов c цветами black, white.
+          </h2>
+          <!-- table-examples прямые переходы из чёрного в белое -->
+          <div class="table-examples">
+            <!-- table-examples__item Снизу вверх из чёрного в белое -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">Снизу вверх</div>
+              <div
+                class="table-examples__black-position table-examples__black-position_01"
+              ></div>
+              <div class="table-examples__title md-font">to top (вверх)</div>
+            </div>
+            <!-- table-examples__item Снизу вверх из чёрного в белое -->
+
+            <!-- table-examples__item Справа налево из чёрного в белое -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                Справа налево
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_02"
+              ></div>
+              <div class="table-examples__title md-font">to left (влево)</div>
+            </div>
+            <!-- table-examples__item Справа налево из чёрного в белое -->
+
+            <!-- table-examples__item Сверху вниз из чёрного в белое -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">Сверху вниз</div>
+              <div
+                class="table-examples__black-position table-examples__black-position_03"
+              ></div>
+              <div class="table-examples__title md-font">to bottom (вниз)</div>
+            </div>
+            <!-- table-examples__item Сверху вниз из чёрного в белое -->
+
+            <!-- table-examples__item Слева направо из чёрного в белое -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                Слева направо
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_04"
+              ></div>
+              <div class="table-examples__title md-font">
+                to right (направо)
+              </div>
+            </div>
+            <!-- table-examples__item Слева направо из чёрного в белое -->
+          </div>
+          <!-- table-examples прямые переходы из чёрного в белое -->
+
+          <h2 class="examples__subheading compression h2-font">
+            Примеры прямых переходов c цветами black, white.
+          </h2>
+          <!-- table-examples переходы по диагоналям из чёрного в белое -->
+          <div class="table-examples">
+            <!-- table-examples__item От правого нижнего угла к левому верхнему из чёрного в белое -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От правого нижнего угла к левому верхнему
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_05"
+              ></div>
+              <div class="table-examples__title md-font">to top left</div>
+            </div>
+            <!-- table-examples__item От правого нижнего угла к левому верхнему из чёрного в белое -->
+
+            <!-- table-examples__item От левого нижнего угла к правому верхнему из чёрного в белое -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От левого нижнего угла к правому верхнему
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_06"
+              ></div>
+              <div class="table-examples__title md-font">to top right</div>
+            </div>
+            <!-- table-examples__item От левого нижнего угла к правому верхнему из чёрного в белое -->
+
+            <!-- table-examples__item От правого верхнего угла к левому из чёрного в белое нижнему -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От правого верхнего угла к <br />
+                левому нижнему
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_07"
+              ></div>
+              <div class="table-examples__title md-font">to bottom left</div>
+            </div>
+            <!-- table-examples__item	От правого верхнего угла к левому нижнему из чёрного в белое -->
+
+            <!-- table-examples__item От левого верхнего угла к правому нижнему из чёрного в белое -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От левого верхнего угла к правому нижнему
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_08"
+              ></div>
+              <div class="table-examples__title md-font">to bottom right</div>
+            </div>
+            <!-- table-examples__item От левого верхнего угла к правому нижнему из чёрного в белое -->
+          </div>
+          <!-- table-examples переходы по диагоналям из чёрного в белое -->
+        </section>
+        <!-- examples  Примеры переходов цветов из чёрного в белое -->
+
+        <!-- examples  Примеры переходов цветов из жёлтого в зелёное -->
+        <section class="examples">
+          <h2 class="examples__subheading compression h2-font">
+            Примеры прямых переходов c цветами yellow, green.
+          </h2>
+          <!-- table-examples прямые переходы из из жёлтого в зелёное -->
+          <div class="table-examples">
+            <!-- table-examples__item Снизу вверх  из жёлтого в зелёное -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">Снизу вверх</div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_01"
+              ></div>
+              <div class="table-examples__title md-font">to top (вверх)</div>
+            </div>
+            <!-- table-examples__item Снизу вверх  из жёлтого в зелёное -->
+
+            <!-- table-examples__item Справа налево  из жёлтого в зелёное -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                Справа налево
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_02"
+              ></div>
+              <div class="table-examples__title md-font">to left (влево)</div>
+            </div>
+            <!-- table-examples__item Справа налево  из жёлтого в зелёное -->
+
+            <!-- table-examples__item Сверху вниз  из жёлтого в зелёное -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">Сверху вниз</div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_03"
+              ></div>
+              <div class="table-examples__title md-font">to bottom (вниз)</div>
+            </div>
+            <!-- table-examples__item Сверху вниз  из жёлтого в зелёное -->
+
+            <!-- table-examples__item Слева направо  из жёлтого в зелёное -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                Слева направо
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_04"
+              ></div>
+              <div class="table-examples__title md-font">
+                to right (направо)
+              </div>
+            </div>
+            <!-- table-examples__item Слева направо  из жёлтого в зелёное -->
+          </div>
+          <!-- table-examples прямые переходы из из жёлтого в зелёное -->
+
+          <h2 class="examples__subheading compression h2-font">
+            Примеры прямых переходов c цветами yellow, green.
+          </h2>
+          <!-- table-examples переходы по диагоналям из из жёлтого в зелёное  из жёлтого в зелёное -->
+          <div class="table-examples">
+            <!-- table-examples__item От правого нижнего угла к левому верхнему  из жёлтого в зелёное -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От правого нижнего угла к левому верхнему
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_05"
+              ></div>
+              <div class="table-examples__title md-font">to top left</div>
+            </div>
+            <!-- table-examples__item От правого нижнего угла к левому верхнему  из жёлтого в зелёное -->
+
+            <!-- table-examples__item От левого нижнего угла к правому верхнему  из жёлтого в зелёное -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От левого нижнего угла к правому верхнему
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_06"
+              ></div>
+              <div class="table-examples__title md-font">to top right</div>
+            </div>
+            <!-- table-examples__item От левого нижнего угла к правому верхнему  из жёлтого в зелёное -->
+
+            <!-- table-examples__item От правого верхнего угла к левому нижнему  из жёлтого в зелёное -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От правого верхнего угла к левому <br />
+                нижнему
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_07"
+              ></div>
+              <div class="table-examples__title md-font">to bottom left</div>
+            </div>
+            <!-- table-examples__item	От правого верхнего угла к левому нижнему  из жёлтого в зелёное -->
+
+            <!-- table-examples__item От левого верхнего угла к правому нижнему  из жёлтого в зелёное -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От левого верхнего угла к правому нижнему
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_08"
+              ></div>
+              <div class="table-examples__title md-font">to bottom right</div>
+            </div>
+            <!-- table-examples__item От левого верхнего угла к правому нижнему  из жёлтого в зелёное -->
+          </div>
+          <!-- table-examples переходы по диагоналям из жёлтого в зелёное -->
+        </section>
+        <!-- examples  Примеры переходов цветов из жёлтого в зелёное -->
+
+        <!-- examples  Примеры переходов цветов радуги -->
+        <section class="examples">
+          <h2 class="examples__subheading compression h2-font">
+            Примеры прямых переходов c цветами радуги
+          </h2>
+
+          <!-- table-examples прямые переходы  цветов радуги -->
+          <div class="table-examples">
+            <!-- table-examples__item Снизу вверх  цветов радуги -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">Снизу вверх</div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_01"
+              ></div>
+              <div class="table-examples__title md-font">to top (вверх)</div>
+            </div>
+            <!-- table-examples__item Снизу вверх  цветов радуги -->
+
+            <!-- table-examples__item Справа налево  цветов радуги -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                Справа налево
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_02"
+              ></div>
+              <div class="table-examples__title md-font">to left (влево)</div>
+            </div>
+            <!-- table-examples__item Справа налево  цветов радуги -->
+
+            <!-- table-examples__item Сверху вниз  цветов радуги -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">Сверху вниз</div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_03"
+              ></div>
+              <div class="table-examples__title md-font">to bottom (вниз)</div>
+            </div>
+            <!-- table-examples__item Сверху вниз  цветов радуги -->
+
+            <!-- table-examples__item Слева направо  цветов радуги -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                Слева направо
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_04"
+              ></div>
+              <div class="table-examples__title md-font">
+                to right (направо)
+              </div>
+            </div>
+            <!-- table-examples__item Слева направо  цветов радуги -->
+          </div>
+          <!-- table-examples прямые переходы  цветов радуги  цветов радуги -->
+
+          <h2 class="examples__subheading compression h2-font">
+            Примеры прямых переходов c цветами радуги
+          </h2>
+          <!-- table-examples переходы по диагоналям  цветов радуги  цветов радуги -->
+          <div class="table-examples">
+            <!-- table-examples__item От правого нижнего угла к левому верхнему  цветов радуги -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От правого нижнего угла к левому верхнему
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_05"
+              ></div>
+              <div class="table-examples__title md-font">to top left</div>
+            </div>
+            <!-- table-examples__item От правого нижнего угла к левому верхнему  цветов радуги -->
+
+            <!-- table-examples__item От левого нижнего угла к правому верхнему  цветов радуги -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От левого нижнего угла к правому верхнему
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_06"
+              ></div>
+              <div class="table-examples__title md-font">to top right</div>
+            </div>
+            <!-- table-examples__item От левого нижнего угла к правому верхнему  цветов радуги -->
+
+            <!-- table-examples__item От правого верхнего угла к левому нижнему  цветов радуги -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От правого верхнего угла к левому <br />
+                нижнему
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_07"
+              ></div>
+              <div class="table-examples__title md-font">to bottom left</div>
+            </div>
+            <!-- table-examples__item	От правого верхнего угла к левому нижнему  цветов радуги -->
+
+            <!-- table-examples__item От левого верхнего угла к правому нижнему  цветов радуги -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                От левого верхнего угла к правому нижнему
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_08"
+              ></div>
+              <div class="table-examples__title md-font">to bottom right</div>
+            </div>
+            <!-- table-examples__item От левого верхнего угла к правому нижнему  цветов радуги -->
+          </div>
+
+          <!-- table-examples переходы по диагоналям  цветов радуги -->
+        </section>
+        <!-- examples  Примеры переходов цветов радуги -->
+      </article>
+
+      <!-- header  -->
+      <header class="header">
+        <div class="header__fixed">
+          <div class="header__block">
+            <img class="header__icon" src="../assets/icons/aPlus.svg" alt="" />
+            <h1 class="header__title h2-font-h1">Linear-gradient</h1>
+            <img class="header__icon" src="../assets/icons/sos.svg" alt="" />
+          </div>
+        </div>
+      </header>
+      <!-- header  -->
+    </main>
+  </body>
+</html>

@@ -53,7 +53,7 @@ b {
   .box-shadow__value {
     margin-bottom: 24px;
     color: #089b08; }
-  .box-shadow__discription {
+  .box-shadow__description {
     margin-bottom: 24px; }
   .box-shadow__text {
     margin-bottom: 24px; }
@@ -89,7 +89,7 @@ b {
           border-left: 1px solid black;
           padding: 6px;
           text-align: center; } }
-  .example__disctiption {
+  .example__description {
     background-color: #ffffff;
     color: gray;
     border-top: 1px solid black;
@@ -97,12 +97,12 @@ b {
     border-right: 1px solid black;
     padding: 6px; }
     @media screen and (min-width: 767px) {
-      .example__disctiption {
+      .example__description {
         border-right: none; } }
-    .example__disctiption_subheading {
+    .example__description_subheading {
       display: none; }
       @media screen and (min-width: 767px) {
-        .example__disctiption_subheading {
+        .example__description_subheading {
           display: block;
           background-color: gray;
           color: black;

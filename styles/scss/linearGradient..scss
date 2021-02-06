@@ -1,0 +1,512 @@
+.main {
+  min-height: 100vh;
+}
+
+.article {
+  width: 100%;
+  padding-top: 96px;
+  max-width: 944px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media screen and (min-width: 576px) {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+em {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-style: oblique;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+//  <b>  и <i> выделяют цветом синтаксис
+b {
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: oblique;
+  font-size: inherit;
+  line-height: inherit;
+  color: green;
+}
+
+i {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 100%;
+  color: green;
+}
+
+.h1-font,
+.h2-font {
+  color: black;
+}
+.display-block {
+  display: block;
+}
+
+.compression {
+  box-sizing: border-box;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+// general
+
+//   <!-- Linear-gradient Информация  -->
+.linear-gradient {
+  box-sizing: border-box;
+  margin-right: -12px;
+  margin-left: -12px;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 24px;
+    text-align: center;
+
+    @media screen and (min-width: 576px) {
+      text-align: start;
+    }
+  }
+
+  &__subheading {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  &__sample {
+    width: 100%;
+    padding: 12px 24px;
+    border-color: yellow;
+    background-image: linear-gradient(yellow, green);
+    margin-bottom: 24px;
+  }
+
+  &__syntax {
+    width: 100%;
+    margin-bottom: 24px;
+
+    &_span {
+      font-family: inherit;
+      font-style: inherit;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 24px;
+      color: black;
+    }
+  }
+
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: blueviolet;
+  }
+}
+//   <!-- Linear-gradient Информация  -->
+
+// <!-- examples  Примеры переходов цветов из чёрного в белое -->
+.examples {
+  box-sizing: border-box;
+  margin-right: -12px;
+  margin-left: -12px;
+  margin-bottom: 48px;
+
+  &__heading {
+    width: 100%;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 576px) {
+      text-align: start;
+    }
+  }
+
+  &__subheading {
+    margin-bottom: 24px;
+  }
+}
+
+.table-examples {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 48px;
+
+  overflow-x: scroll;
+
+  @media screen and (min-width: 576px) {
+    overflow-x: hidden;
+  }
+
+  &__item {
+    min-width: 198px;
+    max-width: 198px;
+    box-sizing: border-box;
+
+    margin-left: 12px;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+  }
+
+  &__description {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+  }
+
+  &__black-position {
+    width: 100%;
+    height: 72px;
+
+    &_01 {
+      background-image: linear-gradient(to top, black, white);
+    }
+
+    &_02 {
+      background-image: linear-gradient(to left, black, white);
+    }
+
+    &_03 {
+      background-image: linear-gradient(to bottom, black, white);
+    }
+
+    &_04 {
+      background-image: linear-gradient(to right, black, white);
+    }
+
+    &_05 {
+      background-image: linear-gradient(to top left, black, white);
+    }
+
+    &_06 {
+      background-image: linear-gradient(to top right, black, white);
+    }
+
+    &_07 {
+      background-image: linear-gradient(to bottom left, black, white);
+    }
+
+    &_08 {
+      background-image: linear-gradient(to bottom right, black, white);
+    }
+  }
+
+  &__title {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+  }
+}
+// <!-- table-examples Примеры переходов цветов из чёрного в белое -->
+
+// <!-- examples  Примеры переходов цветов из жёлтого в зелёное -->
+.examples {
+  box-sizing: border-box;
+  margin-right: -12px;
+  margin-left: -12px;
+  margin-bottom: 48px;
+
+  &__heading {
+    width: 100%;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 576px) {
+      text-align: start;
+    }
+  }
+
+  &__subheading {
+    margin-bottom: 24px;
+  }
+}
+
+.table-examples {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 48px;
+
+  overflow-x: scroll;
+
+  @media screen and (min-width: 576px) {
+    overflow-x: hidden;
+  }
+
+  &__item {
+    min-width: 198px;
+    max-width: 198px;
+    box-sizing: border-box;
+
+    margin-left: 12px;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+  }
+
+  &__description {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+  }
+
+  &__yellow-position {
+    width: 100%;
+    height: 72px;
+
+    &_01 {
+      background-image: linear-gradient(to top, yellow, green);
+    }
+
+    &_02 {
+      background-image: linear-gradient(to left, yellow, green);
+    }
+
+    &_03 {
+      background-image: linear-gradient(to bottom, yellow, green);
+    }
+
+    &_04 {
+      background-image: linear-gradient(to right, yellow, green);
+    }
+
+    &_05 {
+      background-image: linear-gradient(to top left, yellow, green);
+    }
+
+    &_06 {
+      background-image: linear-gradient(to top right, yellow, green);
+    }
+
+    &_07 {
+      background-image: linear-gradient(to bottom left, yellow, green);
+    }
+
+    &_08 {
+      background-image: linear-gradient(to bottom right, yellow, green);
+    }
+  }
+
+  &__title {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+  }
+}
+// <!-- table-examples Примеры переходов цветов из жёлтого в зелёное -->
+
+// <!-- examples  Примеры переходов цветов радуги -->
+.examples {
+  box-sizing: border-box;
+  margin-right: -12px;
+  margin-left: -12px;
+  margin-bottom: 48px;
+
+  &__heading {
+    width: 100%;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 576px) {
+      text-align: start;
+    }
+  }
+
+  &__subheading {
+    margin-bottom: 24px;
+  }
+}
+
+.table-examples {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 48px;
+
+  overflow-x: scroll;
+
+  @media screen and (min-width: 576px) {
+    overflow-x: hidden;
+  }
+
+  &__item {
+    min-width: 198px;
+    max-width: 198px;
+    box-sizing: border-box;
+
+    margin-left: 12px;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+  }
+
+  &__description {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+  }
+
+  &__rainbow-position {
+    width: 100%;
+    height: 84px;
+
+    &_01 {
+      background-image: linear-gradient(
+        to top,
+        red,
+        orange,
+        yellow,
+        green,
+        rgb(0, 238, 255),
+        blue,
+        purple
+      );
+    }
+
+    &_02 {
+      background-image: linear-gradient(
+        to left,
+        red,
+        orange,
+        yellow,
+        green,
+        rgb(0, 238, 255),
+        blue,
+        purple
+      );
+    }
+
+    &_03 {
+      background-image: linear-gradient(
+        to bottom,
+        red,
+        orange,
+        yellow,
+        green,
+        rgb(0, 238, 255),
+        blue,
+        purple
+      );
+    }
+
+    &_04 {
+      background-image: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        rgb(0, 238, 255),
+        blue,
+        purple
+      );
+    }
+
+    &_05 {
+      background-image: linear-gradient(
+        to top left,
+        red,
+        orange,
+        yellow,
+        green,
+        rgb(0, 238, 255),
+        blue,
+        purple
+      );
+    }
+
+    &_06 {
+      background-image: linear-gradient(
+        to top right,
+        red,
+        orange,
+        yellow,
+        green,
+        rgb(0, 238, 255),
+        blue,
+        purple
+      );
+    }
+
+    &_07 {
+      background-image: linear-gradient(
+        to bottom left,
+        red,
+        orange,
+        yellow,
+        green,
+        rgb(0, 238, 255),
+        blue,
+        purple
+      );
+    }
+
+    &_08 {
+      background-image: linear-gradient(
+        to bottom right,
+        red,
+        orange,
+        yellow,
+        green,
+        rgb(0, 238, 255),
+        blue,
+        purple
+      );
+    }
+  }
+
+  &__title {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+  }
+}
+// <!-- table-examples Примеры переходов цветов радуги -->
+//   <!-- header  -->
+.header {
+  width: 100%;
+
+  &__fixed {
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    background: rgba(164, 74, 182, 0.8);
+    background-image: linear-gradient(rgba(164, 74, 182, 0.8), yellow, white);
+    box-shadow: 5px 5px 10px 3px white;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+
+    @media screen and (min-width: 576px) {
+      padding: 12px 28px;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+//   <!-- header  -->
