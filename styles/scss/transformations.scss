@@ -1,0 +1,1582 @@
+.main {
+  position: relative;
+  min-height: calc(100vh - 72px);
+  background-color: #ffffff;
+
+  @media screen and(min-width: 767px) {
+    margin-left: 80px;
+  }
+
+  @media screen and(min-width: 1024px) {
+    margin-left: 355px;
+  }
+}
+
+// menu
+.menu {
+  background: rgba(230, 240, 250, 0.75);
+  display: none;
+
+  @media screen and (min-width: 767px) {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    display: block;
+    width: 80px;
+    height: 100vh;
+    padding: 24px 28px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 355px;
+    padding: 24px 28px;
+  }
+
+  &__list {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__item {
+    margin-left: 24px;
+    position: relative;
+
+    &::before {
+      // это пример
+      // content: "✿"; /* Добавляем символ */
+      // padding-right: 7px; /* Расстояние от текста до маркеров */
+      // color: red; /* Красный цвет маркеров */
+      content: "."; /* Точка*/
+      font-size: 40px; /* Размер текста точки */
+      color: #28323c; /* Цвет точки */
+      line-height: 0; /* Текст не занимает место */
+      position: absolute;
+      top: 2px;
+      left: -16px;
+    }
+
+    &_link {
+      text-decoration: none;
+    }
+  }
+
+  &__transform {
+    display: block;
+  }
+
+  &__transitions {
+    display: block;
+  }
+}
+// menu
+
+.transformations-container {
+  width: 100%;
+  max-width: 944px;
+  padding-top: 96px;
+  background-color: #fff;
+  padding-left: 24px;
+
+  @media screen and (min-width: 767px) {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+// menu-mobile
+.menu-mobile {
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #e6f0fa;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+
+  &__logo-small {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff;
+
+    &_item {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+
+      &:nth-child(1) {
+        background-color: #506478;
+      }
+      &:nth-child(2) {
+        margin: 0 2px;
+        background-color: rgba(80, 100, 120, 0.6);
+      }
+      &:nth-child(3) {
+        background-color: rgba(80, 100, 120, 0.3);
+      }
+    }
+  }
+}
+// menu-mobile
+
+b {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: green;
+}
+
+// transformations
+.transformations {
+  width: 100%;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 36px;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-align: center;
+  }
+
+  &__subheading {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__syntax {
+    color: green;
+    margin-bottom: 24px;
+  }
+
+  &__coordinate-system {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__coordinate-image {
+    width: 100%;
+    margin: 0 0 24px;
+
+    @media screen and (min-width: 767px) {
+      width: calc(40% - 24px);
+      margin: 0 12px 24px;
+    }
+  }
+
+  &__coordinate-picture {
+    width: 100%;
+    max-width: 231px;
+    height: 228px;
+  }
+
+  &__coordinate-description {
+    width: 100%;
+    margin: 0 0 24px;
+
+    @media screen and (min-width: 767px) {
+      width: calc(60% - 24px);
+      margin: 48px 12px 24px;
+    }
+  }
+}
+// transformations
+
+// transform-x
+.translate-x {
+  width: 100%;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__syntax {
+    color: green;
+    margin-bottom: 24px;
+  }
+
+  &__examples {
+    margin-right: -6px;
+    margin-left: -6px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 1299px) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__block {
+    width: 165.6px;
+    min-width: 165.6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+
+  &__formula {
+    margin: 6px;
+  }
+
+  &__span {
+    display: block;
+    color: blue;
+  }
+
+  &__zone {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    height: 96px;
+    // потом поменять
+
+    &_04 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .translate-x__position_04 {
+        transform: translateX(50px);
+      }
+    }
+
+    &_05 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .translate-x__position_05 {
+        transform: translateX(-50px);
+      }
+    }
+  }
+
+  &__icon {
+    background-size: cover;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+    // меняем картинки в каждом блоке
+    background-image: url(../../assets/icons/antiMiteGirl.svg);
+  }
+
+  &__start {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    //  меняем позиции в каждом блоке
+    top: 46px;
+    left: 57.8px;
+  }
+
+  &__position {
+    // меняем transform: в каждом блоке
+    &_02 {
+      transform: translateX(50px);
+    }
+
+    &_03 {
+      // меняем transform: в каждом блоке
+      transform: translateX(-50px);
+    }
+  }
+}
+// transform-x
+
+// transform-y
+.translate-y {
+  width: 100%;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__syntax {
+    color: green;
+    margin-bottom: 24px;
+  }
+
+  &__examples {
+    margin-right: -6px;
+    margin-left: -6px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 1299px) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__block {
+    width: 165.6px;
+    min-width: 165.6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+
+  &__formula {
+    margin: 6px;
+  }
+
+  &__span {
+    display: block;
+    color: blue;
+  }
+
+  &__zone {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    height: 96px;
+    // потом поменять
+
+    &_04 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .translate-y__position_04 {
+        transform: translateY(20px);
+      }
+    }
+
+    &_05 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .translate-y__position_05 {
+        transform: translateY(-20px);
+      }
+    }
+  }
+
+  &__icon {
+    background-size: cover;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+    // меняем картинки в каждом блоке
+    background-image: url(../../assets/icons/antiMitePointer.svg);
+  }
+
+  &__start {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    //  меняем позиции в каждом блоке
+    top: 26px;
+    left: 57.8px;
+  }
+
+  &__position {
+    // меняем transform: в каждом блоке
+    &_02 {
+      transform: translateY(20px);
+    }
+
+    &_03 {
+      // меняем transform: в каждом блоке
+      transform: translateY(-20px);
+    }
+  }
+}
+// transform-y
+
+// transform-y
+.translate {
+  width: 100%;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 36px;
+
+    &_link {
+      display: block;
+      color: blue;
+      text-decoration: none;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__syntax {
+    color: green;
+    margin-bottom: 24px;
+  }
+
+  &__examples {
+    margin-right: -6px;
+    margin-left: -6px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 1299px) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__block {
+    width: 165.6px;
+    min-width: 165.6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+
+  &__formula {
+    margin: 6px;
+  }
+
+  &__span {
+    display: block;
+    color: blue;
+  }
+
+  &__zone {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    height: 96px;
+    // потом поменять
+
+    &_04 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .translate__position_04 {
+        transform: translateX(50px) translateY(-45px);
+      }
+    }
+
+    &_05 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .translate__position_05 {
+        transform: translate(50px, -45px);
+      }
+    }
+  }
+
+  &__icon {
+    background-size: cover;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+    // меняем картинки в каждом блоке
+    background-image: url(../../assets/icons/antiMiteForest.svg);
+  }
+
+  &__start {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    //  меняем позиции в каждом блоке
+    top: 46px;
+    left: 0px;
+  }
+
+  &__position {
+    // меняем transform: в каждом блоке
+    &_02 {
+      transform: translateX(50px) translateY(-45px);
+    }
+
+    &_03 {
+      // меняем transform: в каждом блоке
+      transform: translate(50px, -45px);
+    }
+  }
+}
+// transform-y
+
+// scale
+.scale {
+  width: 100%;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__syntax {
+    color: green;
+    margin-bottom: 24px;
+  }
+
+  &__examples {
+    margin-right: -6px;
+    margin-left: -6px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 1299px) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__block {
+    width: 165.6px;
+    min-width: 165.6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+
+  &__formula {
+    margin: 6px;
+  }
+
+  &__span {
+    display: block;
+    color: blue;
+  }
+
+  &__zone {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    height: 96px;
+    // потом поменять
+
+    &_02 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale__position_02 {
+        transform: scale(0.5);
+      }
+
+      &:active .scale__position_02 {
+        transform: scale(2);
+      }
+    }
+
+    &_03 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale__position_03 {
+        transform: scale(2);
+      }
+
+      &:active .scale__position_03 {
+        transform: scale(0.5);
+      }
+    }
+
+    &_04 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale__position_04 {
+        transform: scale(0);
+      }
+
+      &:active .scale__position_04 {
+        transform: scale(2);
+      }
+    }
+
+    &_05 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale__position_05 {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &__icon {
+    background-size: cover;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+    // меняем картинки в каждом блоке
+    background-image: url(../../assets/icons/antiMitePointer.svg);
+  }
+
+  &__start {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    //  меняем позиции в каждом блоке
+    top: 26px;
+    left: 57.8px;
+  }
+
+  &__position {
+    // меняем transform: в каждом блоке
+    &_02 {
+      // transform: translateX(50px) translateY(-45px);
+    }
+
+    &_03 {
+      // меняем transform: в каждом блоке
+      // transform: translate(50px, -45px);
+    }
+  }
+}
+// scale
+
+// scale-x
+.scale-x {
+  width: 100%;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__syntax {
+    color: green;
+    margin-bottom: 24px;
+  }
+
+  &__examples {
+    margin-right: -6px;
+    margin-left: -6px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 1299px) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__block {
+    width: 165.6px;
+    min-width: 165.6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+
+  &__formula {
+    margin: 6px;
+  }
+
+  &__span {
+    display: block;
+    color: blue;
+  }
+
+  &__zone {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    height: 96px;
+    // потом поменять
+
+    &_02 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale-x__position_02 {
+        transform: scaleX(0.5);
+      }
+
+      &:active .scale-x__position_02 {
+        transform: scaleX(2);
+      }
+    }
+
+    &_03 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale-x__position_03 {
+        transform: scaleX(2);
+      }
+
+      &:active .scale-x__position_03 {
+        transform: scaleX(0.5);
+      }
+    }
+
+    &_04 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale-x__position_04 {
+        transform: scaleX(0);
+      }
+
+      &:active .scale-x__position_04 {
+        transform: scaleX(2);
+      }
+    }
+
+    &_05 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale-x__position_05 {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  &__icon {
+    background-size: cover;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+    // меняем картинки в каждом блоке
+    background-image: url(../../assets/icons/antiMitePointer.svg);
+  }
+
+  &__start {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    //  меняем позиции в каждом блоке
+    top: 26px;
+    left: 57.8px;
+  }
+
+  &__position {
+    // меняем transform: в каждом блоке
+    &_02 {
+      // transform: translateX(50px) translateY(-45px);
+    }
+
+    &_03 {
+      // меняем transform: в каждом блоке
+      // transform: translate(50px, -45px);
+    }
+  }
+}
+// scale-x
+
+// scale-y
+.scale-y {
+  width: 100%;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__syntax {
+    color: green;
+    margin-bottom: 24px;
+  }
+
+  &__examples {
+    margin-right: -6px;
+    margin-left: -6px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 1299px) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__block {
+    width: 165.6px;
+    min-width: 165.6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+
+  &__formula {
+    margin: 6px;
+  }
+
+  &__span {
+    display: block;
+    color: blue;
+  }
+
+  &__zone {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    height: 96px;
+    // потом поменять
+
+    &_02 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale-y__position_02 {
+        transform: scaleY(0.5);
+      }
+
+      &:active .scale-y__position_02 {
+        transform: scaleY(2);
+      }
+    }
+
+    &_03 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale-y__position_03 {
+        transform: scaleY(2);
+      }
+
+      &:active .scale-y__position_03 {
+        transform: scaleY(0.5);
+      }
+    }
+
+    &_04 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale-y__position_04 {
+        transform: scaleY(0);
+      }
+
+      &:active .scale-y__position_04 {
+        transform: scaleY(2);
+      }
+    }
+
+    &_05 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .scale-y__position_05 {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  &__icon {
+    background-size: cover;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+    // меняем картинки в каждом блоке
+    background-image: url(../../assets/icons/antiMitePointer.svg);
+  }
+
+  &__start {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    //  меняем позиции в каждом блоке
+    top: 26px;
+    left: 57.8px;
+  }
+
+  &__position {
+    // меняем transform: в каждом блоке
+    &_02 {
+      // transform: translateX(50px) translateY(-45px);
+    }
+
+    &_03 {
+      // меняем transform: в каждом блоке
+      // transform: translate(50px, -45px);
+    }
+  }
+}
+// scale-y
+
+// rotate
+.rotate {
+  width: 100%;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+
+    &_link {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+
+  &__syntax {
+    color: green;
+    margin-bottom: 24px;
+  }
+
+  &__full-description {
+    width: 100%;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 36px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__block-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image-rotate {
+    width: 63px;
+    height: 63px;
+
+    @media screen and (min-width: 767px) {
+      width: 98px;
+      height: 98px;
+    }
+  }
+
+  &__examples {
+    margin-right: -6px;
+    margin-left: -6px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 1299px) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__block {
+    width: 165.6px;
+    min-width: 165.6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+
+  &__formula {
+    margin: 6px;
+  }
+
+  &__span {
+    display: block;
+    color: blue;
+  }
+
+  &__zone {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    height: 96px;
+    // потом поменять
+
+    &_02 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .rotate__position_02 {
+        transform: rotate(45deg);
+      }
+
+      &:active .rotate__position_02 {
+        transform: rotate(135deg);
+      }
+    }
+
+    &_03 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .rotate__position_03 {
+        transform: rotate(90deg);
+      }
+
+      &:active .rotate__position_03 {
+        transform: rotate(180deg);
+      }
+    }
+
+    &_04 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .rotate__position_04 {
+        transform: rotate(-45deg);
+      }
+
+      &:active .rotate__position_04 {
+        transform: rotate(-135deg);
+      }
+    }
+
+    &_05 {
+      cursor: pointer;
+      &:hover .rotate__position_05 {
+        transform: rotate(-90deg);
+      }
+
+      &:active .rotate__position_05 {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &__icon {
+    background-size: cover;
+    background-position: center center;
+    width: 48px;
+    height: 48px;
+    // меняем картинки в каждом блоке
+    background-image: url(../../assets/icons/clock.svg);
+  }
+
+  &__start {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    //  меняем позиции в каждом блоке
+    top: 26px;
+    left: 57.8px;
+  }
+
+  &__position {
+    // меняем transform: в каждом блоке
+    &_02 {
+      // transform: translateX(50px) translateY(-45px);
+    }
+
+    &_03 {
+      // меняем transform: в каждом блоке
+      // transform: translate(50px, -45px);
+    }
+  }
+
+  &__rotate-direction {
+    width: 100%;
+    max-width: 600px;
+    height: 122.4px;
+
+    @media screen and (min-width: 375px) {
+      height: 147.15px;
+    }
+
+    @media screen and (min-width: 476px) {
+      height: 192.6px;
+    }
+
+    @media screen and (min-width: 576px) {
+      height: 234px;
+    }
+
+    @media screen and (min-width: 600px) {
+      height: 270px;
+    }
+  }
+}
+//rotate
+
+// skew-x
+.skew-x {
+  width: 100%;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__syntax {
+    color: green;
+    margin-bottom: 24px;
+  }
+
+  &__examples {
+    margin-right: -6px;
+    margin-left: -6px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 1299px) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__block {
+    width: 165.6px;
+    min-width: 165.6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+
+  &__formula {
+    margin: 6px;
+  }
+
+  &__span {
+    display: block;
+    color: blue;
+  }
+
+  &__zone {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    height: 120px;
+    // потом поменять
+
+    &_04 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .skew-x__position_04 {
+        transform: skewX(45deg);
+      }
+    }
+
+    &_05 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .skew-x__position_05 {
+        transform: skewX(-45deg);
+      }
+    }
+  }
+
+  &__icon {
+    background-size: cover;
+    background-position: center center;
+    width: 80px;
+    height: 74.93px;
+    // меняем картинки в каждом блоке
+    background-image: url(../../assets/images/tsarLanding/tsarLandingWomenCall.jpg);
+  }
+
+  &__start {
+    position: relative;
+    width: 80px;
+    height: 74.93px;
+    //  меняем позиции в каждом блоке
+    top: 20px;
+    left: 36.8px;
+  }
+
+  &__position {
+    // меняем transform: в каждом блоке
+    &_02 {
+      transform: skewX(15deg);
+    }
+
+    &_03 {
+      // меняем transform: в каждом блоке
+      transform: skewX(-15deg);
+    }
+  }
+}
+// skew-x
+
+// skew-y
+.skew-y {
+  width: 100%;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__syntax {
+    color: green;
+    margin-bottom: 24px;
+  }
+
+  &__examples {
+    margin-right: -6px;
+    margin-left: -6px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 1299px) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__block {
+    width: 165.6px;
+    min-width: 165.6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+
+  &__formula {
+    margin: 6px;
+  }
+
+  &__span {
+    display: block;
+    color: blue;
+  }
+
+  &__zone {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    height: 120px;
+    // потом поменять
+
+    &_04 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .skew-y__position_04 {
+        transform: skewY(45deg);
+      }
+    }
+
+    &_05 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .skew-y__position_05 {
+        transform: skewY(-45deg);
+      }
+    }
+  }
+
+  &__icon {
+    background-size: cover;
+    background-position: center center;
+    width: 80px;
+    height: 74.93px;
+    // меняем картинки в каждом блоке
+    background-image: url(../../assets/images/tsarLanding/tsarLandingWomenCall.jpg);
+  }
+
+  &__start {
+    position: relative;
+    width: 80px;
+    height: 74.93px;
+    //  меняем позиции в каждом блоке
+    top: 20px;
+    left: 36.8px;
+  }
+
+  &__position {
+    // меняем transform: в каждом блоке
+    &_02 {
+      transform: skewY(15deg);
+    }
+
+    &_03 {
+      // меняем transform: в каждом блоке
+      transform: skewY(-15deg);
+    }
+  }
+}
+// skew-y
+
+// transform-origin
+.transform-origin {
+  width: 100%;
+  margin-bottom: 48px;
+
+  &__heading {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+
+    &_link {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+
+  &__syntax {
+    color: green;
+    margin-bottom: 24px;
+  }
+
+  &__full-description {
+    width: 100%;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 36px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__block-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image-origin {
+    width: 325px;
+    height: 256px;
+    margin-bottom: 48px;
+  }
+
+  &__examples {
+    margin-right: -6px;
+    margin-left: -6px;
+    box-sizing: border-box;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 1299px) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__block {
+    width: 165.6px;
+    min-width: 165.6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-sizing: border-box;
+  }
+
+  &__formula {
+    margin: 6px;
+  }
+
+  &__span {
+    display: block;
+    color: blue;
+  }
+
+  &__zone {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    height: 173.21px;
+    // потом поменять
+
+    &_02 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .transform-origin__position_02 {
+        transform: scale(0.5) rotate(-270deg);
+        transition: transform 1s ease;
+      }
+
+      &:active .transform-origin__position_02 {
+        transform: scale(0.5) rotate(270deg);
+        transition: transform 1s ease;
+      }
+    }
+
+    &_03 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .transform-origin__position_03 {
+        transform: scale(0.5) rotate(-270deg);
+        transform-origin: top left;
+        transition: transform 1s ease;
+      }
+
+      &:active .transform-origin__position_03 {
+        transform: scale(0.5) rotate(270deg);
+        transform-origin: top left;
+        transition: transform 1s ease;
+      }
+    }
+
+    &_04 {
+      cursor: pointer;
+      // translate-x меняем название блока в каждом блоке
+      &:hover .transform-origin__position_04 {
+        transform: scale(0.5) rotate(-270deg);
+        transform-origin: top right;
+        transition: transform 1s ease;
+      }
+
+      &:active .transform-origin__position_04 {
+        transform: scale(0.5) rotate(270deg);
+        transform-origin: top right;
+        transition: transform 1s ease;
+      }
+    }
+
+    &_05 {
+      cursor: pointer;
+      &:hover .transform-origin__position_05 {
+        transform-origin: 100% 50%;
+        transform: scale(0.5) rotate(-270deg);
+        transition: transform 1s ease;
+      }
+
+      &:active .transform-origin__position_05 {
+        transform: scale(0.5) rotate(270deg);
+        transform-origin: 100% 50%;
+        transition: transform 1s ease;
+      }
+    }
+  }
+
+  &__icon {
+    background-size: cover;
+    background-position: center center;
+    width: 163.59px;
+    height: 173.2px;
+    // меняем картинки в каждом блоке
+    background-image: url(../../assets/images/tsarLanding/tsarLandingPhone.jpg);
+  }
+
+  &__start {
+    position: relative;
+    width: 163.59px;
+    height: 173.2px;
+    //  меняем позиции в каждом блоке
+    // top: 26px;
+    // left: 57.8px;
+  }
+
+  &__position {
+    // меняем transform: в каждом блоке
+    &_02 {
+      transform: scale(0.5);
+    }
+
+    &_03 {
+      // меняем transform: в каждом блоке
+
+      transform: scale(0.5);
+      transform-origin: top left;
+    }
+
+    &_04 {
+      // меняем transform: в каждом блоке
+      transform: scale(0.5);
+      transform-origin: top right;
+    }
+
+    &_05 {
+      // меняем transform: в каждом блоке
+      transform: scale(0.5);
+      transform-origin: 100% 50%;
+    }
+  }
+}
+// transform-origin
+
+// header
+.header {
+  opacity: 0.5;
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(chartreuse, white, chartreuse);
+}
+// header

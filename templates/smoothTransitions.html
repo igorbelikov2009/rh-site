@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/css/general.css" />
+    <link rel="stylesheet" href="../styles/css/grids.css" />
+    <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="../styles/css/typography.css" />
+    <link rel="stylesheet" href="../styles/css/smoothTransitions.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- main -->
+    <main class="main">
+      <article class="smooth-transitions-container">
+        <!-- transition Универсальное свойство -->
+        <div class="transition">
+          <h1 id="transition" class="transition__heading h2-font-h1">
+            Плавные переходы
+            <span class="transition__heading_span h2-font-h1">
+              <a
+                class="transition__link"
+                href="http://htmlbook.ru/css/transition"
+              >
+                свойство transition</a
+              >
+            </span>
+          </h1>
+          <h2 class="transition__subheading h2-font">Описание</h2>
+          <p class="transition__description md-font">
+            Универсальное свойство, которое позволяет одновременно задать
+            значения <b>transition-property</b>, <b>transition-duration</b>,
+            <b>transition-timing-function</b> и <b>transition-delay</b>.
+            Устанавливает эффект перехода между двумя состояниями элемента, они
+            могут быть определены с помощью псевдоэлемента <b>:hover</b> или
+            <b>:active</b>, а также динамически через <b>JavaScript</b>.
+          </p>
+          <h2 class="transition__subheading h2-font">Применяется</h2>
+          <p class="transition__description md-font">
+            Ко всем элементам, к псевдоэлементам <b> ::before</b> и
+            <b>::after</b>
+          </p>
+          <h2 class="transition__subheading h2-font">Синтаксис</h2>
+          <p class="transition__syntax md-font">
+            transition: | переход [, переход ]*
+          </p>
+          <p class="transition__description md-font">Здесь:</p>
+          <p class="transition__syntax md-font">
+            | переход = [ none | transition-property ] || transition-duration ||
+            transition-timing-function || transition-delay |
+          </p>
+
+          <h2 class="transition__subheading h2-font">Значения</h2>
+          <p class="transition__description md-font">
+            <b>none </b> Отменяет эффект перехода.
+          </p>
+        </div>
+        <!-- transition Универсальное свойство -->
+
+        <!-- transition-duration Длительность перехода -->
+        <section class="transition-duration">
+          <div class="transition-duration__block">
+            <h1
+              id="transition-duration"
+              class="transition-duration__heading h2-font-h1"
+            >
+              transition-duration
+              <span class="transition-duration__heading_span h2-font">
+                Длительность перехода
+              </span>
+            </h1>
+            <p class="transition-duration__description md-font">
+              Задаёт время в секундах или миллисекундах, сколько должна длиться
+              анимация перехода до её завершения. По умолчанию значение равно
+              0s, это означает, что никакой анимации нет, переход происходит
+              мгновенно
+            </p>
+            <p class="transition-duration__description md-font">
+              Можно указать несколько значений, перечисляя их через запятую.
+              Каждое значение применяется к свойствам, заданным через
+              transition-property.
+            </p>
+            <p class="transition-duration__syntax md-font">
+              Синтаксис: <br />
+              transition-duration: <время> [,<время>]*
+            </p>
+            <p class="transition-duration__description md-font">
+              <b>Значения:</b> Задаёт время в секундах или миллисекундах.
+              Значение состоит из целого или дробного числа, за которым сразу же
+              следует символ s для секунд или ms для миллисекунд. Пробел после
+              числа недопустим. Для преобразования единиц помните, что 1s =
+              1000ms.
+            </p>
+            <p class="transition-duration__description md-font">
+              При нулевом значении единица времени не опускается и также должна
+              быть добавлена. Всегда пишите 0s или 0ms вместо простого 0.
+            </p>
+            <p class="transition-duration__description md-font">
+              Плавные переходы в CSS или transitions позволяют изменять значения
+              свойств постепенно, «с нежностью».
+            </p>
+            <p class="transition-duration__description md-font">
+              Эффекты перехода между двумя состояниями элемента определяются с
+              помощью псевдоэлемента :hover или :active, а также динамически
+              через JavaScript.
+            </p>
+            <p class="transition-duration__description md-font">
+              Обычно эффект от изменения значений CSS-свойств виден мгновенно,
+              но с помощью плавных переходов можно изменить это поведение и
+              сделать процесс изменения значений достаточно длительным.
+            </p>
+            <p class="transition-duration__description md-font">
+              В отличие от анимаций, которые позволяют управлять любым
+              количеством промежуточных состояний, с помощью transitions можно
+              управлять только переходом между двумя состояниями: начальным и
+              конечным.
+            </p>
+            <p class="transition-duration__description md-font">
+              Чтобы обозначить плавный переход в CSS, достаточно задать одно
+              свойство: transition-duration — длительность перехода. Значения
+              задаются в секундах (10s, 3s), долях секунды (0.1s, 0.03s) или
+              миллисекундах (100ms, 333ms).
+            </p>
+            <p class="transition-duration__description md-font"></p>
+            <div class="transition-duration__row">
+              <p class="transition-duration__description-block md-font">
+                Рассмотрим плавный переход на простом примере с кнопкой, у
+                которой, при наведении на неё мышки, меняется цвет. <br />
+                <b>
+                  &:hover { <br />
+                  transition-duration: 1s; <br />
+                  background-color: #ff5252; <br />
+                  }
+                </b>
+              </p>
+              <div class="transition-duration__button-block">
+                <button
+                  class="transition-duration__button-item transition-duration__button-item_01"
+                  type="button"
+                >
+                  <img
+                    class="transition-duration__button-image transition-duration__button-image_01"
+                    src="../assets/icons/aPlus.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="transition-duration__block">
+            <h1 class="transition-duration__heading h2-font-h1">
+              transition-duration
+              <span class="transition-duration__heading_span h2-font">
+                Длительность перехода, шаг 2</span
+              >
+            </h1>
+            <p class="transition-duration__description md-font">
+              Плавные переходы и анимацию можно применить только к некоторым
+              CSS-свойствам. В основном это свойства, изменяющие размер, цвет,
+              позицию элементов. В
+              <a
+                class="smooth-transitions__description_link md-font"
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
+                >статье на MDN
+              </a>
+              приведён перечень анимируемых свойств и характер их анимирования.
+            </p>
+            <p class="transition-duration__description md-font">
+              Если задана только длительность перехода transition-duration, то
+              по умолчанию плавное изменение затрагивает все свойства элемента и
+              для всех свойств происходит одновременно.
+            </p>
+            <div class="transition-duration__row">
+              <p class="transition-duration__description-block md-font">
+                Попробуем задать кнопке ещё несколько свойств и посмотрим, как
+                они будут изменяться. <br />
+                <b>
+                  &:hover { <br />
+                  transition-duration: 200ms; <br />
+                  background-color: #ff5252; <br />
+                  color: #ffffff; <br />
+                  } <br />
+                  <br />
+                  &:hover .smooth-transitions__button-image_02 { <br />
+                  transition-duration: 200ms; <br />
+                  opacity: 1; <br />
+                  transform: rotate(45deg); <br />
+                  } <br />
+                  <br />
+                  &:hover .smooth-transitions__button-image_03 { <br />
+                  transition-duration: 200ms; <br />
+                  transform: scale(10); <br />
+                  opacity: 0; <br />
+                  }
+                </b>
+              </p>
+              <div class="transition-duration__button-block">
+                <button
+                  class="transition-duration__button-item transition-duration__button-item_02"
+                  type="button"
+                >
+                  <img
+                    class="transition-duration__button-image transition-duration__button-image_02"
+                    src="../assets/icons/aPlusColor.svg"
+                    alt=""
+                  />
+                  <img
+                    class="transition-duration__button-image transition-duration__button-image_03"
+                    src="../assets/icons/aPlus.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+            <p class="transition-duration__description md-font"></p>
+            <p class="transition-duration__description md-font"></p>
+          </div>
+        </section>
+        <!-- transition-duration Длительность перехода -->
+
+        <!-- transition-property Устанавливает: какие свойства плавно изменять -->
+        <section class="transition-property">
+          <h1
+            id="transition-property"
+            class="transition-property__heading h2-font-h1"
+          >
+            transition-property:
+            <span class="transition-property__heading_span h2-font">
+              Какие свойства плавно изменять.
+            </span>
+          </h1>
+          <p class="transition-property__description md-font">
+            Устанавливает имя стилевого свойства, значение которого будет
+            отслеживаться для создания эффекта перехода.
+          </p>
+          <p class="transition-property__syntax md-font">
+            Синтаксис: <br />
+            transition-property: none | all | <свойство> [,<свойство>]*
+          </p>
+          <h2 class="transition-property__subheading h2-font">Значения</h2>
+          <p class="transition-property__description md-font">
+            <b>none</b>
+            Никакое свойство не задано.
+          </p>
+          <p class="transition-property__description md-font">
+            <b> all </b>
+            Все свойства будут отслеживаться.
+          </p>
+          <p class="transition-property__description md-font">
+            <b> <свойство> </b>
+            Название стилевого свойства, регистр при его написании не
+            учитывается. При указании нескольких свойств они перечисляются друг
+            за другом через запятую.
+          </p>
+          <p class="transition-property__description md-font">
+            По умолчанию плавный переход действует на все анимируемые свойства
+            элемента. Такое поведение соответствует значению <b>all</b> свойства
+            <b>transition-property</b>, это значение по умолчанию.
+          </p>
+          <p class="transition-property__description md-font">
+            Такое поведение часто нежелательно, особенно когда в правиле много
+            свойств.
+          </p>
+          <p class="transition-property__description md-font">
+            Можно указать, какие именно свойства нужно изменять плавно,
+            перечислив их в transition-property через запятую:
+          </p>
+          <p class="transition-property__description md-font">
+            transition-property: width; // плавно меняется только ширина <br />
+            transition-property: width, height; // плавно меняются ширина и
+            высота
+          </p>
+          <p class="transition-property__description md-font">
+            При этом так же через запятую можно задавать переходам разных
+            свойств разную длительность:
+          </p>
+          <p class="transition-property__description md-font">
+            transition-property: width, height; <br />
+            transition-duration: 1s, 5s; // ширина меняется за 1 секунду, высота
+            за 5.
+          </p>
+        </section>
+        <!-- transition-property Устанавливает: какие свойства плавно изменять -->
+
+        <!-- transition-delay Задержка перехода -->
+        <section class="transition-delay">
+          <h1
+            id="transition-delay"
+            class="transition-delay__heading h2-font-h1"
+          >
+            transition-delay
+            <span class="transition-delay__heading_span h2-font">
+              Задержка перехода</span
+            >
+          </h1>
+          <p class="transition-delay__description md-font">
+            Свойство transition-delay устанавливает время ожидания перед
+            запуском эффекта перехода. Значение в секундах 0s или или
+            миллисекундах 0ms запускает анимацию сразу же. Отрицательное
+            значение также включает анимацию без задержек, но может привести к
+            изменению вида начала анимации.
+          </p>
+          <p class="transition-delay__description md-font">
+            Допустимо указывать несколько значений, перечисляя их через запятую.
+            Каждое значение будет применяться к свойству, заданному в параметрах
+            transition-property.
+          </p>
+          <p class="transition-delay__syntax md-font">
+            Синтаксис: <br />
+            transition-delay: <время> [,<время>]*
+          </p>
+          <p class="transition-delay__description md-font">
+            Задаёт время в секундах или миллисекундах. Значение состоит из
+            целого или дробного числа, за которым сразу же следует символ s для
+            секунд или ms для миллисекунд. Пробел после числа недопустим. Для
+            преобразования единиц помните, что 1s = 1000ms.
+          </p>
+          <p class="transition-delay__description md-font">
+            При нулевом значении единица времени не опускается и также должна
+            быть добавлена. Всегда пишите 0s или 0ms вместо простого 0.
+          </p>
+          <p class="transition-delay__description md-font">
+            <b> transition-property: transform;</b> плавный переход для свойства
+            transform <br />
+            <b>transition-duration: 500ms;</b> длительностью 500ms <br />
+            <b>transition-delay: 50ms;</b> задержка перехода 50ms.
+          </p>
+        </section>
+        <!-- transition-delay Задержка перехода -->
+
+        <!-- transition-timing-function «Форма» перехода -->
+        <section>
+          <h1
+            id="transition-timing-function"
+            class="transition-timing-function__heading h2-font-h1"
+          >
+            transition-timing-function
+            <span class="transition-timing-function__heading_span h2-font">
+              Оно определяет с какой скоростью и ускорением будут меняться
+              свойства во время перехода.</span
+            >
+          </h1>
+          <p class="transition-timing-function__description md-font">
+            Устанавливает, насколько быстро должно изменяться значение стилевого
+            свойство для которого применяется эффект перехода.
+          </p>
+          <p class="transition-timing-function__description md-font">
+            transition-timing-function представляет собой математическую
+            функцию, показывающую, как быстро по времени меняется указанное
+            через transition-property значение свойства. Начальная точка имеет
+            координаты 0.0, 0.0, конечная — 1.0, 1.0, при этом функция по оси
+            ординат может превышать эти значения в большую или меньшую сторону
+            (рис. 1).
+          </p>
+          <p class="transition-timing-function__syntax md-font">
+            Синтаксис: <br />
+            transition-timing-function:
+            ease|ease-in|ease-out|ease-in-out|linear|step-start|step-end|steps|cubic-bezier
+          </p>
+          <p class="transition-timing-function__subheading h2-font">Значения</p>
+          <p class="transition-timing-function__description md-font">
+            <b>ease</b> Анимация начинается медленно, затем ускоряется и к концу
+            движения опять замедляется. Аналогично
+            cubic-bezier(0.25,0.1,0.25,1).
+          </p>
+          <p class="transition-timing-function__description md-font">
+            <b>ease-in </b> Анимация медленно начинается, к концу ускоряется.
+            Аналогично cubic-bezier(0.42,0,1,1).
+          </p>
+          <p class="transition-timing-function__description md-font">
+            <b>ease-out </b> Анимация начинается быстро, к концу замедляется.
+            Аналогично cubic-bezier(0,0,0.58,1).
+          </p>
+          <p class="transition-timing-function__description md-font">
+            <b>ease-in-out </b> Анимация начинается и заканчивается медленно.
+            Аналогично cubic-bezier(0.42,0,0.58,1).
+          </p>
+          <p class="transition-timing-function__description md-font">
+            <b>linear </b> Одинаковая скорость от начала и до конца.
+          </p>
+          <p class="transition-timing-function__description md-font">
+            <b>step-start </b> Как таковой анимации нет. Стилевые свойства сразу
+            же принимают конечное значение.
+          </p>
+          <p class="transition-timing-function__description md-font">
+            <b>step-end </b> Как таковой анимации нет. Стилевые свойства
+            находятся в начальном значении заданное время, затем сразу же
+            принимают конечное значение.
+          </p>
+          <p class="transition-timing-function__description md-font">
+            <b>steps </b> Ступенчатая функция, имеющая заданное число шагов.
+            <br />
+            transition-timing-function: steps(<число>, start | end) <br />
+            Здесь: <число> — целое число больше нуля; start — задаёт
+            полунепрерывную снизу функцию; end — задаёт полунепрерывную сверху
+            функцию.
+          </p>
+          <p class="transition-timing-function__description md-font">
+            <b>cubic-bezier </b> Задаёт функцию движения в виде кривой Безье.
+          </p>
+
+          <p class="transition-timing-function__description md-font">
+            В предыдущих примерах переходы происходили с одинаковой динамикой.
+            Мы меняли длительность и задержку перехода, но не скорость и
+            ускорение. По умолчанию, скорость и ускорение изменений
+            соответствуют первому графику, из которого видно, что переход
+            начинается медленно, затем ускоряется и к концу движения опять
+            замедляется.
+          </p>
+          <p class="transition-timing-function__description md-font">
+            Так ведёт себя значение <b>ease</b> свойства
+            transition-timing-function.(Первый график)
+          </p>
+          <div class="transition-timing-function__row">
+            <div class="transition-timing-function__column">
+              <img
+                class="transition-timing-function__image"
+                src="../assets/icons/coolStuff/graphEase.png"
+                alt=""
+              />
+              <p class="transition-timing-function__image-title">ease</p>
+            </div>
+            <div class="transition-timing-function__column">
+              <img
+                class="transition-timing-function__image"
+                src="../assets/icons/coolStuff/graphLinear.png"
+                alt=""
+              />
+              <p class="transition-timing-function__image-title">linear</p>
+            </div>
+          </div>
+          <p
+            id="example"
+            class="transition-timing-function__description md-font"
+          >
+            Чтобы сделать переход равномерным, без ускорений и замедлений,
+            используется значение <b>linear</b>. «Форма» линейного перехода
+            приведена на втором графике.
+          </p>
+        </section>
+        <!-- transition-timing-function «Форма» перехода -->
+
+        <!-- example примеры  timing-function-переходов -->
+        <section class="example">
+          <div class="example__block example__block_black md-font">ease</div>
+          <div class="example__block example__block_gray md-font">ease-in</div>
+          <div class="example__block example__block_red md-font">ease-out</div>
+          <div class="example__block example__block_orange md-font">
+            ease- <br />
+            in-out
+          </div>
+          <div class="example__block example__block_yellow md-font">linear</div>
+          <div class="example__block example__block_green md-font">
+            step-start
+          </div>
+          <div class="example__block example__block_blue md-font">step-end</div>
+          <div class="example__block example__block_dark-blue md-font">
+            steps
+          </div>
+          <div class="example__block example__block_purple md-font">
+            cubic-bezier
+          </div>
+        </section>
+        <!-- example примеры  timing-function-переходов -->
+
+        <!-- graphics-transition графики переходов-->
+        <section class="graphics-transition">
+          <h1
+            id="graphics-transition"
+            class="graphics-transition__heading h2-font-h1"
+          >
+            Графики переходов
+          </h1>
+          <div class="graphics-transition__block">
+            <div class="graphics-transition__column">
+              <img
+                class="graphics-transition__image"
+                src="../assets/icons/htmlBook/01_ease.png"
+                alt=""
+              />
+              <p class="graphics-transition__title sm-font">ease</p>
+            </div>
+            <div class="graphics-transition__column">
+              <img
+                class="graphics-transition__image"
+                src="../assets/icons/htmlBook/02_ease-in.png"
+                alt=""
+              />
+              <p class="graphics-transition__title sm-font">ease-in</p>
+            </div>
+            <div class="graphics-transition__column">
+              <img
+                class="graphics-transition__image"
+                src="../assets/icons/htmlBook/03_ease-out.png"
+                alt=""
+              />
+              <p class="graphics-transition__title sm-font">ease-out</p>
+            </div>
+            <div class="graphics-transition__column">
+              <img
+                class="graphics-transition__image"
+                src="../assets/icons/htmlBook/04_ease-in-out.png"
+                alt=""
+              />
+              <p class="graphics-transition__title sm-font">ease-in-out</p>
+            </div>
+            <div class="graphics-transition__column">
+              <img
+                class="graphics-transition__image"
+                src="../assets/icons/htmlBook/05_linear.png"
+                alt=""
+              />
+              <p class="graphics-transition__title sm-font">linear</p>
+            </div>
+            <div class="graphics-transition__column">
+              <img
+                class="graphics-transition__image"
+                src="../assets/icons/htmlBook/06_step-start.png"
+                alt=""
+              />
+              <p class="graphics-transition__title sm-font">step-start</p>
+            </div>
+            <div class="graphics-transition__column">
+              <img
+                class="graphics-transition__image"
+                src="../assets/icons/htmlBook/07_step-end.png"
+                alt=""
+              />
+              <p class="graphics-transition__title sm-font">step-end</p>
+            </div>
+            <div class="graphics-transition__column">
+              <img
+                class="graphics-transition__image"
+                src="../assets/icons/htmlBook/08_steps.png"
+                alt=""
+              />
+              <p class="graphics-transition__title sm-font">steps</p>
+            </div>
+          </div>
+        </section>
+        <!-- graphics-transition графики переходов-->
+      </article>
+
+      <!-- menu-mobile -->
+      <div class="menu-mobile">
+        <img
+          src="../assets/logotype/smallLogo.svg"
+          class="menu-mobile__logo-small"
+        />
+        <div class="menu-mobile__dots">
+          <div class="menu-mobile__dots_item"></div>
+          <div class="menu-mobile__dots_item"></div>
+          <div class="menu-mobile__dots_item"></div>
+        </div>
+      </div>
+      <!-- menu-mobile -->
+    </main>
+    <!-- main -->
+
+    <!-- menu -->
+    <nav class="menu">
+      <!-- transform-list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/transformations.html">
+          Двумерные трансформации</a
+        >
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#transformations"
+            >Трансформация элемента</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#translate-x"
+            >Сдвиг по горизонтали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#translate-y"
+            >Сдвиг по вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#translate"
+            >Сдвиг по горизонтали и вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#scale"
+            >Изменение масштаба элемента</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#scale-x"
+            >Изменение масштаба по горизонтали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#scale-y"
+            >Изменение масштаба по вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#rotate">Поворот элемента</a>
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#skew-x"
+            >Наклон элемента по горизонтали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#skew-y"
+            >Наклон элемента по вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#transform-origin"
+            >Координаты трансформации элемента.</a
+          >
+        </li>
+      </ul>
+      <!-- transform-list -->
+
+      <!-- transitions_list -->
+      <ul class="menu__list">
+        <a
+          class="menu__link h2-font"
+          href="../templates/smoothTransitions.html"
+        >
+          Плавные переходы
+        </a>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition"
+            >Универсальное свойство</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-duration"
+            >Длительность перехода</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-property"
+            >Какие свойства плавно изменять</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-delay"
+            >Задержка перехода
+          </a>
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-timing-function"
+            >Скорость и ускорение переходов
+          </a>
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#example"
+            >примеры timing-function переходов</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#graphics-transition"
+            >Графики переходов</a
+          >
+        </li>
+      </ul>
+      <!-- transitions_list -->
+
+      <!-- gradient_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/linearGradient.html">
+          Линейный градиент</a
+        >
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#linear-gradient"
+            >Линейный градиент</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#examples"
+            >Примеры прямых и диогональных переходов</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#angled-gradients"
+            >Градиенты под углом</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#sample-flower"
+            >Градиенты под углом, пример:</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#sample"
+            >Множество градиентов</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#color-stop">
+            Пропорции цветов и колорстопы</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#color-stop-sample"
+            >Примеры колор стопов</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#repeating-gradient">
+            Повторяющийся линейный градиент</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#stylish-buttons"
+            >Стильные кнопки</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#footer">Рекомендации</a>
+        </li>
+      </ul>
+      <!-- gradient_list -->
+
+      <!-- shadow_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/boxShadow.html">
+          Тени box-shadow
+        </a>
+
+        <li class="menu__item menu__shadow">
+          <a class="menu__item_link md-font" href="#box-shadow">
+            Тени box-shadow</a
+          >
+        </li>
+      </ul>
+      <!-- shadow_list -->
+
+      <!-- stuff_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/coolStuff.html"
+          >Крутые вещи</a
+        >
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#custom-shadows"
+            >Нестандартные тени</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#hover-active">
+            Эффекты при наведении на кнопки</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#active-gallery">
+            Эффекты при наведении на галерею</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#stack-cards"
+            >"Стопка" карт</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#centering"
+            >Центрирование изображений
+          </a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#aspect-ratio">
+            Свойство CSS aspect-ratio: X / Y</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#after-before"
+            >::after и ::before</a
+          >
+        </li>
+
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+      </ul>
+      <!-- stuff_list -->
+    </nav>
+    <!-- menu -->
+    <header class="header"></header>
+  </body>
+</html>
