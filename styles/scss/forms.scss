@@ -24,184 +24,84 @@
 }
 
 em {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: normal;
+  font-family: inherit;
+  font-weight: inherit;
   font-style: oblique;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: inherit;
+  line-height: inherit;
 }
+
 b {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: normal;
+  font-family: inherit;
+  font-weight: inherit;
   font-style: oblique;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: inherit;
+  line-height: inherit;
   color: green;
 }
-.display-block {
-  display: block;
-}
 
-//   <!-- Информация о формах -->
-.information-about-forms {
+.form {
   box-sizing: border-box;
-  margin-right: -12px;
-  margin-left: -12px;
 
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 
   &__heading {
-    margin-bottom: 24px;
+    margin-bottom: 36px;
   }
 
-  &__text {
-    margin-bottom: 24px;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: blueviolet;
-  }
-}
-//   <!-- Информация о формах -->
-
-//   <!-- Информация о полях -->
-.information-about-inputs {
-  box-sizing: border-box;
-  margin-right: -12px;
-  margin-left: -12px;
-
-  margin-bottom: 48px;
-
-  &__heading {
-    margin-bottom: 24px;
-  }
-
-  &__text {
-    margin-bottom: 24px;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: blueviolet;
-  }
-}
-//   <!-- Информация о полях -->
-
-//   <!-- Информация о типах полей -->
-.information-type-inputs {
-  &__heading {
-    box-sizing: border-box;
-    margin-right: -12px;
-    margin-left: -12px;
-
-    margin-bottom: 24px;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: blueviolet;
-  }
-}
-//   <!-- Информация о типах полей -->
-
-// Типы полей
-.type-input {
-  margin-bottom: 48px;
-
-  &__type {
-    background-color: #ffffff;
-    color: black;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    padding: 6px;
-
-    &_subheading {
-      // подзаголовок
-      display: none;
-
-      @media screen and (min-width: 767px) {
-        display: block;
-        background-color: gray;
-        color: black;
-        border-top: 1px solid black;
-        border-left: 1px solid black;
-        padding: 6px;
-        text-align: center;
-      }
-    }
+  &__subheading {
+    margin-bottom: 36px;
+    color: magenta;
   }
 
   &__description {
-    background-color: #ffffff;
-    color: gray;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding: 6px;
+    margin-bottom: 24px;
+  }
 
-    @media screen and (min-width: 767px) {
-      border-right: none;
+  &__link {
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+
+    text-decoration: none;
+    color: blueviolet;
+  }
+
+  &__button {
+    margin-bottom: 48px;
+  }
+
+  &__radio {
+    max-width: 272px;
+    margin-bottom: 48px;
+    border: 1px solid brown;
+    padding: 24px 0px 48px;
+
+    @media screen and (min-width: 375px) {
+      max-width: 327px;
     }
 
-    &_subheading {
-      // подзаголовок
-      display: none;
-
-      @media screen and (min-width: 767px) {
-        display: block;
-        background-color: gray;
-        color: black;
-        border-top: 1px solid black;
-        border-left: 1px solid black;
-        padding: 6px;
-        text-align: center;
-      }
+    @media screen and (min-width: 576px) {
+      padding: 24px 48px 48px;
     }
   }
 
-  &__appearance {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    padding: 6px;
-    text-align: center;
+  &__primary-radio {
+    margin-bottom: 48px;
+  }
 
-    &_subheading {
-      // подзаголовок
-      display: none;
-
-      @media screen and (min-width: 767px) {
-        display: block;
-        background-color: gray;
-        color: black;
-        border-top: 1px solid black;
-        border-right: 1px solid black;
-        border-left: 1px solid black;
-        padding: 6px;
-        text-align: center;
-      }
-    }
-
-    &_radio {
-      display: flex;
-      flex-direction: column;
-    }
+  &__secondary-radio {
+    margin-bottom: 48px;
   }
 }
-.primary-button {
-  // стилизацаия подходит для всех видов кнопок
-  cursor: pointer;
+//   <!-- Информация о полях -->
 
-  // эти две ширины обеспечивают
+// primary-button
+.primary-button {
+  cursor: pointer;
   width: 100%;
   max-width: 365px;
-  // адаптацию ширины кнопки без медиа
-
   padding: 12px 8px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
@@ -213,24 +113,138 @@ b {
   box-sizing: border-box;
   flex: auto;
   // flex: none;
-}
 
+  &_image {
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.9;
+      transition: all 0.2s linear;
+    }
+  }
+
+  &_scale {
+    display: block;
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.9;
+      transition: all 0.2s linear;
+    }
+  }
+}
+// primary-button
+
+// Две горизонтальные кнопки другой стилизации
+.second-buttons {
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__button {
+    cursor: pointer;
+    min-width: 219px;
+    padding: 16px 12px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid #50287d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    color: white;
+    text-align: center;
+
+    &_scale {
+      display: block;
+
+      &:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+        transition: all 0.2s linear;
+      }
+    }
+
+    &:hover {
+      border: 2px solid #50287d;
+      box-shadow: 2px 2px 2px 2px #50287d;
+    }
+
+    &_left {
+      margin-right: 16px;
+      background-color: #50287d;
+      color: white;
+    }
+
+    &_right {
+      display: none;
+      color: #50287d;
+
+      @media screen and (min-width: 576px) {
+        display: block;
+      }
+    }
+  }
+}
+// Две горизонтальные кнопки другой стилизации
+
+// primary-radio Тройной переключатель
 .primary-radio {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  &__container {
+    width: 100%;
+    max-width: 272px;
+
+    @media screen and (min-width: 375px) {
+      max-width: 372px;
+    }
+  }
+
+  &__subheading {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: blue;
+    margin-bottom: 36px;
+  }
+
   &__item {
-    width: 33.33333%;
+    width: calc(33.333333% - 12px);
     cursor: pointer;
-    // border: 2px solid rgb(145, 127, 127);
     border-radius: 24px;
-    background-color: yellow;
     background-image: linear-gradient(blue, green, yellow);
     box-shadow: 0 -5px 10px -3px #3498db, 0 5px 10px -3px #2ecc71;
-    padding: 8px 6px;
-    margin: 0 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+    flex: auto;
+
+    &:hover {
+      transform: scale(1.05);
+      opacity: 0.8;
+      transition: all 0.2s linear;
+    }
+
+    &:hover .primary-radio__title {
+      transform: rotate(360deg);
+      transition: all 0.2s linear;
+    }
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
 
     &:active {
       border: 1px solid #3498db;
@@ -242,13 +256,87 @@ b {
   }
 
   &__title {
-    color: rgb(216, 72, 221);
-
-    font-weight: bold;
-    // text-decoration: none;
+    color: white;
+    padding: 8px 0px;
   }
 }
-// Типы полей
+// primary-radio Тройной переключатель
+
+// secondary-radio Двойной спаренный переключатель
+.secondary-radio {
+  width: 100%;
+  max-width: 132px;
+  max-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //
+  margin: 0 auto;
+
+  &__container {
+    width: 100%;
+    max-width: 272px;
+
+    @media screen and (min-width: 375px) {
+      max-width: 372px;
+    }
+  }
+
+  &__subheading {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: blue;
+    margin-bottom: 36px;
+  }
+
+  &__item {
+    width: 50%;
+    cursor: pointer;
+    padding: 7px 12px;
+    box-sizing: border-box;
+    // flex: none;
+
+    &_left {
+      background-color: #15499f;
+      border: 1px solid #15499f;
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+
+    &_right {
+      background-color: white;
+      border: 1px solid black;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.2s linear;
+    }
+
+    &:active {
+      border: 2px;
+    }
+  }
+
+  &__field {
+    display: none;
+  }
+
+  &__title {
+    font-weight: normal;
+
+    &_left {
+      color: white;
+    }
+  }
+}
+// secondary-radio Двойной спаренный переключатель
 
 // menu
 .menu {
@@ -313,6 +401,10 @@ b {
 
   &__forms {
     display: block;
+  }
+
+  &__table {
+    display: none;
   }
 }
 // menu

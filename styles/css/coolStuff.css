@@ -443,6 +443,8 @@ em {
     display: block; }
   .menu__forms {
     display: none; }
+  .menu__table {
+    display: none; }
 
 .menu-mobile {
   width: 100%;

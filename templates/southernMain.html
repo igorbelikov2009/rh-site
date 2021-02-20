@@ -346,25 +346,17 @@
               <!-- поле выбора  -->
               <form class="select select_city" action="" method="post">
                 <label class="select__title x-sm-font" for="">
-                  <select class="select__list x-sm-font" name="city">
-                    <option class="select__item x-sm-font" value="">
-                      Москва
-                    </option>
-                    <option class="select__item x-sm-font" value="">
+                  <select class="select__list" name="city">
+                    <option class="select__item" value="">Москва</option>
+                    <option class="select__item" value="">
                       Санкт Петербург
                     </option>
-                    <option class="select__item x-sm-font" value="">
-                      Казань
-                    </option>
-                    <option class="select__item x-sm-font" value="">
+                    <option class="select__item" value="">Казань</option>
+                    <option class="select__item" value="">
                       Нижний Новгород
                     </option>
-                    <option class="select__item x-sm-font" value="">
-                      Волгоград
-                    </option>
-                    <option class="select__item x-sm-font" value="">
-                      Камышин
-                    </option>
+                    <option class="select__item" value="">Волгоград</option>
+                    <option class="select__item" value="">Камышин</option>
                   </select>
                 </label>
               </form>
@@ -373,23 +365,13 @@
               <!-- поле выбора  -->
               <form class="select select_area" action="" method="post">
                 <label class="select__title x-sm-font" for="">
-                  <select class="select__list x-sm-font" name="area">
-                    <option class="select__item x-sm-font" value="">
-                      Кузминки
-                    </option>
-                    <option class="select__item x-sm-font" value="">
-                      Некрасовка
-                    </option>
-                    <option class="select__item x-sm-font" value="">
-                      Люберцы
-                    </option>
-                    <option class="select__item x-sm-font" value="">
-                      Лефортово
-                    </option>
-                    <option class="select__item x-sm-font" value="">
-                      Дубровка
-                    </option>
-                    <option class="select__item x-sm-font" value="">
+                  <select class="select__list" name="area">
+                    <option class="select__item" value="">Кузминки</option>
+                    <option class="select__item" value="">Некрасовка</option>
+                    <option class="select__item" value="">Люберцы</option>
+                    <option class="select__item" value="">Лефортово</option>
+                    <option class="select__item" value="">Дубровка</option>
+                    <option class="select__item" value="">
                       Волгоградский проспект
                     </option>
                   </select>
@@ -397,44 +379,43 @@
               </form>
               <!-- поле выбора  -->
 
-              <!-- переключатель radio -->
-              <div class="offices__radio primary-radio">
+              <!-- переключатель secondary-radio -->
+              <div class="offices__radio secondary-radio">
                 <label
-                  class="primary-radio__item primary-radio__item_left"
+                  class="secondary-radio__item secondary-radio__item_left"
                   for=""
                 >
                   <input
-                    class="primary-radio__field"
+                    class="secondary-radio__field"
                     type="radio"
                     name="browser"
                     value="ie"
                   />
                   <div
-                    class="primary-radio__title primary-radio__title_left sm-font"
+                    class="secondary-radio__title secondary-radio__title_left sm-font"
                   >
                     Список
                   </div>
                 </label>
 
                 <label
-                  class="primary-radio__item primary-radio__item_right"
+                  class="secondary-radio__item secondary-radio__item_right"
                   for=""
                 >
                   <input
-                    class="primary-radio__field"
+                    class="secondary-radio__field"
                     type="radio"
                     name="browser"
                     value="ie"
                   />
                   <div
-                    class="primary-radio__title primary-radio__title_right sm-font"
+                    class="secondary-radio__title secondary-radio__title_right sm-font"
                   >
                     Карта
                   </div>
                 </label>
               </div>
-              <!-- переключатель radio -->
-              <div></div>
+              <!-- переключатель secondary-radio -->
             </div>
             <p class="offices__address sm-font">
               Партийный переулок д. 1, корп.7, стр. 2 <br />
@@ -487,121 +468,121 @@
       <footer class="footer">
         <div class="footer__body">
           <ul class="footer__column">
-            <a class="footer__link h2-font" href=""> Частным лицам</a>
+            <a class="footer__link footer__link_main" href=""> Частным лицам</a>
             <li>
-              <a class="footer__link md-font" href=""> Кредитование </a>
+              <a class="footer__link footer__link_minor" href="">
+                Кредитование
+              </a>
             </li>
             <li>
-              <a class="footer__link md-font" href=""> Денежные переводы </a>
+              <a class="footer__link footer__link_minor" href="">
+                Денежные переводы
+              </a>
             </li>
             <li>
-              <a class="footer__link md-font" href=""> Сейфовые ячейки </a>
+              <a class="footer__link footer__link_minor" href="">
+                Сейфовые ячейки
+              </a>
             </li>
             <li>
-              <a class="footer__link md-font" href="">Ипотека</a>
+              <a class="footer__link footer__link_minor" href="">Ипотека</a>
             </li>
             <li>
-              <a class="footer__link md-font" href="">Вклады</a>
+              <a class="footer__link footer__link_minor" href="">Вклады</a>
             </li>
           </ul>
           <ul class="footer__column">
-            <a class="footer__link h2-font" href=""> Бизнесу</a>
+            <a class="footer__link footer__link_main" href=""> Бизнесу</a>
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
+              <a class="footer__link footer__link_hidden" href=""
                 >Кредиты бизнесу</a
               >
             </li>
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
+              <a class="footer__link footer__link_hidden" href=""
                 >Зарплатные проекты</a
               >
             </li>
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
+              <a class="footer__link footer__link_hidden" href=""
                 >Тарифы для юр. лиц</a
               >
             </li>
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
+              <a class="footer__link footer__link_hidden" href=""
                 >Банк - клиент</a
               >
             </li>
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
-                >Гарантии</a
-              >
+              <a class="footer__link footer__link_hidden" href="">Гарантии</a>
             </li>
           </ul>
           <ul class="footer__column">
-            <a class="footer__link footer__link_hidden h2-font" href="">
+            <a class="footer__link footer__link_main" href="">
               Финансовым институтам</a
             >
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
+              <a class="footer__link footer__link_hidden" href=""
                 >Операции с ценными бумагами</a
               >
             </li>
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
+              <a class="footer__link footer__link_hidden" href=""
                 >Банкам-контрагентам</a
               >
             </li>
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
+              <a class="footer__link footer__link_hidden" href=""
                 >Сотрудничество</a
               >
             </li>
           </ul>
           <ul class="footer__column">
-            <a class="footer__link h2-font" href=""> Южный Банк</a>
+            <a class="footer__link footer__link_main" href=""> Южный Банк</a>
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
-                >О нас</a
-              >
+              <a class="footer__link footer__link_hidden" href="">О нас</a>
             </li>
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
+              <a class="footer__link footer__link_hidden" href=""
                 >Офисы и отделения</a
               >
             </li>
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
-                >Новости</a
-              >
+              <a class="footer__link footer__link_hidden" href="">Новости</a>
             </li>
             <li>
-              <a class="footer__link footer__link_hidden md-font" href=""
-                >Реквизиты</a
-              >
+              <a class="footer__link footer__link_hidden" href="">Реквизиты</a>
             </li>
           </ul>
           <ul class="footer__column">
-            <a class="footer__link footer__link_hidden h2-font" href="">
-              Контакты</a
-            >
+            <a class="footer__link footer__link_main" href=""> Контакты</a>
             <div class="footer__visible">
               <li>
-                <a class="footer__link md-font" href="">8 (800) 980 62 62</a>
+                <a class="footer__link footer__link_minor" href=""
+                  >8 (800) 980 62 62</a
+                >
               </li>
 
               <li>
-                <a class="footer__link sm-font" href=""
+                <a class="footer__link footer__link_low" href=""
                   >Бесплатный звонок по России</a
                 >
               </li>
             </div>
             <div class="footer__hidden">
               <li>
-                <a class="footer__link md-font" href="">8 (495) 980 60 60</a>
+                <a class="footer__link footer__link_minor" href=""
+                  >8 (495) 980 60 60</a
+                >
               </li>
 
               <li>
-                <a class="footer__link sm-font" href=""
+                <a class="footer__link footer__link_low" href=""
                   >Для жителей Москвы и МО</a
                 >
               </li>
             </div>
-            <li>
+            <li class="footer__order">
               <div class="footer__social-groups">
                 <img
                   class="footer__icon"
