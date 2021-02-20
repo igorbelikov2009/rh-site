@@ -184,6 +184,19 @@
   text-align: center;
   box-sizing: border-box; }
 
+.secondary-button {
+  width: 100%;
+  max-width: 219px;
+  padding: 16px 12px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid #50287d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  text-align: center; }
+
 .label {
   width: 100%;
   padding: 3px 2px;

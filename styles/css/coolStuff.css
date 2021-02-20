@@ -27,6 +27,13 @@ b {
   font-style: inherit;
   color: green; }
 
+em {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: red; }
+
 .custom-shadows {
   width: 100%;
   margin-bottom: 48px; }

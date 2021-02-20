@@ -337,12 +337,25 @@
           <p class="aspect-ratio__syntax md-font">aspect-ratio: X / Y;</p>
           <p class="aspect-ratio__description md-font">
             Где <b>X</b> - размер по горизонтали, <b>Y</b> - размер по
-            вертикали. Задаются в процентах, пикселях, в абослютной ппропорции.
+            вертикали. Задаются в процентах, в абослютной пропорции. <br />
           </p>
           <p class="aspect-ratio__description md-font">
+            <b>Правильно</b> <br />
             aspect-ratio: 100% / 50%; <br />
-            aspect-ratio: 455px / 221px; <br />
-            aspect-ratio: 16 / 9;
+            aspect-ratio: 16 / 9; <br />
+            aspect-ratio: 1440 / 823;
+          </p>
+          <p class="aspect-ratio__description md-font">
+            <b>Неправильно</b> <br />
+            <em>
+              aspect-ratio: 455px / 221px; <br />
+              aspect-ratio: 5em / 3em; <br />
+              aspect-ratio: 5rem / 3rem;
+            </em>
+          </p>
+          <p class="aspect-ratio__description md-font">
+            В пикселях, в других единицах измерений задавать нельзя - не будет
+            работать.
           </p>
           <p class="aspect-ratio__description md-font">
             Если элемент имеет либо высоту, либо ширину, то неизвестная сторона
@@ -553,7 +566,11 @@
           <p class="after-before__description md-font">
             Переписывать и изучать статью будем потом. Если срочно надо, то
             ныряем
-            <a class="after-before__description_link md-font" href="">сюда</a>
+            <a
+              class="after-before__description_link md-font"
+              href="https://webref.ru/layout/after-before"
+              >сюда</a
+            >
           </p>
           <p class="after-before__description md-font"></p>
         </section>
