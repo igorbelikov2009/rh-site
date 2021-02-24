@@ -14,7 +14,7 @@
     <!-- main -->
     <main class="main">
       <article class="article">
-        <!-- form  Информация о формах -->
+        <!-- Форма "form"-->
         <section class="form">
           <h1 id="forms" class="form__heading h1-font">
             Форма
@@ -62,42 +62,19 @@
             в адресной строке браузера и следуют после знака вопроса.
           </p>
         </section>
-        <!-- form  Информация о формах -->
+        <!-- Форма "form" -->
 
-        <!-- form  Информация об input -->
+        <!-- Типы форм -->
         <section class="form">
-          <h1 id="inputs" class="form__heading h1-font">
-            Поля
-            <a class="form__link" href="http://htmlbook.ru/html/input"
-              >"input"</a
+          <h1 id="type-input" class="form__heading h1-font">
+            <a class="form__link" href="http://htmlbook.ru/html/input/type"
+              >Типы</a
             >
+            форм
           </h1>
           <p class="form__description md-font">
-            Тег input является одним из разносторонних элементов формы и
-            позволяет создавать разные элементы интерфейса и обеспечить
-            взаимодействие с пользователем. Главным образом input предназначен
-            для создания текстовых полей, различных кнопок, переключателей и
-            флажков. Хотя элемент input не требуется помещать внутрь контейнера
-            <b>form</b>, определяющего форму, но если введенные пользователем
-            данные должны быть отправлены на сервер, где их обрабатывает
-            серверная программа, то указывать <b>form</b> обязательно. То же
-            самое обстоит и в случае обработки данных с помощью клиентских
-            приложений, например, скриптов на языке <b>JavaScript</b>. Заготовки
-            различных полей <b>input</b> можно делать, не вкладывая их в
-            <b>form</b>, что бы в процессе работы можно было собирать множество
-            <b>input</b>ов в единый или в несколько <b>form</b>.
-          </p>
-        </section>
-        <section class="form">
-          <h1 id="type-input" class="form__heading h1-font">Типы форм</h1>
-          <p class="form__description md-font">
             Основной атрибут тега <b>input</b>, определяющий вид элемента —
-            <a
-              class="form__link md-font"
-              href="http://htmlbook.ru/html/input/type"
-              >type.</a
-            >
-            Он позволяет задавать следующие элементы формы: текстовое поле
+            type. Он позволяет задавать следующие элементы формы: текстовое поле
             <b>(text)</b>, поле с паролем <b>(password)</b>, переключатель
             (<b>radio)</b>, флажок <b>(checkbox)</b>, скрытое поле
             <b>(hidden)</b>, кнопка <b>(button)</b>, кнопка для отправки формы
@@ -108,10 +85,10 @@
             <b>HTML5</b> добавлено еще более десятка новых элементов.
           </p>
         </section>
-        <!-- form  Информация об input -->
+        <!-- Типы форм -->
 
-        <!-- form кнопки -->
-        <section class="form">
+        <!-- Кнопки button -->
+        <section id="button" class="form">
           <h1 class="form__description h1-font">
             Кнопки
             <a class="form__link" href="http://htmlbook.ru/html/button"
@@ -152,9 +129,10 @@
 
           <p class="form__description md-font">
             Для отправки данных на сервер предназначена специальная кнопка
-            <b>type="submit"</b>. Её вид ничем не отличается от обычных кнопок,
-            но при нажатии на нее происходит выполнение серверной программы,
-            указанной атрибутом action тега <b>form</b>.
+            <b>type="submit"</b> (кнопка "Enter" на клавиатуре). Её вид ничем не
+            отличается от обычных кнопок, но при нажатии на нее происходит
+            выполнение серверной программы, указанной атрибутом action тега
+            <b>form</b>.
           </p>
           <p class="form__description md-font">
             Эта программа, называемая еще обработчиком формы, получает данные,
@@ -185,7 +163,9 @@
 
           <!-- Самая простая кнопка button-->
           <button class="form__button primary-button">
-            <p class="primary-button_scale">Самая простая кнопка button</p>
+            <p id="primary-button" class="primary-button_scale">
+              Самая простая кнопка button
+            </p>
           </button>
           <!-- Самая простая кнопка button-->
 
@@ -215,11 +195,418 @@
             <b>flex: auto;</b> или <b>flex:none;</b> <br />
           </p>
         </section>
-        <!-- form кнопки -->
+        <!-- Кнопки button -->
 
-        <!-- input type="radio" -->
+        <!-- Поля "input" -->
         <section class="form">
-          <h1 class="form__heading h1-font">
+          <h1 id="inputs" class="form__heading h1-font">
+            Поля
+            <a class="form__link" href="http://htmlbook.ru/html/input"
+              >"input"</a
+            >
+          </h1>
+          <p class="form__description md-font">
+            Тег input является одним из разносторонних элементов формы и
+            позволяет создавать разные элементы интерфейса и обеспечить
+            взаимодействие с пользователем. Главным образом input предназначен
+            для создания текстовых полей, различных кнопок, переключателей и
+            флажков. Хотя элемент input не требуется помещать внутрь контейнера
+            <b>form</b>, определяющего форму, но если введенные пользователем
+            данные должны быть отправлены на сервер, где их обрабатывает
+            серверная программа, то указывать <b>form</b> обязательно. То же
+            самое обстоит и в случае обработки данных с помощью клиентских
+            приложений, например, скриптов на языке <b>JavaScript</b>. Заготовки
+            различных полей <b>input</b> можно делать, не вкладывая их в
+            <b>form</b>, что бы в процессе работы можно было собирать множество
+            <b>input</b>ов в единый или в несколько <b>form</b>.
+          </p>
+        </section>
+        <!-- Поля "input" -->
+
+        <!-- policy-form -->
+        <section class="policy-form">
+          <h2 id="form__subhe" class="policy-form__subheading h2-font">
+            Поле выбора даты с иконкой "треугольник"
+          </h2>
+          <div class="row">
+            <!-- Поле выбора даты с иконкой треугольник -->
+
+            <label
+              class="policy-form__input-date input-date col-7 col-md-3"
+              for=""
+            >
+              <p class="input-date__label x-sm-font">Начало действия</p>
+              <div class="input-date__block">
+                <input class="input-date__field" type="date" name="date" />
+                <div class="input-date__icon">
+                  <div
+                    class="input-date__triangle"
+                    style="background-image: url(../assets/icons/triangle.svg)"
+                  ></div>
+                </div>
+              </div>
+            </label>
+
+            <!-- Поле выбора даты с иконкой треугольник -->
+          </div>
+          <!-- Поля с подсказской для заполнения и подзаголовком внизу -->
+          <h2 class="policy-form__subheading h2-font">
+            Поля с подсказской для заполнения и подзаголовком внизу
+          </h2>
+          <div class="row">
+            <label
+              class="policy-form__input-prompt input-prompt col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                placeholder="Фамилия (поле с подсказской)"
+            /></label>
+            <!-- Поля с подсказской для заполнения -->
+
+            <!-- Поля с подсказской для заполнения -->
+            <label
+              class="policy-form__input-prompt input-prompt col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                placeholder="Имя (поле с подсказской)"
+            /></label>
+          </div>
+          <div class="row">
+            <label
+              class="policy-form__input-subtitle input-subtitle col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-subtitle__field"
+                type="text"
+                placeholder="Отчество (поле с подсказской)"
+              />
+              <div class="input-subtitle__subtitle">и подзаголовком</div>
+            </label>
+          </div>
+          <!-- Поля с подсказской для заполнения и подзаголовком внизу -->
+
+          <!-- input-subtitle Контактные данные Email -->
+          <div class="row">
+            <label
+              class="policy-form__input-subtitle input-subtitle col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-subtitle__field"
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Email"
+              />
+              <div class="input-subtitle__subtitle">
+                для получения электронного полиса
+              </div>
+            </label>
+            <!-- input-subtitle Контактные данные Email -->
+
+            <!-- input-subtitle Контактные данные Номер телефона -->
+            <label
+              class="policy-form__input-subtitle input-subtitle col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-subtitle__field"
+                type="tel"
+                id="tel"
+                name="tel"
+                pattern="+7 [0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                placeholder="Номер телефона"
+              />
+              <div class="input-subtitle__subtitle">на экстренный случай</div>
+            </label>
+            <!-- input-subtitle Контактные данные Номер телефона -->
+          </div>
+          <div class="row mr-bot-24">
+            <p class="policy-form__contact-details col-12 sm-font">
+              Паспортные данные
+            </p>
+          </div>
+          <div class="row">
+            <!-- input-prompt  Паспортные данные серия -->
+            <label
+              class="policy-form__input-prompt input-prompt col-4 col-md-2"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                id="passport"
+                name="passport"
+                placeholder="Серия"
+            /></label>
+            <!-- input-prompt  Паспортные данные серия-->
+
+            <!-- input-prompt  Паспортные данные номер-->
+            <label
+              class="policy-form__input-prompt input-prompt col-4 col-md-2"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                id="passport"
+                name="passport"
+                placeholder="Номер"
+            /></label>
+            <!-- input-prompt  Паспортные данные номер-->
+
+            <!-- input-date Паспортные данные дата выдачи-->
+            <label
+              class="policy-form__input-date input-date col-7 offset-md-1 col-md-3"
+              for=""
+            >
+              <div class="input-date__label md-font">Дата выдачи</div>
+              <div class="input-date__block">
+                <input class="input-date__field" type="date" name="date" />
+                <div class="input-date__icon">
+                  <div
+                    class="input-date__triangle"
+                    style="background-image: url(../assets/icons/triangle.svg)"
+                  ></div>
+                </div>
+              </div>
+            </label>
+            <!-- input-date Паспортные данные дата выдачи-->
+          </div>
+          <div class="row">
+            <!-- input-prompt  Паспортные данные Кем выдан-->
+            <label
+              class="policy-form__input-prompt input-prompt col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                id="passport"
+                name="passport"
+                placeholder="Кем выдан"
+            /></label>
+            <!-- input-prompt  Паспортные данные Кем выдан-->
+          </div>
+
+          <div class="row mr-bot-24">
+            <p class="policy-form__contact-details col-12 sm-font">
+              Адрес регистрации
+            </p>
+          </div>
+          <div class="row">
+            <!-- input-prompt  Паспортные данные Адрес в свободной форме-->
+            <label
+              class="policy-form__input-prompt input-prompt col-10 col-md-5"
+              for=""
+            >
+              <input
+                class="input-prompt__field"
+                type="text"
+                id="passport"
+                name="passport"
+                placeholder="Адрес в свободной форме"
+            /></label>
+            <!-- input-prompt  Паспортные данные Кем выдан-->
+          </div>
+
+          <!-- primary-checkbox  Является застрахованным -->
+          <div id="primary-checkbox" class="row">
+            <label
+              tabindex="0"
+              role="checkbox"
+              id=""
+              class="policy-form__checkbox primary-checkbox col-7 col-md-3"
+            >
+              <div class="primary-checkbox__icon">
+                <span class="primary-checkbox__checker"></span>
+                <input
+                  id="Checkbox"
+                  type="checkbox"
+                  class="primary-checkbox__input"
+                />
+              </div>
+              <div class="policy-form__label primary-checkbox__label sm-font">
+                Является застрахованным
+              </div>
+            </label>
+          </div>
+          <!-- primary-checkbox  Является застрахованным -->
+        </section>
+        <!-- policy-form -->
+
+        <!-- agreement -->
+        <section class="agreement">
+          <div class="agreement__block">
+            <div class="row">
+              <!-- primary-checkbox Продолжая, я соглашаюсь с правилами -->
+              <label
+                tabindex="0"
+                role="checkbox"
+                id=""
+                class="agreement__checkbox primary-checkbox col-12"
+              >
+                <div class="primary-checkbox__icon">
+                  <span class="primary-checkbox__checker"></span>
+                  <input
+                    id="Checkbox"
+                    type="checkbox"
+                    class="primary-checkbox__input"
+                  />
+                </div>
+                <div class="agreement__label primary-checkbox__label sm-font">
+                  Продолжая, я соглашаюсь с
+                  <a
+                    class="agreement__link primary-checkbox__link sm-font"
+                    href=""
+                    >правилами
+                  </a>
+                  и
+                  <a
+                    class="agreement__link primary-checkbox__link sm-font"
+                    href=""
+                    >программой</a
+                  >
+                  оказания услуг.
+                </div>
+              </label>
+              <!-- primary-checkbox  Продолжая, я соглашаюсь с правилами -->
+              <div class="col-12">
+                <button class="agreement__button primary-button">
+                  Оформить полис за 2 000 ₽
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- agreement -->
+
+        <!-- Ползунок -->
+        <section class="form">
+          <h1 id="image_ranges" class="form__heading h1-font">Ползунок</h1>
+          <p class="form__description md-font">
+            Ползунок предназначен для ввода чисел в указанном диапазоне, но в
+            отличие от поля <b>input type="number"</b> имеет другой интерфейс и
+            применяется в тех случаях, когда не особенно важно указывать точное
+            значение. На рис. 1 продемонстрирован вид ползунка в разных
+            браузерах.
+          </p>
+          <div class="form__container-image">
+            <img
+              class="form__image form__image_ranges"
+              src="../assets/icons/htmlBook/ranges.png"
+              alt=""
+            />
+          </div>
+          <p class="form__syntax h2-font">
+            Синтаксис создания ползунка следующий.
+          </p>
+          <p class="form__description md-font">
+            input type="range" min="0" max="100" step="1" value="50"
+          </p>
+          <p class="form__description md-font">
+            Здесь min — минимальное число в диапазоне (по умолчанию 0), max —
+            максимальное число (по умолчанию 100), step — шаг изменения чисел
+            (по умолчанию 1), value — текущее значение. По умолчанию value
+            вычисляется по формуле:
+          </p>
+          <div class="form__container-image">
+            <img
+              class="form__image form__image_formula"
+              src="../assets/icons/htmlBook/rangeFormula.png"
+              alt=""
+            />
+          </div>
+          <p class="form__description md-font">
+            Если значение max меньше, чем значение min, то value равно min.
+          </p>
+          <p class="form__description md-font">
+            Атрибуты не являются обязательными, их можно опустить, в таком
+            случае они принимают значения по умолчанию.
+          </p>
+          <p class="form__description md-font">
+            Независимо от минимального и максимального числа ширина ползунка
+            остаётся одинаковой. Изменить ширину, можно, только сбросив стили.
+          </p>
+          <p class="form__description md-font">
+            <b>
+              input[type=range] { <br />
+              width: 200px; <br />
+              -webkit-appearance: none; <br />
+              -moz-appearance: none; <br />
+              appearance: none; <br />
+              }</b
+            >
+          </p>
+          <p class="form__description md-font">
+            Здесь помимо ширины мы указали специальное свойство
+            <b>appearance</b> которое отвечает за базовые стили отображения
+            элемента вашей операционной системы. Значение
+            <b>'none'</b> указывает на то что мы эти стили сбрасываем. По итогу
+            поле range будет отображаться не полностью. Это нам необходимо чтобы
+            задать свои собственные стили для ползунка.
+          </p>
+          <p class="form__description md-font">
+            Сами ползунки редко применяются в «чистом» виде, поскольку не
+            обеспечивают необходимую обратную связь с пользователем, а вот в
+            сочетании с JavaScript это становится мощным и удобным элементом
+            интерфейса. В примере 1 с помощью ползунка изменяется размер
+            изображения, такая возможность часто используется в различных
+            фотогалереях.
+          </p>
+
+          <!-- slider -->
+          <div class="slider__block">
+            <p class="slider__subheading md-font">Сумма кредита</p>
+
+            <div class="slider">
+              <input
+                class="slider__range"
+                type="range"
+                min="1"
+                max="100"
+                id="size"
+                value="50"
+              />
+              <div class="slider__title">
+                <p class="slider__title_item">90 000 р.</p>
+                <p class="slider__title_item">2 000 000 р.</p>
+              </div>
+            </div>
+          </div>
+          <!-- slider -->
+
+          <!-- slider -->
+          <div class="slider__block">
+            <p class="slider__subheading md-font">Срок кредита</p>
+            <div class="slider">
+              <input
+                class="slider__range"
+                type="range"
+                min="1"
+                max="100"
+                id="size"
+                value="50"
+              />
+              <div class="slider__title">
+                <p class="slider__title_item">1 год</p>
+                <p class="slider__title_item">5 лет</p>
+              </div>
+            </div>
+          </div>
+          <!-- slider -->
+        </section>
+        <!-- Ползунок -->
+        <!--  radio Переключатели (radiobutton) -->
+        <section class="form">
+          <h1 id="scriptio" class="form__heading h1-font">
             radio Переключатели (radiobutton).
           </h1>
 
@@ -329,7 +716,179 @@
 
           <!--  -->
         </section>
-        <!-- input type="radio" -->
+        <!--   radio Переключатели (radiobutton)-->
+
+        <!-- Раскрывающийся список, тег select , а также поле с одним или...  -->
+        <section class="form">
+          <h1 id="lbook.ru/htm" class="form__heading h1-font">
+            Раскрывающийся список,
+            <a class="form__link" href="http://htmlbook.ru/html/select"
+              >тег select</a
+            >
+            , а также
+            <a
+              class="form__link"
+              href="http://htmlbook.ru/samhtml5/formy/pole-so-spiskom"
+              >поле выбора с одним или множественным списком .</a
+            >
+          </h1>
+          <div>
+            <p class="form__description md-font">
+              Тег <b>select</b> позволяет создать элемент интерфейса в виде
+              раскрывающегося списка, а также список с одним или множественным
+              выбором. В зависимости от настроек, в списке можно выбирать одно
+              или несколько значений. Преимущество списка в его компактности и
+              универсальности, список может занимать одну или несколько строк, в
+              нём можно выбирать одно или несколько значений.
+            </p>
+            <p class="form__description md-font">
+              Тег <b>select</b> выступает контейнером для пунктов списка и
+              определяет его вид, будет ли это раскрывающийся список или же
+              список с одним или множественным выбором.
+            </p>
+            <p class="form__description md-font">
+              Конечный вид зависит от использования атрибута <b>size</b> тега
+              <b>select</b>, который устанавливает высоту списка. <br />
+            </p>
+            <p class="form__description md-font">
+              Ширина списка при этом определяется автоматически исходя из длины
+              самого широкого текста внутри <b> option</b>, а также может
+              изменяться с помощью стилей. <br />
+            </p>
+            <p class="form__description md-font">
+              Каждый пункт создается с помощью тега <b>option</b>, который
+              должен быть вложен в контейнер <b>select</b>. Если планируется
+              отправлять данные списка на сервер, то требуется поместить элемент
+              <b>select</b> внутрь формы. Это также необходимо, когда к данным
+              списка идет обращение через скрипты.
+            </p>
+          </div>
+          <h2 class="form__subheading h2-font">Поле выбора</h2>
+
+          <!-- поле выбора_header  -->
+          <form
+            class="form__select select select_header"
+            action=""
+            method="post"
+          >
+            <label class="select__title-header sm-font" for="">
+              <select class="select__list-header sm-font" name="">
+                <option class="select__item-header sm-font" value="">
+                  Частным лицам
+                </option>
+                <option class="select__item-header sm-font" value="">
+                  Кредиты
+                </option>
+                <option class="select__item-header sm-font" value="">
+                  Ипотека
+                </option>
+                <option class="select__item-header sm-font" value="">
+                  Кассовое обслуживание
+                </option>
+                <option class="select__item-header sm-font" value="">
+                  Вклады
+                </option>
+                <option class="select__item-header sm-font" value="">
+                  Денежные переводы
+                </option>
+              </select>
+            </label>
+          </form>
+          <!-- поле выбора_header  -->
+
+          <!--  Два поля выбора и переключатель secondary-radio в один ряд -->
+          <div class="form">
+            <h2 class="form__subheading h2-font">
+              Два поля выбора и переключатель secondary-radio в один ряд
+            </h2>
+
+            <div class="form__list">
+              <div class="form__sector-select">
+                <!-- поле выбора_city  -->
+                <form class="select select_city" action="" method="post">
+                  <label class="select__title x-sm-font" for="">
+                    <select class="select__list" name="city">
+                      <option class="select__item" value="">Москва</option>
+                      <option class="select__item" value="">
+                        Санкт Петербург
+                      </option>
+                      <option class="select__item" value="">Казань</option>
+                      <option class="select__item" value="">
+                        Нижний Новгород
+                      </option>
+                      <option class="select__item" value="">Волгоград</option>
+                      <option class="select__item" value="">Камышин</option>
+                    </select>
+                  </label>
+                </form>
+                <!-- поле выбора_city  -->
+
+                <!-- поле выбора_area  -->
+                <form class="select select_area" action="" method="post">
+                  <label class="select__title x-sm-font" for="">
+                    <select class="select__list" name="area">
+                      <option class="select__item" value="">Кузминки</option>
+                      <option class="select__item" value="">Некрасовка</option>
+                      <option class="select__item" value="">Люберцы</option>
+                      <option class="select__item" value="">Лефортово</option>
+                      <option class="select__item" value="">Дубровка</option>
+                      <option class="select__item" value="">
+                        Волгоградский проспект
+                      </option>
+                    </select>
+                  </label>
+                </form>
+                <!-- поле выбора_area  -->
+
+                <!-- переключатель secondary-radio -->
+                <div class="location__radio secondary-radio">
+                  <label
+                    class="secondary-radio__item secondary-radio__item_left"
+                    for=""
+                  >
+                    <input
+                      class="secondary-radio__field"
+                      type="radio"
+                      name="browser"
+                      value="ie"
+                    />
+                    <div
+                      class="secondary-radio__title secondary-radio__title_left sm-font"
+                    >
+                      Список
+                    </div>
+                  </label>
+
+                  <label
+                    class="secondary-radio__item secondary-radio__item_right"
+                    for=""
+                  >
+                    <input
+                      class="secondary-radio__field"
+                      type="radio"
+                      name="browser"
+                      value="ie"
+                    />
+                    <div
+                      class="secondary-radio__title secondary-radio__title_right sm-font"
+                    >
+                      Карта
+                    </div>
+                  </label>
+                </div>
+                <!-- переключатель secondary-radio -->
+              </div>
+            </div>
+          </div>
+          <!-- Два поля выбора и переключатель secondary-radio в один ряд -->
+        </section>
+        <!-- Раскрывающийся список, тег select , а также поле с одним или... -->
+
+        <p class="form__description md-font"></p>
+        <p class="form__description md-font"></p>
+        <p class="form__description md-font"></p>
+        <p class="form__description md-font"></p>
+        <p class="form__description md-font"></p>
         <p class="form__description md-font"></p>
         <p class="form__description md-font"></p>
         <p class="form__description md-font"></p>
@@ -414,31 +973,83 @@
         </li>
 
         <li class="menu__item menu__forms">
-          <a class="menu__item_link md-font" href="#inputs"> Поля input</a>
-        </li>
-
-        <li class="menu__item menu__forms">
           <a class="menu__item_link md-font" href="#type-input"> Типы форм</a>
         </li>
 
         <li class="menu__item menu__forms">
-          <a class="menu__item_link md-font" href="#button-row"
-            >Простая кнопка button
+          <a class="menu__item_link md-font" href="#button">Кнопки button </a>
+        </li>
+
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#inputs"> Поля input</a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#primary-button"
+            >Самая простая кнопка button
           </a>
         </li>
-
         <li class="menu__item menu__forms">
-          <a class="menu__item_link md-font" href="#submit">Кнопка submit</a>
+          <a class="menu__item_link md-font" href="#form__subhe"
+            >Поле выбора даты
+          </a>
         </li>
-
         <li class="menu__item menu__forms">
-          <a class="menu__item_link md-font" href="#reset">Кнопка reset</a>
+          <a class="menu__item_link md-font" href="#primary-checkbox"
+            >primary-checkbox
+          </a>
         </li>
-
         <li class="menu__item menu__forms">
-          <a class="menu__item_link md-font" href="#radio">Кнопка radio</a>
+          <a class="menu__item_link md-font" href="#image_ranges"> Ползунок</a>
         </li>
-
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#scriptio"
+            >radio Переключатели (radiobutton).
+          </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#lbook.ru/htm"
+            >Раскрывающийся список, тег select
+          </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#"> </a>
+        </li>
         <li class="menu__item menu__forms">
           <a class="menu__item_link md-font" href="#"> </a>
         </li>

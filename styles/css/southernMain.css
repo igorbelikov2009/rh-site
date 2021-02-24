@@ -84,13 +84,11 @@
 
 .select {
   width: 100%; }
-  .select_top-block {
+  .select_header {
     max-width: 132px; }
-  .select__list {
+  .select__list-header {
     width: 100%; }
-  .select__hidden {
-    line-height: 0px; }
-  .select__item {
+  .select__item-header {
     width: 100%; }
 
 .top-block {
@@ -387,7 +385,7 @@
     width: 48px;
     height: 24px; }
 
-.offices-address {
+.location {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -395,59 +393,61 @@
   background: #f2f7fb;
   position: relative; }
   @media screen and (min-width: 1024px) {
-    .offices-address {
+    .location {
       padding: 40px 72px 56px; } }
-  .offices-address__heading {
+  .location__heading {
     font-weight: bold;
     margin-bottom: 24px;
     text-align: center; }
-  .offices-address__container {
+  .location__container {
     display: flex;
     justify-content: space-between; }
-  .offices-address__map-container {
-    width: calc(100% - 327px);
-    height: 624px;
-    background-position: center center;
-    background-size: cover;
-    display: none; }
-    @media screen and (min-width: 576px) {
-      .offices-address__map-container {
-        display: block; } }
-  .offices-address__map-title {
-    color: #2f2f34;
-    margin-bottom: 16px; }
-  .offices-address__map-block {
-    width: 100%;
-    overflow-x: scroll; }
-  .offices-address__map {
-    width: 969px;
-    height: 624px;
-    background-position: center center;
-    background-size: cover; }
-
-.offices {
-  width: 272px; }
-  @media screen and (min-width: 375px) {
-    .offices {
-      width: 327px; } }
-  .offices__sector-select {
+  .location__list {
+    width: 272px; }
+    @media screen and (min-width: 375px) {
+      .location__list {
+        width: 327px; } }
+  .location__sector-select {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px; }
     @media screen and (min-width: 576px) {
-      .offices__sector-select {
+      .location__sector-select {
         max-width: 80%; } }
-  .offices__address {
+  .location__address {
     width: 100%;
     margin-bottom: 16px;
     position: relative; }
-    .offices__address::before {
+    .location__address::before {
       content: url(../../assets/icons/southernMain/mapsFlags.svg);
       position: relative;
       top: 4px;
       left: -1px; }
+  .location__map-container {
+    width: calc(100% - 327px);
+    height: 624px;
+    background-position: center center;
+    background-size: cover;
+    display: none; }
+    @media screen and (min-width: 576px) {
+      .location__map-container {
+        display: block; } }
+  .location__map-title {
+    color: #2f2f34;
+    margin-bottom: 16px; }
+  .location__map-block {
+    width: 100%;
+    overflow-x: scroll; }
+    @media screen and (min-width: 1440px) {
+      .location__map-block {
+        overflow-x: hidden; } }
+  .location__map {
+    width: 969px;
+    height: 624px;
+    background-position: center center;
+    background-size: cover; }
 
 .select {
   width: 100%; }

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../styles/css/grids.css" />
     <link rel="stylesheet" href="../styles/css/reset.css" />
     <link rel="stylesheet" href="../styles/css/typography.css" />
-    <link rel="stylesheet" href="../styles/css/southernMain.css" />
+    <link rel="stylesheet" href="../styles/css/southernСredit.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -92,257 +92,293 @@
       <!-- top-block -->
       <section
         class="top-block"
-        style="background-image: url(../assets/images/southernMain/jetty.jpg)"
+        style="
+          background-image: url(../assets/images/southernMain/southernCredit.jpg);
+        "
       >
-        <div class="top-block__body">
-          <h1 class="top-block__heading h1-font">
-            Отпуск ближе,
-            <span class="top-block__heading_span h1-font">чем кажется</span>
-          </h1>
-          <p class="top-block__offer h2-font">
-            Планируете незабываемый отдых? Мы предлагаем оформить кредит
-            наличными по специальной ставке от 8 %
-          </p>
+        <h1 class="top-block__heading">
+          Кредит наличными
+          <span class="top-block__heading_span">на любые цели</span>
+        </h1>
 
-          <form class="top-block__buttons" action="">
-            <button class="top-block__button top-block__button_left">
-              Оформить кредит
-            </button>
-            <button class="top-block__button top-block__button_right">
-              Калькулятор
-            </button>
-          </form>
+        <div class="top-block__offer">
+          <div class="top-block__item">
+            <p class="top-block__title">Сумма кредита</p>
+            <p class="top-block__description">до 2 млн руб</p>
+          </div>
+          <div class="top-block__item">
+            <p class="top-block__title">Срок</p>
+            <p class="top-block__description">от 1 года до 5 лет</p>
+          </div>
+          <div class="top-block__item">
+            <p class="top-block__title">Ставка</p>
+            <p class="top-block__description">от 8 %</p>
+          </div>
         </div>
+
+        <form class="top-block__buttons" action="">
+          <button class="tertiary-button">Оформить кредит</button>
+        </form>
       </section>
       <!-- top-block -->
 
-      <!-- offer -->
-      <section class="offer">
-        <div class="offer__container">
-          <div class="offer__row">
-            <div class="offer__column">
-              <div class="offer__wrapper">
-                <div class="offer__rate">
-                  <p class="offer__title h2-font">Кредит</p>
-                  <p class="h1-font">от 8 %</p>
-                </div>
-
-                <p class="offer__description md-font">
-                  Планируйте покупки, а о деньгах позаботимся мы
-                </p>
-                <a class="offer__link-arrow" href="">
-                  <img
-                    src="../assets/icons/southernMain/polygonGreen6.svg"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="offer__box-link">
-                <a class="offer__link md-font" href="">Подробнее</a>
-              </div>
-            </div>
-            <div class="offer__column">
-              <div class="offer__wrapper">
-                <div class="offer__rate">
-                  <p class="offer__title h2-font">Ипотека</p>
-                  <p class="h1-font">от 7,9 %</p>
-                </div>
-
-                <p class="offer__description md-font">
-                  Чем больше метров, тем ниже Ваша ставка
-                </p>
-                <a class="offer__link-arrow" href="">
-                  <img
-                    src="../assets/icons/southernMain/polygonGreen6.svg"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="offer__box-link">
-                <a class="offer__link md-font" href="">Подробнее</a>
-              </div>
-            </div>
-            <div class="offer__column">
-              <div class="offer__wrapper">
-                <div class="offer__rate">
-                  <p class="offer__title h2-font">Вклады</p>
-                  <p class="h1-font">до 7 %</p>
-                </div>
-
-                <p class="offer__description md-font">
-                  Самый высокий доход по накопительному счёту
-                </p>
-                <a class="offer__link-arrow" href="">
-                  <img
-                    src="../assets/icons/southernMain/polygonGreen6.svg"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="offer__box-link">
-                <a class="offer__link md-font" href="">Подробнее</a>
-              </div>
-            </div>
-            <div class="offer__column">
-              <div class="offer__wrapper">
-                <div class="offer__rate">
-                  <p class="offer__title h2-font">Переводы</p>
-                  <p class="h1-font">от 1 %</p>
-                </div>
-
-                <p class="offer__description md-font">
-                  Легкий и быстрый перевод по всему миру
-                </p>
-                <a class="offer__link-arrow" href="">
-                  <img
-                    src="../assets/icons/southernMain/polygonGreen6.svg"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="offer__box-link">
-                <a class="offer__link md-font" href="">Подробнее</a>
-              </div>
-            </div>
-          </div>
+      <!-- calculator -->
+      <section class="calculator">
+        <div class="calculator__nav">
+          <p class="calculator__nav-link sm-font">Главная</p>
+          <p class="calculator__nav-link sm-font">Частным лицам</p>
+          <p class="calculator__nav-item sm-font">Кредит</p>
         </div>
-      </section>
-      <!-- offer -->
+        <h2 class="calculator__heading sm-font">Кредитный калькулятор</h2>
 
-      <!-- news -->
-      <section class="news">
-        <h1 class="news__heading h1-font">Новости</h1>
-        <div class="news__container">
-          <div class="course-currency__column course-currency">
-            <p class="course-currency__title h2-font">Курсы валют</p>
-            <p class="course-currency__time sm-font">На 10.03.2020, 20:00</p>
-            <div class="course-currency__price">
-              <p class="course-currency__price_item sm-font">USD</p>
-              <p class="course-currency__price_item sm-font">70,25</p>
-              <div class="course-currency__price_sector">
-                <p class="course-currency__price_item sm-font">70,50</p>
-                <img
-                  class="course-currency__price_icon"
-                  src="../assets/icons/southernMain/polygon4.svg"
-                  alt=""
+        <div class="calculator__row">
+          <div class="calculator__column calculator__column_left">
+            <!-- primary-radio -->
+            <form class="calculator__primary-radio primary-radio__container">
+              <label class="primary-radio__item" for="">
+                <input
+                  class="primary-radio__field"
+                  type="radio"
+                  name="browser"
+                  value="ie"
                 />
+                <div class="primary-radio__title sm-font">Кредит</div>
+              </label>
+
+              <label class="primary-radio__item" for="">
+                <input
+                  class="primary-radio__field"
+                  type="radio"
+                  name="browser"
+                  value="ie"
+                />
+                <div class="primary-radio__title sm-font">Рефинансирование</div>
+              </label>
+            </form>
+            <!-- primary-radio -->
+
+            <!-- slider -->
+            <div class="slider__block">
+              <p class="slider__subheading md-font">Сумма кредита</p>
+
+              <div class="slider">
+                <input
+                  class="slider__range"
+                  type="range"
+                  min="1"
+                  max="100"
+                  id="size"
+                  value="50"
+                />
+                <div class="slider__title">
+                  <p class="slider__title_item">90 000 р.</p>
+                  <p class="slider__title_item">2 000 000 р.</p>
+                </div>
               </div>
             </div>
-            <div class="course-currency__price sm-font">
-              <p class="course-currency__price_item sm-font">EUR</p>
-              <p class="course-currency__price_item sm-font">80,25</p>
-              <div class="course-currency__price_sector">
-                <p class="course-currency__price_item sm-font">83,70</p>
+            <!-- slider -->
 
-                <img
-                  class="course-currency__price_icon"
-                  src="../assets/icons/southernMain/polygon4.svg"
-                  alt=""
+            <!-- slider -->
+            <div class="slider__block">
+              <p class="slider__subheading md-font">Срок кредита</p>
+              <div class="slider">
+                <input
+                  class="slider__range"
+                  type="range"
+                  min="1"
+                  max="100"
+                  id="size"
+                  value="50"
                 />
+                <div class="slider__title">
+                  <p class="slider__title_item">1 год</p>
+                  <p class="slider__title_item">5 лет</p>
+                </div>
               </div>
             </div>
-            <a class="course-currency__link sm-font" href="">Посмотреть все</a>
-            <p class="course-currency__title h2-font">Драгоценные металлы</p>
-            <p class="course-currency__time sm-font">На 10.03.2020, 20:00</p>
-            <div class="course-currency__price sm-font">
-              <p class="course-currency__price_item sm-font">Золото</p>
-              <p class="course-currency__price_item sm-font">
-                3 739,50 / 3 939,10
+            <!-- slider -->
+            <p class="calculator__clarification calculator__clarification_top">
+              Расчет является предварительным. Точные условия по кредиту вам
+              будут предоставлены в отделении банка или по телефону после
+              оформления заявки.
+            </p>
+          </div>
+          <div class="calculator__column calculator__column_right">
+            <div class="calculator__wrapper">
+              <!-- checkbox -->
+              <label class="calculator__checkbox checkbox" for="">
+                <input class="checkbox__field" type="checkbox" атрибуты />
+                <p class="checkbox__title">Со страховкой</p>
+                <div class="checkbox__after">
+                  <p class="checkbox__after-item">i</p>
+                </div>
+              </label>
+              <!-- checkbox -->
+
+              <div class="calculator__info-block">
+                <div class="calculator__info">
+                  <p class="calculator__rate h1-font">60 820 р.</p>
+                  <p class="calculator__title md-font">Ежемесячный платёж</p>
+                </div>
+                <div class="calculator__info">
+                  <p class="calculator__rate h1-font">8%</p>
+                  <p class="calculator__title md-font">Ставка по кредиту</p>
+                </div>
+              </div>
+              <form class="calculator__buttons" action="">
+                <button class="calculator__button tertiary-button">
+                  Оформить заявку
+                </button>
+              </form>
+              <p
+                class="calculator__clarification calculator__clarification_bottom"
+              >
+                Расчет является предварительным. Точные условия по кредиту вам
+                будут предоставлены в отделении банка или по телефону после
+                оформления заявки.
               </p>
             </div>
-            <div class="course-currency__price sm-font">
-              <p class="course-currency__price_item sm-font">Серебро</p>
-              <p class="course-currency__price_item sm-font">38,07 / 40,13</p>
-            </div>
-            <a class="course-currency__link sm-font" href="">Посмотреть все</a>
-          </div>
-          <div class="news__tape">
-            <a></a>
-            <a href="" class="news__block">
-              <div
-                class="news__image"
-                style="
-                  background-image: url(../assets/images/southernMain/rectangle10.jpg);
-                "
-              ></div>
-              <div class="news__sector">
-                <p class="news__description sm-font">
-                  Южный Банк сообщает об изменении режима работы в связи с
-                  празднованием Международного женского дня
-                </p>
-                <p class="news__date sm-font">07.03.20</p>
-              </div>
-            </a>
-            <a href="" class="news__block">
-              <div
-                class="news__image"
-                style="
-                  background-image: url(../assets/images/southernMain/rectangle11.jpg);
-                "
-              ></div>
-              <div class="news__sector">
-                <p class="news__description sm-font">
-                  Южный Банк поддержит финансово строительство школы в
-                  Калинограде
-                </p>
-                <p class="news__date sm-font">05.03.20</p>
-              </div>
-            </a>
-          </div>
-          <div class="news__tape">
-            <a href="" class="news__block">
-              <div
-                class="news__image"
-                style="
-                  background-image: url(../assets/images/southernMain/rectangle12.jpg);
-                "
-              ></div>
-              <div class="news__sector">
-                <p class="news__description sm-font">
-                  Южный Банк снижает ставки по кредитам наличными до 7,5%
-                </p>
-                <p class="news__date sm-font">05.03.20</p>
-              </div>
-            </a>
-            <a href="" class="news__block">
-              <div
-                class="news__image"
-                style="
-                  background-image: url(../assets/images/southernMain/rectangle13.jpg);
-                "
-              ></div>
-              <div class="news__sector">
-                <p class="news__description sm-font">
-                  Южный Банк размещает однодневные облигации
-                </p>
-                <p class="news__date sm-font">03.03.20</p>
-              </div>
-            </a>
           </div>
         </div>
-        <!-- pointer -->
-        <a class="news__pointer pointer" href="">
-          <div
-            class="pointer__circle"
-            style="
-              background-image: url(../assets/icons/southernMain/ellipse6.svg);
-            "
-          >
-            <img
-              class="pointer__arrow"
-              src="../assets/icons/southernMain/polygon6.svg"
-              alt=""
-            />
-          </div>
-          <img
-            class="pointer__more"
-            src="../assets/icons/southernMain/esho.svg"
-            alt=""
-          />
-        </a>
-        <!-- pointer -->
       </section>
-      <!-- news -->
+      <!-- calculator -->
+
+      <!-- processing -->
+      <section class="processing">
+        <h1 class="processing__heading h1-font">Заявка на кредит наличными</h1>
+        <div class="processing__request">
+          <div class="processing__container">
+            <div class="processing__block">
+              <div class="processing__line"></div>
+
+              <div class="processing__steps">
+                <div class="processing__stage">
+                  <p class="processing__title">Контактная информация</p>
+                  <div class="processing__marker"></div>
+                </div>
+                <div class="processing__stage">
+                  <p class="processing__title">Персональные данные</p>
+                  <div class="processing__marker"></div>
+                </div>
+
+                <div class="processing__stage">
+                  <p class="processing__title">Работа и доходы</p>
+                  <div class="processing__marker"></div>
+                </div>
+                <div class="processing__stage">
+                  <p class="processing__title">Условия кредита</p>
+                  <div class="processing__marker"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- processing -->
+
+      <!-- contact -->
+      <section class="contact">
+        <div class="contact__details">
+          <!-- input-border -->
+          <p class="contact__title sm-font">Фамилия Имя Отчество</p>
+          <label class="contact__input input-border" for="">
+            <input class="input-border__field" type="text" autofocus />
+          </label>
+          <!-- input-border -->
+          <!-- input-border -->
+          <p class="contact__title sm-font">Дата рождения</p>
+          <label class="contact__field input-border" for="">
+            <input
+              class="input-border__field"
+              type="text"
+              placeholder="ДД/MM/ГГГГ"
+            />
+          </label>
+          <!-- input-border -->
+          <!-- input-border -->
+          <p class="contact__title sm-font">Ваш номер телефона</p>
+          <label class="contact__field input-border" for="">
+            <input
+              class="input-border__field"
+              type="tel"
+              placeholder="+7 (___) ___ - __ - __"
+            />
+          </label>
+          <!-- input-border -->
+          <!-- input-border -->
+          <p class="contact__title sm-font">Электронная почта</p>
+          <label class="contact__field input-border" for="">
+            <input
+              class="input-border__field"
+              type="email"
+              placeholder="pochta@mail.ru"
+            />
+          </label>
+          <!-- input-border -->
+
+          <form class="contact__buttons" action="">
+            <button class="contact__button tertiary-button">Продолжить</button>
+          </form>
+        </div>
+      </section>
+      <!-- contact -->
+
+      <!-- request -->
+      <section class="request">
+        <div class="request__questions-block">
+          <div class="request__questions">
+            <p class="request__question md-font">Как получить?</p>
+            <p class="request__question md-font">Условия</p>
+            <p class="request__question md-font">Документы</p>
+            <p class="request__question md-font">Как погашать</p>
+            <p class="request__question md-font">Преимущества</p>
+          </div>
+          <div class="request__line"></div>
+        </div>
+        <div class="request__stages">
+          <div class="request__phase">
+            <div class="request__circle">
+              <p class="request__number h1-font">1</p>
+            </div>
+            <p class="request__description md-font">
+              Заполните заявку на сайте или в отделении банка
+            </p>
+          </div>
+          <div class="request__phase">
+            <div class="request__circle">
+              <p class="request__number h1-font">2</p>
+            </div>
+            <p class="request__description md-font">
+              Дождитесь ответа и подготовьте пакет документов
+            </p>
+          </div>
+          <div class="request__phase">
+            <div class="request__circle">
+              <p class="request__number h1-font">3</p>
+            </div>
+            <p class="request__description md-font">
+              Приходите в отделение и получите деньги
+            </p>
+          </div>
+        </div>
+        <div class="request__line-bootom"></div>
+        <div class="request__make-block">
+          <div class="request__make">
+            <div class="request__offer">
+              <p class="request__now md-font">Оформите заявку прямо сейчас</p>
+              <p class="request__time sm-font">
+                Заполнение заявки займёт не более 5 минут
+              </p>
+            </div>
+            <div class="request__buttons">
+              <button class="request__button tertiary-button">
+                Оформить кредит
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- request -->
 
       <!-- location -->
       <section class="location">

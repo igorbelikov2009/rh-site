@@ -1,0 +1,391 @@
+.main {
+  min-height: 100vh;
+}
+
+.mr-bot-24 {
+  margin-bottom: 24px;
+}
+
+.article {
+  width: 100%;
+  max-width: 944px;
+  background-color: #ffffff;
+  padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media screen and (min-width: 576px) {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+//  <!-- forest -->
+.forest {
+  padding-top: 84px;
+  margin-bottom: 72px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    margin-bottom: 24px;
+  }
+
+  &__price {
+    margin-bottom: 48px;
+    color: #b5bdc8;
+  }
+
+  &__discription {
+    margin-bottom: 48px;
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 356px;
+    border: 1px solid #50287d;
+    background-color: #ffffff;
+    color: #50287d;
+    margin-bottom: 24px;
+  }
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__image-wrapper {
+    display: flex;
+  }
+
+  &__pictures {
+    width: 100%;
+    height: 201px;
+    margin: auto;
+
+    @media screen and (min-width: 375px) {
+      height: 241px;
+    }
+
+    @media screen and (min-width: 437px) {
+      width: 381px;
+      height: 282px;
+    }
+
+    @media screen and (min-width: 767px) {
+      width: 348px;
+      height: 257px;
+    }
+
+    @media screen and (min-width: 833px) {
+      width: 381px;
+      height: 282px;
+    }
+  }
+}
+//  <!-- forest -->
+
+// <!-- advantages -->
+.advantages {
+  margin-bottom: 48px;
+
+  &__headering {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  &__icon {
+    margin-bottom: 24px;
+  }
+
+  &__picture {
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__discription {
+    color: #96a0aa;
+    margin-bottom: 24px;
+  }
+}
+// <!-- advantages -->
+
+//  <!-- facilities -->
+.facilities {
+  margin-bottom: 48px;
+
+  &__headering {
+    color: #5a646e;
+    margin-bottom: 48px;
+  }
+}
+
+.list {
+  margin-bottom: 24px;
+  margin-left: 9px;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+  }
+
+  &__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #50287d;
+    margin-right: 17px;
+  }
+
+  &__title {
+    color: #5a646e;
+  }
+
+  &__discription {
+    color: #78828c;
+    margin-bottom: 24px;
+    margin-left: 22px;
+  }
+}
+
+.facilities-image {
+  width: 100%;
+
+  &__picture {
+    width: 100%;
+    display: flex;
+  }
+
+  &__item {
+    width: 432px;
+    height: 343px;
+    margin: auto;
+  }
+}
+//  <!-- facilities -->
+
+// <!-- info-block -->
+.info-block {
+  margin-bottom: 96px;
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    max-width: 584px;
+    color: #5a646e;
+    margin-bottom: 48px;
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 356px;
+    border: 1px solid #50287d;
+    background-color: #ffffff;
+    color: #50287d;
+    margin-bottom: 24px;
+  }
+}
+// <!-- info-block -->
+
+// <!-- policy-form -->
+.policy-form {
+  &__heading {
+    // margin-bottom: 48px;
+    margin-bottom: 60px;
+    // отступ больше на 12px потому,
+    // что у поля выбора даты верхний отступ
+    // отрицательный "-12рх"
+  }
+
+  &__input-date {
+    margin-top: -12px;
+    margin-bottom: 47px;
+  }
+
+  &__info {
+    color: #b5bdc8;
+    margin-bottom: 72px;
+  }
+
+  &__span {
+    display: block;
+    color: #b5bdc8;
+  }
+
+  &__subtitle {
+    color: #b5bdc8;
+
+    margin-bottom: 48px;
+  }
+
+  &__contact-details {
+    color: #5a646e;
+    margin-bottom: 24px;
+  }
+
+  &__input-prompt {
+    margin-bottom: 47px;
+  }
+
+  &__input-subtitle {
+    margin-bottom: 47px;
+  }
+
+  &__checkbox {
+    margin-bottom: 72px;
+  }
+
+  &__add-insured {
+    margin-bottom: 72px;
+    display: flex;
+
+    text-decoration: none;
+  }
+
+  &__add-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+// <!-- policy-form -->
+
+//   <!-- agreement -->
+.agreement {
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background: #f3f5f7;
+  border-bottom: 1px solid #d2dce6;
+
+  &__block {
+    width: 100%;
+    max-width: 944px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 767px) {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+  }
+
+  &__checkbox {
+    margin-bottom: 48px;
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 356px;
+    background: #d2dce6;
+    color: #96a0aa;
+  }
+}
+//   <!-- agreement -->
+
+// <!-- footer small font-->
+.footer {
+  width: 100%;
+  background: #f3f5f7;
+  padding-top: 48px;
+  padding-bottom: 72px;
+
+  &__block {
+    width: 100%;
+    max-width: 944px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 767px) {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+  }
+
+  &__string {
+    color: #b5bdc8;
+
+    &:first-child {
+      margin-bottom: 24px;
+    }
+
+    &_span {
+      display: block;
+    }
+  }
+}
+// <!-- footer small font-->
+
+//  <!-- header -->
+.header {
+  display: none;
+  width: 100%;
+  height: 72px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 28px;
+  }
+
+  &__wideLogotype {
+    display: none;
+
+    @media screen and (min-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__smallLogo {
+    display: block;
+
+    @media screen and (min-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    width: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    width: 24px;
+    height: 24px;
+  }
+}
+//  <!-- header -->
