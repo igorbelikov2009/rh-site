@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/css/general.css" />
+    <link rel="stylesheet" href="../styles/css/grids.css" />
+    <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="../styles/css/typography.css" />
+    <link rel="stylesheet" href="../styles/css/linearGradient..css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- main -->
+    <main class="main">
+      <article class="article">
+        <!-- linear-gradient  Информация  -->
+        <section class="linear-gradient">
+          <div class="compression">
+            <h1
+              id="linear-gradient"
+              class="linear-gradient__heading h2-font-h1"
+            >
+              <span class="linear-gradient__heading_span">
+                <a
+                  class="linear-gradient__link h2-font-h1"
+                  href="http://htmlbook.ru/css3-na-primerakh/lineinyi-gradient"
+                >
+                  "Линейный градиент"</a
+                >
+              </span>
+            </h1>
+            <!-- Описание -->
+            <h2 class="linear-gradient__subheading h2-font">Описание</h2>
+            <p class="linear-gradient__text md-font">
+              Градиентом называют плавный переход от одного цвета к другому,
+              причём самих цветов и переходов между ними может быть несколько. С
+              помощью градиентов создаются самые причудливые эффекты
+              веб-дизайна, например, псевдотрёхмерность, блики, фон и др. Также
+              с градиентом элементы смотрятся более симпатично, чем однотонные.
+            </p>
+
+            <p class="linear-gradient__text md-font">
+              Отдельного свойства для добавления градиента нет, поскольку он
+              считается фоновым изображением, поэтому добавляется через свойство
+              <i>background-image</i> или универсальное свойство
+              <i>background</i>
+            </p>
+
+            <p class="linear-gradient__text md-font">
+              В самом простом случае с двумя цветами, в начале пишется позиция,
+              от которой будет начинаться градиент, затем начальный и конечный
+              цвет.
+            </p>
+            <div class="linear-gradient__sample">
+              border-color: yellow; <br />
+              <br />
+              background-image: linear-gradient(yellow, green);
+            </div>
+
+            <p class="linear-gradient__text md-font">
+              Сам градиент создаётся функцией <i>linear-gradient</i>, в
+              параметрах которой указываются направление градиента и набор
+              цветов. Направление можно не указывать, тогда будет использовано
+              значение по умолчанию — сверху вниз. Цветов может быть любое
+              количество.
+            </p>
+            <p class="linear-gradient__text md-font"></p>
+            <!-- Описание -->
+
+            <!-- Синтаксис -->
+            <h2 class="linear-gradient__subheading h2-font">Синтаксис</h2>
+            <div class="linear-gradient__syntax-image">
+              <img
+                class="linear-gradient__syntax-picture"
+                src="../assets/images/linearGradient/linearGradientDeg.png"
+                alt=""
+              />
+            </div>
+
+            <p class="linear-gradient__text md-font">
+              Для записи позиции вначале пишется <i>to</i>, а затем добавляются
+              ключевые слова <i>top</i>, <i>bottom</i> и <i>left</i>,
+              <i>right</i>, а также их сочетания. Порядок слов не важен, можно
+              написать <i>to left top</i> или <i>to top left</i>. В табл. 1
+              приведены разные позиции и тип получаемого градиента для цветов
+              <i>#000</i> и <i>#fff</i>, по другому от чёрного к белому.
+            </p>
+            <!-- Синтаксис -->
+          </div>
+        </section>
+        <!-- linear-gradient  Информация  -->
+
+        <!-- examples  Примеры переходов цветов из чёрного в белое -->
+        <section class="examples">
+          <h1 id="examples" class="examples__heading compression h2-font-h1">
+            Примеры прямых и диогональных переходов цветов
+          </h1>
+          <h2 class="examples__subheading compression h2-font">
+            Примеры прямых переходов.
+          </h2>
+          <!-- table-examples прямые переходы -->
+          <div class="table-examples">
+            <!-- table-examples__item Снизу вверх -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                из чёрного в белое
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_01"
+              ></div>
+              <div class="table-examples__description md-font">
+                из жёлтого в зелёное
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_01"
+              ></div>
+              <div class="table-examples__description md-font">
+                цвета радуги
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_01"
+              ></div>
+              <div class="table-examples__description md-font">Снизу вверх</div>
+              <div class="table-examples__title md-font">to top (вверх)</div>
+            </div>
+            <!-- table-examples__item Снизу вверх -->
+
+            <!-- table-examples__item Справа налево -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                из чёрного в белое
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_02"
+              ></div>
+              <div class="table-examples__description md-font">
+                из жёлтого в зелёное
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_02"
+              ></div>
+              <div class="table-examples__description md-font">
+                цвета радуги
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_02"
+              ></div>
+              <div class="table-examples__description md-font">
+                Справа налево
+              </div>
+              <div class="table-examples__title md-font">to left (влево)</div>
+            </div>
+            <!-- table-examples__item Справа налево -->
+
+            <!-- table-examples__item Сверху вниз -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                из чёрного в белое
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_03"
+              ></div>
+              <div class="table-examples__description md-font">
+                из жёлтого в зелёное
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_03"
+              ></div>
+              <div class="table-examples__description md-font">
+                цвета радуги
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_03"
+              ></div>
+              <div class="table-examples__description md-font">Сверху вниз</div>
+              <div class="table-examples__title md-font">to bottom (вниз)</div>
+            </div>
+            <!-- table-examples__item Сверху вниз -->
+
+            <!-- table-examples__item Слева направо -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                из чёрного в белое
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_04"
+              ></div>
+              <div class="table-examples__description md-font">
+                из жёлтого в зелёное
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_04"
+              ></div>
+              <div class="table-examples__description md-font">
+                цвета радуги
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_04"
+              ></div>
+              <div class="table-examples__description md-font">
+                Слева направо
+              </div>
+              <div class="table-examples__title md-font">
+                to right (направо)
+              </div>
+            </div>
+            <!-- table-examples__item Слева направо -->
+          </div>
+          <!-- table-examples прямые переходы -->
+
+          <h2 class="examples__subheading compression h2-font">
+            Примеры переходов по диагоналям.
+          </h2>
+          <!-- table-examples переходы по диагоналям -->
+          <div class="table-examples">
+            <!-- table-examples__item От правого нижнего угла к левому верхнему -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                из чёрного в белое
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_05"
+              ></div>
+              <div class="table-examples__description md-font">
+                из жёлтого в зелёное
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_05"
+              ></div>
+              <div class="table-examples__description md-font">
+                цвета радуги
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_05"
+              ></div>
+              <div class="table-examples__description md-font">
+                От правого нижнего угла к левому верхнему
+              </div>
+              <div class="table-examples__title md-font">to top left</div>
+            </div>
+            <!-- table-examples__item От правого нижнего угла к левому верхнему -->
+
+            <!-- table-examples__item От левого нижнего угла к правому верхнему -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                из чёрного в белое
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_06"
+              ></div>
+              <div class="table-examples__description md-font">
+                из жёлтого в зелёное
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_06"
+              ></div>
+              <div class="table-examples__description md-font">
+                цвета радуги
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_06"
+              ></div>
+              <div class="table-examples__description md-font">
+                От левого нижнего угла к правому верхнему
+              </div>
+              <div class="table-examples__title md-font">to top right</div>
+            </div>
+            <!-- table-examples__item От левого нижнего угла к правому верхнему -->
+
+            <!-- table-examples__item От правого верхнего угла к левому нижнему -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                из чёрного в белое
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_07"
+              ></div>
+              <div class="table-examples__description md-font">
+                из жёлтого в зелёное
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_07"
+              ></div>
+              <div class="table-examples__description md-font">
+                цвета радуги
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_07"
+              ></div>
+              <div class="table-examples__description md-font">
+                От правого верхнего угла к <br />
+                левому нижнему
+              </div>
+              <div class="table-examples__title md-font">to bottom left</div>
+            </div>
+            <!-- table-examples__item	От правого верхнего угла к левому нижнему -->
+
+            <!-- table-examples__item От левого верхнего угла к правому нижнему -->
+            <div class="table-examples__item">
+              <div class="table-examples__description md-font">
+                из чёрного в белое
+              </div>
+              <div
+                class="table-examples__black-position table-examples__black-position_08"
+              ></div>
+              <div class="table-examples__description md-font">
+                из жёлтого в зелёное
+              </div>
+              <div
+                class="table-examples__yellow-position table-examples__yellow-position_08"
+              ></div>
+              <div class="table-examples__description md-font">
+                цвета радуги
+              </div>
+              <div
+                class="table-examples__rainbow-position table-examples__rainbow-position_08"
+              ></div>
+              <div class="table-examples__description md-font">
+                От левого верхнего угла к правому нижнему
+              </div>
+              <div class="table-examples__title md-font">to bottom right</div>
+            </div>
+            <!-- table-examples__item От левого верхнего угла к правому нижнему -->
+          </div>
+          <!-- table-examples переходы по диагоналям из чёрного в белое -->
+        </section>
+        <!-- examples  Примеры переходов цветов из чёрного в белое -->
+
+        <!-- angled-gradients Градиенты под углом -->
+        <section class="angled-gradients">
+          <div class="angled-gradients__compression">
+            <h1
+              id="angled-gradients"
+              class="angled-gradients__heading h2-font-h1"
+            >
+              Градиенты под углом
+            </h1>
+            <p class="angled-gradients__text md-font">
+              Вместо ключевого слова допускается задавать угол наклона
+              градиентной линии, который показывает направление градиента.
+              Направление в градусах задаётся с помощью единицы измерения deg.
+              Можно задавать положительные и отрицательные углы. Вначале пишется
+              положительное или отрицательное значение угла, затем к нему слитно
+              добавляется deg.
+            </p>
+            <p class="angled-gradients__text md-font">
+              Нулю градусов (или 360º) соответствует градиент снизу вверх. 0deg
+              соответствует 12 часам, а отсчёт угла идет по часовой стрелке. В
+              случае, если угол задан отрицательным значением, например, -90deg,
+              то он отсчитывается против часовой стрелки.
+            </p>
+            <p class="angled-gradients__text md-font">
+              Отсчёт угла наклона градиентной линии показан ниже.
+            </p>
+            <div class="angled-gradients__image">
+              <img
+                class="angled-gradients__picture"
+                src="../assets/images/linearGradient/linearGradientAngle.png"
+                alt=""
+              />
+            </div>
+            <p class="angled-gradients__text md-font">
+              Для значения <b>top left</b> и ему подобных угол наклона
+              градиентной линии вычисляется, исходя из размеров элемента так,
+              чтобы соединять две диагонально противоположные угловые точки.
+            </p>
+          </div>
+        </section>
+        <!-- angled-gradients Градиенты под углом -->
+
+        <!-- sample Градиенты под углом -->
+        <div class="sample-flower">
+          <h2 id="sample-flower" class="sample-flower__subheading h2-font">
+            Градиенты под углом, пример:
+          </h2>
+          <div class="sample-flower__body">
+            <div class="sample-flower__left">
+              <p class="sample-flower__description md-font">
+                Верхнему правому листку задан градиент под углом 225°
+              </p>
+
+              <p class="sample-flower__description md-font">
+                Нижнему правому листку задан градиент под углом 315°
+              </p>
+
+              <p class="sample-flower__description md-font">
+                Нижнему левому листку задан градиент под углом 45°
+              </p>
+            </div>
+            <div class="sample-flower__right">
+              <div class="sample-flower__item flower">
+                <div class="flower__block-left">
+                  <div class="flower__leaf flower__leaf-top-left"></div>
+                  <div class="flower__leaf flower__leaf-top-right"></div>
+                </div>
+                <div class="flower__block-right">
+                  <div class="flower__leaf flower__leaf-bottom-left"></div>
+                  <div class="flower__leaf flower__leaf-bottom-right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sample Градиенты под углом -->
+
+        <!-- sample Множество градиентов -->
+        <section class="sample">
+          <h1 id="sample" class="sample__subheading h1-font">
+            Множество градиентов
+          </h1>
+          <p class="linear-gradient__text md-font">
+            Для создания сложных градиентов двух цветов уже будет недостаточно,
+            синтаксис позволяет добавлять их неограниченное количество,
+            перечисляя цвета через запятую. При этом можно использовать
+            прозрачный цвет (ключевое слово transparent), а также полупрозрачный
+            с помощью формата RGBA, как показано в примере
+          </p>
+          <div class="sample__body">
+            <div class="sample__left">
+              <p class="sample__description md-font">
+                div { background-image:
+                <br />
+                linear-gradient(to top, rgba(30,87,153,0), rgba(30,87,153,0.8),
+                <br />
+                rgba(30,87,153,1), rgba(30,87,153,1), rgba(41,137,216,1),
+                <br />
+                rgba(30,87,153,1), rgba(30,87,153,1), rgba(30,87,153,0.8),
+                <br />
+                rgba(30,87,153,0)); <br />
+                color: #fff; <br />
+                padding: 10px; <br />
+                }
+              </p>
+            </div>
+            <div class="sample__right">
+              <div class="sample__item sample__item_many-gradients">
+                множество градиентов
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- sample Множество градиентов -->
+
+        <!-- sample Пропорции цветов и колорстопы -->
+        <section class="sample">
+          <h1 id="color-stop" class="sample__subheading h1-font">
+            Пропорции цветов и колорстопы
+          </h1>
+          <p class="linear-gradient__text md-font">
+            По умолчанию цвета в градиентах распределяются равномерно, в
+            одинаковых пропорциях, но этим поведением можно управлять. Делается
+            это с помощью так называемых колорстопов, которые записываются сразу
+            после значений цветов, так: red 0%, yellow 100%. Например, запись
+            red 0%, orange 50%, yellow 100% означает, что градиент начинается с
+            красного цвета, затем на 50% переходит в оранжевый, а затем до конца
+            в жёлтый. Для простоты крайние единицы вроде 0% и 100% можно не
+            писать, они подразумеваются по умолчанию. Колорстоп указывает
+            положение цвета в градиенте, его можно задавать в процентах,
+            пикселях и других единицах. <br />
+            Колорстоп задаёт то место, где будет располагаться центральная
+            (самая насыщенная) часть цвета. В примере показано создание
+            градиентной кнопки, в которой положение второго цвета из трёх задано
+            как 36%.
+          </p>
+          <div class="sample__body">
+            <div class="sample__left">
+              <p class="sample__description md-font">
+                { color: #fff; <br />
+                background: #b5bdc8; <br />
+                background: linear-gradient(to top, #b5bdc8 0%, <br />
+                #828c95 36%, #28343b 100%); <br />
+                border: 1px solid #333; <br />
+                border-radius: 20px; <br />
+
+                }
+              </p>
+            </div>
+            <div class="sample__right">
+              <button class="sample__item sample__item_color-proportions">
+                Градиентная кнопка
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- sample Пропорции цветов и колорстопы -->
+
+        <!-- color-stop Примеры колор стопов -->
+        <section class="color-stop">
+          <h2 id="color-stop-sample" class="color-stop__subheading h2-font">
+            Рассмотрим несколько примеров, чтобы понять поведение колорстопов:
+          </h2>
+          <div class="color-stop__row">
+            <div class="color-stop__left">
+              <p class="color-stop__description md-font">yellow, green</p>
+            </div>
+            <div class="color-stop__right">
+              <div
+                class="color-stop__appearance color-stop__appearance_01"
+              ></div>
+            </div>
+          </div>
+
+          <div class="color-stop__row">
+            <div class="color-stop__left">
+              <p class="color-stop__description md-font">
+                yellow 0%, green 100%
+              </p>
+            </div>
+            <div class="color-stop__right">
+              <div
+                class="color-stop__appearance color-stop__appearance_02"
+              ></div>
+            </div>
+          </div>
+
+          <div class="color-stop__row">
+            <div class="color-stop__left">
+              <p class="color-stop__description md-font">
+                yellow 0%, green 50%
+              </p>
+            </div>
+            <div class="color-stop__right">
+              <div
+                class="color-stop__appearance color-stop__appearance_03"
+              ></div>
+            </div>
+          </div>
+
+          <div class="color-stop__row">
+            <div class="color-stop__left">
+              <p class="color-stop__description md-font">
+                yellow 50%, green 100%
+              </p>
+            </div>
+            <div class="color-stop__right">
+              <div
+                class="color-stop__appearance color-stop__appearance_04"
+              ></div>
+            </div>
+          </div>
+
+          <div class="color-stop__row">
+            <div class="color-stop__left">
+              <p class="color-stop__description md-font">
+                yellow 25%, green 75%
+              </p>
+            </div>
+            <div class="color-stop__right">
+              <div
+                class="color-stop__appearance color-stop__appearance_05"
+              ></div>
+            </div>
+          </div>
+
+          <div class="color-stop__row">
+            <div class="color-stop__left">
+              <p class="color-stop__description md-font">red, yellow, green</p>
+            </div>
+            <div class="color-stop__right">
+              <div
+                class="color-stop__appearance color-stop__appearance_06"
+              ></div>
+            </div>
+          </div>
+
+          <div class="color-stop__row">
+            <div class="color-stop__left">
+              <p class="color-stop__description md-font">
+                red 0%, yellow 50%, green 100%
+              </p>
+            </div>
+            <div class="color-stop__right">
+              <div
+                class="color-stop__appearance color-stop__appearance_07"
+              ></div>
+            </div>
+          </div>
+
+          <div class="color-stop__row">
+            <div class="color-stop__left">
+              <p class="color-stop__description md-font">
+                red 33%, yellow 66%, green 100%
+              </p>
+            </div>
+            <div class="color-stop__right">
+              <div
+                class="color-stop__appearance color-stop__appearance_08"
+              ></div>
+            </div>
+          </div>
+        </section>
+        <!-- color-stop Примеры колор стопов -->
+
+        <!-- repeating-gradient Повторяющийся линейный градиент -->
+        <section class="repeating-gradient">
+          <h1
+            id="repeating-gradient"
+            class="repeating-gradient__heading h1-font"
+          >
+            Повторяющийся линейный градиент
+          </h1>
+          <p class="repeating-gradient__text md-font">
+            Помимо обычных градиентов существуют и повторяющиеся. Их синтаксис
+            полностью совпадает с синтаксисом обычных, только вместо
+            linear-gradient пишется repeating-gradient__. Повторяющийся градиент
+            хорош для создания полосатых фонов или фонов-орнаментов средствами
+            CSS.
+          </p>
+          <ul>
+            <p class="repeating-gradient__text md-font">
+              Есть несколько тонкостей, которые нужно знать про повторяющиеся
+              градиенты:
+            </p>
+            <li class="repeating-gradient__list md-font">
+              1. Размер фрагмента определяется по последнему колорстопу. Чтобы
+              повторение было видно, последний колорстоп должен быть меньше, чем
+              размер элемента с градиентом.
+            </li>
+            <li class="repeating-gradient__list md-font">
+              2. Если первый и последний цвета градиента различаются, то будут
+              видны резкие границы между повторяющимися фрагментами. Чтобы от
+              них избавиться, нужно задавать одинаковый первый и последний
+              цвета.
+            </li>
+            <li class="repeating-gradient__list md-font">
+              3. Колорстопы в повторяющихся градиентах обычно задают в пикселях,
+              но можно использовать и проценты.
+            </li>
+          </ul>
+
+          <p class="repeating-gradient__text md-font">
+            Кстати, вместо повторяющихся градиентов можно использовать обычные
+            градиенты в сочетании со свойствами background-size и
+            background-repeat. Но повторяющиеся градиенты удобнее и требуют
+            меньше кода.
+          </p>
+
+          <p class="repeating-gradient__text md-font">
+            В этом примере показано, как из обычных градиентов сделать
+            повторяющиеся. Обратить внимание на то, какого размера получаются
+            фрагменты. Например, в первых двух блоках поместится ровно четыре
+            фрагмента.
+          </p>
+          <h2 class="repeating-gradient__subheading h2-font">
+            Примеры преобразований обычных градиентов в повторяющиеся <br />
+            (обязательно задавать ширину цвета в пикселях):
+          </h2>
+          <div class="repeating-gradient__row">
+            <div class="repeating-gradient__column">
+              <p class="repeating-gradient__description md-font">
+                Обычный градиент
+              </p>
+              <div
+                class="repeating-gradient__normal repeating-gradient__normal_01"
+              ></div>
+              <p class="repeating-gradient__description md-font">
+                Повторяющийся
+              </p>
+              <div
+                class="repeating-gradient__converted repeating-gradient__converted_01"
+              ></div>
+            </div>
+            <div class="repeating-gradient__column">
+              <p class="repeating-gradient__description md-font">
+                Обычный градиент
+              </p>
+              <div
+                class="repeating-gradient__normal repeating-gradient__normal_02"
+              ></div>
+              <p class="repeating-gradient__description md-font">
+                Повторяющийся
+              </p>
+              <div
+                class="repeating-gradient__converted repeating-gradient__converted_02"
+              ></div>
+            </div>
+            <div class="repeating-gradient__column">
+              <p class="repeating-gradient__description md-font">
+                Обычный градиент
+              </p>
+              <div
+                class="repeating-gradient__normal repeating-gradient__normal_03"
+              ></div>
+              <p class="repeating-gradient__description md-font">
+                Повторяющийся
+              </p>
+              <div
+                class="repeating-gradient__converted repeating-gradient__converted_03"
+              ></div>
+            </div>
+            <div class="repeating-gradient__column">
+              <p class="repeating-gradient__description md-font">
+                Обычный градиент
+              </p>
+              <div
+                class="repeating-gradient__normal repeating-gradient__normal_04"
+              ></div>
+              <p class="repeating-gradient__description md-font">
+                Повторяющийся
+              </p>
+              <div
+                class="repeating-gradient__converted repeating-gradient__converted_04"
+              ></div>
+            </div>
+          </div>
+        </section>
+        <!-- repeating-gradient Повторяющийся линейный градиент -->
+
+        <!-- stylish-buttons Стильные кнопки -->
+        <section class="stylish-buttons">
+          <h1 id="stylish-buttons" class="stylish-buttons__heading h1-font">
+            Стильные кнопки
+          </h1>
+          <div class="stylish-buttons__row">
+            <div class="stylish-buttons__column">
+              <div class="stylish-buttons__wrapper">
+                <p class="stylish-buttons__description md-font">
+                  background-image: <br />
+                  linear-gradient( <br />
+                  #ffffff, <br />
+                  #dddddd);
+                </p>
+              </div>
+              <div class="stylish-buttons__block">
+                <button
+                  class="stylish-buttons__button stylish-buttons__button_01 md-font"
+                >
+                  Стильная кнопка
+                </button>
+              </div>
+              <div class="stylish-buttons__wrapper">
+                <p class="stylish-buttons__description md-font">
+                  box-shadow: inset 0 0 0 1px <br />
+                  rgba(0, 0, 0, 0.2), 0 1px 3px #aaaaaa;
+                  <br />
+                  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+                </p>
+              </div>
+            </div>
+            <div class="stylish-buttons__column">
+              <div class="stylish-buttons__wrapper">
+                <p class="stylish-buttons__description md-font">
+                  background-image: <br />
+                  linear-gradient( <br />
+                  #cc0630 0%, <br />
+                  #8f0222 75%, <br />
+                  #6d0019 100%); <br />
+                </p>
+              </div>
+              <div class="stylish-buttons__block">
+                <button
+                  class="stylish-buttons__button stylish-buttons__button_02 md-font"
+                >
+                  Стильная кнопка
+                </button>
+              </div>
+              <div class="stylish-buttons__wrapper">
+                <p class="stylish-buttons__description md-font">
+                  box-shadow: inset 0 0 0 1px <br />
+                  rgba(0, 0, 0, 0.2), 0 1px 3px #aaaaaa;
+                  <br />
+                  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+                </p>
+              </div>
+            </div>
+            <div class="stylish-buttons__column">
+              <div class="stylish-buttons__wrapper">
+                <p class="stylish-buttons__description md-font">
+                  background-image: <br />
+                  linear-gradient( <br />
+                  #b8e1fc 0%, <br />
+                  #90bcea 35%, #90bff0 50%, <br />
+                  #6ba8e5 51%, <br />
+                  #bdf3fd 100% );
+                </p>
+              </div>
+              <div class="stylish-buttons__block">
+                <button
+                  class="stylish-buttons__button stylish-buttons__button_03 md-font"
+                >
+                  Стильная кнопка
+                </button>
+              </div>
+              <div class="stylish-buttons__wrapper">
+                <p class="stylish-buttons__description md-font">
+                  box-shadow: inset 0 0 0 1px <br />
+                  rgba(0, 0, 0, 0.2), 0 1px 3px #aaaaaa;
+                  <br />
+                  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- stylish-buttons Стильные кнопки -->
+
+        <!-- linear-gradient-continuation -->
+        <section id="footer" class="footer">
+          <p class="footer__text md-font">
+            Градиенты достаточно популярны среди веб-дизайнеров, но их
+            добавление усложняется разными свойствами под каждый браузер и
+            указанием множества цветов. Чтобы было проще создавать градиенты и
+            вставлять их в код, рекомендуется
+            <a
+              class="footer__link"
+              href="https://www.colorzilla.com/gradient-editor/"
+              >сайт www.colorzilla.com/gradient-editor</a
+            >
+            с помощью которого легко настроить градиенты и сразу получить нужный
+            код. Имеются готовые шаблоны (Presets), просмотр результата
+            (Preview), настройка цветов (Adjustments), конечный код (CSS),
+            который поддерживает IE через фильтры.
+          </p>
+        </section>
+        <!-- linear-gradient-continuation -->
+      </article>
+
+      <!-- menu-mobile -->
+      <div class="menu-mobile">
+        <img
+          src="../assets/logotype/smallLogo.svg"
+          class="menu-mobile__logo-small"
+        />
+        <div class="menu-mobile__dots">
+          <div class="menu-mobile__dots_item"></div>
+          <div class="menu-mobile__dots_item"></div>
+          <div class="menu-mobile__dots_item"></div>
+        </div>
+      </div>
+      <!-- menu-mobile -->
+    </main>
+    <!-- main -->
+    <!-- menu -->
+    <nav class="menu">
+      <!-- transform-list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/transformations.html">
+          Двумерные трансформации</a
+        >
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#transformations"
+            >Трансформация элемента</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#translate-x"
+            >Сдвиг по горизонтали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#translate-y"
+            >Сдвиг по вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#translate"
+            >Сдвиг по горизонтали и вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#scale"
+            >Изменение масштаба элемента</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#scale-x"
+            >Изменение масштаба по горизонтали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#scale-y"
+            >Изменение масштаба по вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#rotate">Поворот элемента</a>
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#skew-x"
+            >Наклон элемента по горизонтали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#skew-y"
+            >Наклон элемента по вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#transform-origin"
+            >Координаты трансформации элемента.</a
+          >
+        </li>
+      </ul>
+      <!-- transform-list -->
+
+      <!-- transitions_list -->
+      <ul class="menu__list">
+        <a
+          class="menu__link h2-font"
+          href="../templates/smoothTransitions.html"
+        >
+          Плавные переходы
+        </a>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition"
+            >Универсальное свойство</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-duration"
+            >Длительность перехода</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-property"
+            >Какие свойства плавно изменять</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-delay"
+            >Задержка перехода
+          </a>
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-timing-function"
+            >Скорость и ускорение переходов
+          </a>
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#example"
+            >примеры timing-function переходов</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#graphics-transition"
+            >Графики переходов</a
+          >
+        </li>
+      </ul>
+      <!-- transitions_list -->
+
+      <!-- gradient_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/linearGradient.html">
+          Линейный градиент</a
+        >
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#linear-gradient"
+            >Линейный градиент</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#examples"
+            >Примеры прямых и диогональных переходов</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#angled-gradients"
+            >Градиенты под углом</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#sample-flower"
+            >Градиенты под углом, пример:</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#sample"
+            >Множество градиентов</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#color-stop">
+            Пропорции цветов и колорстопы</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#color-stop-sample"
+            >Примеры колор стопов</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#repeating-gradient">
+            Повторяющийся линейный градиент</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#stylish-buttons"
+            >Стильные кнопки</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#footer">Рекомендации</a>
+        </li>
+      </ul>
+      <!-- gradient_list -->
+
+      <!-- shadow_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/boxShadow.html">
+          Тени box-shadow
+        </a>
+
+        <li class="menu__item menu__shadow">
+          <a class="menu__item_link md-font" href="#box-shadow">
+            Тени box-shadow</a
+          >
+        </li>
+      </ul>
+      <!-- shadow_list -->
+
+      <!-- stuff_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/coolStuff.html"
+          >Крутые вещи</a
+        >
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#custom-shadows"
+            >Нестандартные тени</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#hover-active">
+            Эффекты при наведении на кнопки</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#active-gallery">
+            Эффекты при наведении на галерею</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#stack-cards"
+            >"Стопка" карт</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#centering"
+            >Центрирование изображений
+          </a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#aspect-ratio">
+            Свойство CSS aspect-ratio: X / Y</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#after-before"
+            >::after и ::before</a
+          >
+        </li>
+
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+      </ul>
+      <!-- stuff_list -->
+
+      <!-- forms_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/forms.html">
+          Форма "form"
+        </a>
+
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#box-shadow">
+            Форма "form"</a
+          >
+        </li>
+      </ul>
+      <!-- forms_list -->
+
+      <!-- table_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/table.html">
+          Таблица
+        </a>
+
+        <li class="menu__item menu__table">
+          <a class="menu__item_link md-font" href="#table"> Таблица</a>
+        </li>
+      </ul>
+      <!-- table_list -->
+    </nav>
+    <!-- menu -->
+    <!-- header  -->
+    <header class="header"></header>
+    <!-- header  -->
+  </body>
+</html>

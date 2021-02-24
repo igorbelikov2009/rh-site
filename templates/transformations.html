@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/css/typography.css" />
+    <link rel="stylesheet" href="../styles/css/reset.css" />
+    <link rel="stylesheet" href="../styles/css/grids.css" />
+    <link rel="stylesheet" href="../styles/css/general.css" />
+    <link rel="stylesheet" href="../styles/css/transformations.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- main -->
+    <main class="main">
+      <article class="transformations-container">
+        <!-- transformations -->
+        <div id="transformations" class="transformations">
+          <h1 class="transformations__heading h2-font-h1">
+            Двухмерные трансформации
+            <a
+              class="transformations__link"
+              href="http://htmlbook.ru/css/transform"
+            >
+              свойство transform</a
+            >
+          </h1>
+          <h2 class="transformations__subheading h2-font">Описание</h2>
+          <p class="transformations__description md-font">
+            Трансформирует элемент, в частности, позволяет его масштабировать,
+            вращать, сдвигать, наклонять, а также комбинировать виды
+            трансформаций.
+          </p>
+          <p class="transformations__description md-font">
+            Используется, как для создания динамического поведения объектов
+            (например, при наведении мышки :hover), так и статических
+            декоративных эффектов при вёрстке. Можно крутить, наклонять,
+            перемещать, уменьшать и увеличивать объекты, изменять их форму.
+          </p>
+          <h2 class="transformations__subheading h2-font">Синтаксис</h2>
+          <p class="transformations__syntax md-font">
+            transform: <функция> [<функция>]* | none <br />
+            transform: функция трансформации(значение трансформации)
+          </p>
+          <h2 class="transformations__subheading h2-font">Значения</h2>
+          <p class="transformations__description md-font">
+            <b> функция </b> <br />
+            Функция трансформации.
+          </p>
+          <p class="transformations__description md-font">
+            <b>none </b>
+            <br />
+            Отменяет действие трансформации.
+          </p>
+          <h2 class="transformations__subheading h2-font">
+            В CSS используется обратная система координат.
+          </h2>
+          <div class="transformations__coordinate-system">
+            <div class="transformations__coordinate-image">
+              <div
+                class="transformations__coordinate-picture"
+                style="
+                  background-image: url(../assets/images/coordinatesTrimed.png);
+                "
+              ></div>
+            </div>
+            <div class="transformations__coordinate-description">
+              <p class="transformations__description md-font">
+                Её ключевой особенностью является то, что ось Y направлена вниз,
+                а не вверх, так как веб-страница начинается с левого верхнего
+                угла и идет вниз,
+              </p>
+              <p class="transformations__description md-font">
+                В связи с этим, положительные значения трансформации по оси Y
+                переместят объект вертикально вниз. Для движения вверх
+                используется отрицательное значение трансформации.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- transformations -->
+
+        <!-- transform: translate-x; -->
+        <section id="translate-x" class="translate-x">
+          <h1 class="translate-x__heading h2-font-h1">
+            transform: translateX;
+          </h1>
+          <p class="translate-x__description md-font">
+            Сдвигает элемент по горизонтали на указанное значение. Положительное
+            значение сдвигает вправо, отрицательное влево.Значение функции
+            трансформации численное, а возможные единицы измерения — px, %, em
+            или in.
+          </p>
+          <p class="translate-x__syntax md-font">transform: translateX(tx)</p>
+          <div class="translate-x__examples">
+            <!-- __block -->
+            <div class="translate-x__block">
+              <p class="translate-x__formula md-font">исходное положение</p>
+              <div class="translate-x__zone">
+                <div class="translate-x__start">
+                  <div class="translate-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate-x__block">
+              <p class="translate-x__formula md-font">
+                статическое изменение
+                <span class="translate-x__span md-font"
+                  >transform: translateX(50px);</span
+                >
+              </p>
+              <div class="translate-x__zone translate-x__zone_02">
+                <div class="translate-x__start translate-x__position_02">
+                  <div class="translate-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate-x__block">
+              <p class="translate-x__formula md-font">
+                статическое изменение
+                <span class="translate-x__span md-font"
+                  >transform: translateX(-50px);</span
+                >
+              </p>
+              <div class="translate-x__zone translate-x__zone_03">
+                <div class="translate-x__start translate-x__position_03">
+                  <div class="translate-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate-x__block">
+              <p class="translate-x__formula md-font">
+                динамическое изменение
+                <span class="translate-x__span md-font"
+                  >transform: translateX(50px);</span
+                >
+              </p>
+              <div class="translate-x__zone translate-x__zone_04">
+                <div class="translate-x__start translate-x__position_04">
+                  <div class="translate-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate-x__block">
+              <p class="translate-x__formula md-font">
+                динамическое изменение
+                <span class="translate-x__span md-font"
+                  >transform: translateX(-50px);</span
+                >
+              </p>
+              <div class="translate-x__zone translate-x__zone_05">
+                <div class="translate-x__start translate-x__position_05">
+                  <div class="translate-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+          </div>
+        </section>
+        <!-- transform: translate-x; -->
+
+        <!-- transform: translate-y; -->
+        <section id="translate-y" class="translate-y">
+          <h1 class="translate-y__heading h2-font-h1">
+            transform: translateY;
+          </h1>
+          <p class="translate-y__description md-font">
+            Сдвигает элемент по вертикали на указанное значение. Положительное
+            значение сдвигает вниз, отрицательное вверх. Обратить внимание!!!
+            Для движения вверх используется отрицательное значение
+            трансформации.
+          </p>
+          <p class="translate-y__syntax md-font">transform: translateY(ty)</p>
+          <div class="translate-y__examples">
+            <!-- __block -->
+            <div class="translate-y__block">
+              <p class="translate-y__formula md-font">исходное положение</p>
+              <div class="translate-y__zone">
+                <div class="translate-y__start">
+                  <div class="translate-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate-y__block">
+              <p class="translate-y__formula md-font">
+                статическое изменение
+                <span class="translate-y__span md-font"
+                  >transform: translateY(20px);</span
+                >
+              </p>
+              <div class="translate-y__zone translate-y__zone_02">
+                <div class="translate-y__start translate-y__position_02">
+                  <div class="translate-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate-y__block">
+              <p class="translate-y__formula md-font">
+                статическое изменение
+                <span class="translate-y__span md-font"
+                  >transform: translateY(-20px);</span
+                >
+              </p>
+              <div class="translate-y__zone translate-y__zone_03">
+                <div class="translate-y__start translate-y__position_03">
+                  <div class="translate-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate-y__block">
+              <p class="translate-y__formula md-font">
+                динамическое изменение
+                <span class="translate-y__span md-font"
+                  >transform: translateY(20px);</span
+                >
+              </p>
+              <div class="translate-y__zone translate-y__zone_04">
+                <div class="translate-y__start translate-y__position_04">
+                  <div class="translate-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate-y__block">
+              <p class="translate-y__formula md-font">
+                динамическое изменение
+                <span class="translate-y__span md-font"
+                  >transform: translateY(-20px);</span
+                >
+              </p>
+              <div class="translate-y__zone translate-y__zone_05">
+                <div class="translate-y__start translate-y__position_05">
+                  <div class="translate-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+          </div>
+        </section>
+        <!-- transform: translate-y; -->
+
+        <!-- transform: translate;   -->
+        <section id="translate" class="translate">
+          <h1 class="translate__heading h2-font-h1">
+            transform: translate(); <br />
+            transform: (translateY translateX);
+          </h1>
+          <a
+            class="translate__heading_link md-font"
+            href="https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/"
+            >Быстрый трюк с CSS: как центрировать объект точно по центру
+          </a>
+          <p class="translate__description md-font">
+            Одновременно к объекту может быть применено несколько функций
+            трансформации. При этом функции
+            <b>перечисляются через пробел</b> после имени свойства transform,
+            например:
+            <br />
+            transform: translateY(-100px) translateX(100px). <br />
+            Такая трансформация переместит объект на 100 пикселей вправо и вверх
+            по оси координат. Те же действия выполнит, объединяющая перемещение
+            сразу по двум осям функция — <br />
+            translate: transform: translate(перемещение по оси X [, перемещение
+            по оси Y]) <br />
+            translate Сдвигает элемент на заданное значение по горизонтали и
+            вертикали.
+          </p>
+          <p class="translate__syntax md-font">
+            transform: translate(перемещение по оси X [, перемещение по оси Y])
+          </p>
+
+          <p class="translate__description md-font">
+            Квадратные скобки указывают на то, что значение перемещения по оси Y
+            является необязательным аргументом. В коде квадратные скобки писать
+            не нужно, два значения <b>перечисляются через запятую</b> <br />
+            transform: translate(50px<b>,</b> -50px);<br />
+            причём у них могут быть разные единицы измерения. Если не указать
+            значение перемещения по оси Y, а написать translate(перемещение по
+            оси X), то значение перемещения по Y будет считаться равным 0 и
+            функция будет работать аналогично translateX.
+          </p>
+          <p class="translate__description md-font">
+            // Эти функции работают одинаково: <br />
+            transform: translate(100px); <br />
+            transform: translate(100px, 0); <br />
+            transform: translateX(100px); <br />
+          </p>
+          <p class="translate__description md-font">
+            В примере покажем одно и то же перемещение по горизонтали и
+            вертикали, заданное двумя разными функциями <br />
+            transform: translateX(50px) translateY(-45px); и <br />
+            transform: translate(50px, -45px);
+          </p>
+
+          <div class="translate__examples">
+            <!-- __block -->
+            <div class="translate__block">
+              <p class="translate__formula md-font">исходное положение</p>
+              <div class="translate__zone">
+                <div class="translate__start">
+                  <div class="translate__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate__block">
+              <p class="translate__formula md-font">
+                статическое изменение
+                <span class="translate__span md-font">
+                  transform: translateX(50px) translateY(-50px);</span
+                >
+              </p>
+              <div class="translate__zone translate__zone_02">
+                <div class="translate__start translate__position_02">
+                  <div class="translate__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate__block">
+              <p class="translate__formula md-font">
+                статическое изменение
+                <span class="translate__span md-font">
+                  transform: translate(50px, -45px);</span
+                >
+              </p>
+              <div class="translate__zone translate__zone_03">
+                <div class="translate__start translate__position_03">
+                  <div class="translate__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate__block">
+              <p class="translate__formula md-font">
+                динамическое изменение
+                <span class="translate__span md-font"
+                  >transform: translateX(50px) translateY(-45px);</span
+                >
+              </p>
+              <div class="translate__zone translate__zone_04">
+                <div class="translate__start translate__position_04">
+                  <div class="translate__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="translate__block">
+              <p class="translate__formula md-font">
+                динамическое изменение
+                <span class="translate__span md-font">
+                  transform: translate(50px, -45px);</span
+                >
+              </p>
+              <div class="translate__zone translate__zone_05">
+                <div class="translate__start translate__position_05">
+                  <div class="translate__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+          </div>
+        </section>
+        <!-- transform: translate;   -->
+
+        <!-- transform: scale; -->
+        <section id="scale" class="scale">
+          <h1 class="scale__heading h2-font-h1">transform: scale();</h1>
+          <p class="scale__description md-font">
+            Масштаб элемента по горизонтали и вертикали.
+          </p>
+          <p class="scale__syntax md-font">transform: scale(sx[, sy]);</p>
+          <p class="scale__description md-font">
+            Значение больше 1 увеличивает масштаб элемента, меньше 1 — уменьшает
+            масштаб.
+          </p>
+
+          <p class="scale__description md-font">
+            Вообще функция scale, как и translate, принимает 2 аргумента:
+          </p>
+          <p class="scale__description md-font">
+            scale(масштаб-по-X [, масштаб-по-Y])
+          </p>
+          <p class="scale__description md-font">
+            Если необязательный аргумент масштаб-по-Y не задан, то считается,
+            что он такой же, как масштаб-по-X:
+          </p>
+          <p class="scale__description md-font">
+            transform: scale(2) то же самое, что transform: scale(2, 2)
+          </p>
+
+          <p class="scale__description md-font">
+            Рассмотрим примеры: <br />
+
+            transform: scale(0.5); уменьшит объект в 2 раза; <br />
+            transform: scale(2); увеличит объект в 2 раза; <br />
+            transform: scale(0); полностью «схлопнет» объект, и его не будет
+            видно; <br />
+            transform: scale(1); оставит объект без изменений.
+          </p>
+          <div class="scale__examples">
+            <!-- __block -->
+            <div class="scale__block">
+              <p class="scale__formula md-font">исходное положение</p>
+              <div class="scale__zone">
+                <div class="scale__start">
+                  <div class="scale__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale__block">
+              <p class="scale__formula md-font">
+                уменьшит объект в 2 раза, сожмёт к центру по осям;
+                <span class="scale__span md-font"
+                  >:hover {transform: scale(0.5);} <br />
+                  :active {transform: scale(2);}
+                </span>
+              </p>
+              <div class="scale__zone scale__zone_02">
+                <div class="scale__start scale__position_02">
+                  <div class="scale__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale__block">
+              <p class="scale__formula md-font">
+                увеличит объект в 2 раза во все стороны по осям;
+                <span class="scale__span md-font">
+                  :hover {transform: scale(2);} <br />
+                  :active {transform: scale(0.5);}
+                </span>
+              </p>
+
+              <div class="scale__zone scale__zone_03">
+                <div class="scale__start scale__position_03">
+                  <div class="scale__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale__block">
+              <p class="scale__formula md-font">
+                полностью «схлопнет» объект, и его не будет видно;
+                <span class="scale__span md-font">
+                  :hover {transform: scale(0);} <br />
+                  :active {transform: scale(2);}
+                </span>
+              </p>
+              <div class="scale__zone scale__zone_04">
+                <div class="scale__start scale__position_04">
+                  <div class="scale__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale__block">
+              <p class="scale__formula md-font">
+                оставит объект без изменений
+                <span class="scale__span md-font">transform: scale(1);</span>
+              </p>
+              <div class="scale__zone scale__zone_05">
+                <div class="scale__start scale__position_05">
+                  <div class="scale__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+          </div>
+          <p class="scale__description md-font">
+            Также в случае, когда необходимо масштабировать объект только по
+            одной оси независимо от другой, существуют функции
+            scaleX(масштаб-по-Х) и scaleY(масштаб-по-Y).
+          </p>
+        </section>
+        <!-- transform: scale; -->
+
+        <!-- transform: scale-x; -->
+        <section id="scale-x" class="scale-x">
+          <h1 class="scale-x__heading h2-font-h1">transform: scaleX;</h1>
+          <p class="scale-x__description md-font">
+            Масштабирует элемент по горизонтали.
+          </p>
+          <p class="scale-x__syntax md-font">transform: scaleX(sx);</p>
+          <p class="scale-x__description md-font">
+            Значение больше 1 увеличивает масштаб элемента, меньше 1 — уменьшает
+            масштаб.
+          </p>
+
+          <p class="scale-x__description md-font">
+            Рассмотрим примеры: <br />
+
+            transform: scaleX(0.5); уменьшит объект в 2 раза по горизонтали;
+            <br />
+            transform: scaleX(2); увеличит объект в 2 раза по горизонтали;
+            <br />
+            transform: scaleX(0); полностью «схлопнет» объект, и его не будет
+            видно; <br />
+            transform: scaleX(1); оставит объект без изменений.
+          </p>
+          <div class="scale-x__examples">
+            <!-- __block -->
+            <div class="scale-x__block">
+              <p class="scale-x__formula md-font">исходное положение</p>
+              <div class="scale-x__zone">
+                <div class="scale-x__start">
+                  <div class="scale-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale-x__block">
+              <p class="scale-x__formula md-font">
+                уменьшит объект в 2 раза по горизонтали;
+                <span class="scale-x__span md-font"
+                  >:hover {transform: scaleX(0.5);} <br />
+                  :active {transform: scaleX(2);}
+                </span>
+              </p>
+              <div class="scale-x__zone scale-x__zone_02">
+                <div class="scale-x__start scale-x__position_02">
+                  <div class="scale-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale-x__block">
+              <p class="scale-x__formula md-font">
+                увеличит объект в 2 раза по горизонтали;
+                <span class="scale-x__span md-font">
+                  :hover {transform: scaleX(2);} <br />
+                  :active {transform: scaleX(0.5);}
+                </span>
+              </p>
+
+              <div class="scale-x__zone scale-x__zone_03">
+                <div class="scale-x__start scale-x__position_03">
+                  <div class="scale-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale-x__block">
+              <p class="scale-x__formula md-font">
+                полностью «схлопнет» объект, и его не будет видно;
+                <span class="scale-x__span md-font">
+                  :hover {transform: scaleX(0);} <br />
+                  :active {transform: scaleX(2);}
+                </span>
+              </p>
+              <div class="scale-x__zone scale-x__zone_04">
+                <div class="scale-x__start scale-x__position_04">
+                  <div class="scale-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale-x__block">
+              <p class="scale-x__formula md-font">
+                оставит объект без изменений
+                <span class="scale-x__span md-font">transform: scaleX(1);</span>
+              </p>
+              <div class="scale-x__zone scale-x__zone_05">
+                <div class="scale-x__start scale-x__position_05">
+                  <div class="scale-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+          </div>
+        </section>
+        <!-- transform: scale-x; -->
+
+        <!-- transform: scale-y; -->
+        <section id="scale-y" class="scale-y">
+          <h1 class="scale-y__heading h2-font-h1">transform: scaleY;</h1>
+          <p class="scale-y__description md-font">
+            Масштабирует элемент по вертикали.
+          </p>
+          <p class="scale-y__syntax md-font">transform: scaleY(sy);</p>
+          <p class="scale-y__description md-font">
+            Значение больше 1 увеличивает масштаб элемента, меньше 1 — уменьшает
+            масштаб.
+          </p>
+
+          <p class="scale-y__description md-font"></p>
+          <p class="scale-y__description md-font"></p>
+          <p class="scale-y__description md-font"></p>
+          <p class="scale-y__description md-font"></p>
+
+          <p class="scale-y__description md-font">
+            Рассмотрим примеры: <br />
+
+            transform: scaleY(0.5); уменьшит объект в 2 раза по вертикали;
+            <br />
+            transform: scaleY(2); увеличит объект в 2 раза по вертикали; <br />
+            transform: scaleY(0); полностью «схлопнет» объект, и его не будет
+            видно; <br />
+            transform: scaleY(1); оставит объект без изменений.
+          </p>
+          <div class="scale-y__examples">
+            <!-- __block -->
+            <div class="scale-y__block">
+              <p class="scale-y__formula md-font">исходное положение</p>
+              <div class="scale-y__zone">
+                <div class="scale-y__start">
+                  <div class="scale-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale-y__block">
+              <p class="scale-y__formula md-font">
+                уменьшит объект в 2 раза по вертикали;
+                <span class="scale-y__span md-font"
+                  >:hover {transform: scaleY(0.5);} <br />
+                  :active {transform: scaleY(2);}
+                </span>
+              </p>
+              <div class="scale-y__zone scale-y__zone_02">
+                <div class="scale-y__start scale-y__position_02">
+                  <div class="scale-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale-y__block">
+              <p class="scale-y__formula md-font">
+                увеличит объект в 2 раза по вертикали;
+                <span class="scale-y__span md-font">
+                  :hover {transform: scaleY(2);} <br />
+                  :active {transform: scaleY(0.5);}
+                </span>
+              </p>
+
+              <div class="scale-y__zone scale-y__zone_03">
+                <div class="scale-y__start scale-y__position_03">
+                  <div class="scale-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale-y__block">
+              <p class="scale-y__formula md-font">
+                полностью «схлопнет» объект, и его не будет видно;
+                <span class="scale-y__span md-font">
+                  :hover {transform: scaleY(0);} <br />
+                  :active {transform: scaleY(2);}
+                </span>
+              </p>
+              <div class="scale-y__zone scale-y__zone_04">
+                <div class="scale-y__start scale-y__position_04">
+                  <div class="scale-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="scale-y__block">
+              <p class="scale-y__formula md-font">
+                оставит объект без изменений
+                <span class="scale-y__span md-font">transform: scaleY(1);</span>
+              </p>
+              <div class="scale-y__zone scale-y__zone_05">
+                <div class="scale-y__start scale-y__position_05">
+                  <div class="scale-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+          </div>
+        </section>
+        <!-- transform: scale-y; -->
+
+        <!-- transform: rotate; -->
+        <section id="rotate" class="rotate">
+          <h1 class="rotate__heading h2-font-h1">transform: rotate;</h1>
+          <p class="rotate__description md-font">
+            Поворот элемента на заданный угол относительно точки трансформации,
+            задаваемой свойством
+            <a
+              class="rotate__description_link md-font"
+              href="http://htmlbook.ru/css/transform-origin"
+              >transform-origin.</a
+            >
+          </p>
+          <p class="rotate__syntax md-font">transform: rotate(<угол>);</p>
+          <div class="rotate__full-description">
+            <div class="rotate__block-image col-3 col-md-2">
+              <img
+                class="rotate__image-rotate"
+                src="../assets/images/htmlAcademy/rotate.png"
+                alt=""
+              />
+            </div>
+            <div class="col-9 col-md-10">
+              <p class="rotate__description md-font">
+                Положительное значение угла повернёт объект по часовой стрелке,
+                а отрицательное — против. Единица измерения поворота — градусы
+                deg, например: transform: rotate(180deg) повернёт объект на 180°
+                по часовой стрелке, то есть перевернёт его.
+              </p>
+            </div>
+          </div>
+
+          <p class="rotate__description md-font">
+            Рассмотрим примеры: <br />
+
+            transform: rotate(45deg); повернёт объект на 45° по часовой стрелке;
+            <br />
+            transform: rotate(90deg); повернёт объект на 90° по часовой стрелке;
+            <br />
+            transform: rotate(-45deg); повернёт объект на 45° против часовой
+            стрелки; <br />
+            transform: rotate(-90deg); повернёт объект на 90° против часовой
+            стрелки.
+          </p>
+          <div class="rotate__examples">
+            <!-- __block -->
+            <div class="rotate__block">
+              <p class="rotate__formula md-font">исходное положение</p>
+              <div class="rotate__zone">
+                <div class="rotate__start">
+                  <div class="rotate__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="rotate__block">
+              <p class="rotate__formula md-font">
+                повернёт объект на 45° (135°) по часовой стрелке;
+                <span class="rotate__span md-font"
+                  >:hover {transform: rotate(45deg);} <br />
+                  :active {transform: rotate(135deg);}
+                </span>
+              </p>
+              <div class="rotate__zone rotate__zone_02">
+                <div class="rotate__start rotate__position_02">
+                  <div class="rotate__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="rotate__block">
+              <p class="rotate__formula md-font">
+                повернёт объект на 90° (180°) по часовой стрелке;
+                <span class="rotate__span md-font">
+                  :hover { transform: rotate(90deg);} <br />
+                  :active { transform: rotate(180deg);}
+                </span>
+              </p>
+
+              <div class="rotate__zone rotate__zone_03">
+                <div class="rotate__start rotate__position_03">
+                  <div class="rotate__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="rotate__block">
+              <p class="rotate__formula md-font">
+                повернёт объект на 45° (135°) против часовой стрелки;
+                <span class="rotate__span md-font">
+                  :hover { transform: rotate(-45deg);} <br />
+                  :active { transform: rotate(-135deg);}
+                </span>
+              </p>
+              <div class="rotate__zone rotate__zone_04">
+                <div class="rotate__start rotate__position_04">
+                  <div class="rotate__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="rotate__block">
+              <p class="rotate__formula md-font">
+                повернёт объект на 90° (180°) против часовой стрелки.
+                <span class="rotate__span md-font">
+                  :hover { transform: rotate(-90deg);} <br />
+                  :active { transform: rotate(-180deg);}</span
+                >
+              </p>
+              <div class="rotate__zone rotate__zone_05">
+                <div class="rotate__start rotate__position_05">
+                  <div class="rotate__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+          </div>
+
+          <p class="rotate__description md-font">
+            При совместном применении трансформации поворота и перемещения есть
+            небольшая тонкость. При повороте вместе с объектом на заданный угол
+            поворачивается и вся его система координат:
+          </p>
+          <div class="rotate__full-description">
+            <div class="rotate__block-image col-12">
+              <img
+                class="rotate__rotate-direction"
+                src="../assets/images/htmlAcademy/rotateDirection.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <p class="rotate__description md-font"></p>
+          <p class="rotate__description md-font"></p>
+          <p class="rotate__description md-font"></p>
+        </section>
+        <!-- transform: rotate; -->
+
+        <!-- transform: skew-x; -->
+        <section id="skew-x" class="skew-x">
+          <h1 class="skew-x__heading h2-font-h1">transform: skewX;</h1>
+          <p class="skew-x__description md-font">
+            Наклоняет элемент на заданный угол по горизонтали.
+          </p>
+          <p class="skew-x__syntax md-font">transform: skewX(<угол>)</p>
+          <div class="skew-x__examples">
+            <!-- __block -->
+            <div class="skew-x__block">
+              <p class="skew-x__formula md-font">исходное положение</p>
+              <div class="skew-x__zone">
+                <div class="skew-x__start">
+                  <div class="skew-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="skew-x__block">
+              <p class="skew-x__formula md-font">
+                статическое изменение
+                <span class="skew-x__span md-font"
+                  >transform: skewX(15deg);</span
+                >
+              </p>
+              <div class="skew-x__zone skew-x__zone_02">
+                <div class="skew-x__start skew-x__position_02">
+                  <div class="skew-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="skew-x__block">
+              <p class="skew-x__formula md-font">
+                статическое изменение
+                <span class="skew-x__span md-font"
+                  >transform: skewX(-15deg);</span
+                >
+              </p>
+              <div class="skew-x__zone skew-x__zone_03">
+                <div class="skew-x__start skew-x__position_03">
+                  <div class="skew-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="skew-x__block">
+              <p class="skew-x__formula md-font">
+                динамическое изменение
+                <span class="skew-x__span md-font"
+                  >transform: skewX(45deg);</span
+                >
+              </p>
+              <div class="skew-x__zone skew-x__zone_04">
+                <div class="skew-x__start skew-x__position_04">
+                  <div class="skew-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="skew-x__block">
+              <p class="skew-x__formula md-font">
+                динамическое изменение
+                <span class="skew-x__span md-font"
+                  >transform: skewY(-45deg);</span
+                >
+              </p>
+              <div class="skew-x__zone skew-x__zone_05">
+                <div class="skew-x__start skew-x__position_05">
+                  <div class="skew-x__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+          </div>
+        </section>
+        <!-- transform: skew-x; -->
+
+        <!-- transform: skew-y; -->
+        <section id="skew-y" class="skew-y">
+          <h1 class="skew-y__heading h2-font-h1">transform: skewY;</h1>
+          <p class="skew-y__description md-font">
+            Наклоняет элемент на заданный угол по вертикали.
+          </p>
+          <p class="skew-y__syntax md-font">transform: skewY(<угол>)</p>
+          <div class="skew-y__examples">
+            <!-- __block -->
+            <div class="skew-y__block">
+              <p class="skew-y__formula md-font">исходное положение</p>
+              <div class="skew-y__zone">
+                <div class="skew-y__start">
+                  <div class="skew-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="skew-y__block">
+              <p class="skew-y__formula md-font">
+                статическое изменение
+                <span class="skew-y__span md-font"
+                  >transform: skewY(15deg);</span
+                >
+              </p>
+              <div class="skew-y__zone skew-y__zone_02">
+                <div class="skew-y__start skew-y__position_02">
+                  <div class="skew-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="skew-y__block">
+              <p class="skew-y__formula md-font">
+                статическое изменение
+                <span class="skew-y__span md-font"
+                  >transform: skewY(-15deg);</span
+                >
+              </p>
+              <div class="skew-y__zone skew-y__zone_03">
+                <div class="skew-y__start skew-y__position_03">
+                  <div class="skew-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="skew-y__block">
+              <p class="skew-y__formula md-font">
+                динамическое изменение
+                <span class="skew-y__span md-font"
+                  >transform: skewY(45deg);</span
+                >
+              </p>
+              <div class="skew-y__zone skew-y__zone_04">
+                <div class="skew-y__start skew-y__position_04">
+                  <div class="skew-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="skew-y__block">
+              <p class="skew-y__formula md-font">
+                динамическое изменение
+                <span class="skew-y__span md-font"
+                  >transform: skewY(-45deg);</span
+                >
+              </p>
+              <div class="skew-y__zone skew-y__zone_05">
+                <div class="skew-y__start skew-y__position_05">
+                  <div class="skew-y__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+          </div>
+        </section>
+        <!-- transform: skew-y; -->
+
+        <!-- transform-origin  -->
+        <section id="transform-origin" class="transform-origin">
+          <h1 class="transform-origin__heading h2-font-h1">transform-origin</h1>
+          <p class="transform-origin__description md-font">
+            Устанавливает координаты точки, относительно которой будет
+            происходить трансформация элемента.
+          </p>
+          <p class="transform-origin__description md-font">
+            Синтаксис transform-origin для трёхмерных трансформаций следующий:
+          </p>
+          <p class="transform-origin__syntax md-font">
+            transform-origin: (X) (Y) (X)
+          </p>
+          <p class="transform-origin__description md-font">
+            <b>(X)</b> Координата по оси X. Может принимать следующие значения:
+          </p>
+          <p class="transform-origin__description md-font">
+            | длина | проценты | left | center | right
+          </p>
+          <p class="transform-origin__description md-font">
+            Здесь <b>длина</b> — любая единица измерения CSS.
+          </p>
+          <p class="transform-origin__description md-font">
+            <b>(Y)</b> Координата по оси Y. Может принимать следующие значения:
+          </p>
+          <p class="transform-origin__description md-font">
+            | длина | проценты | top | center | bottom
+          </p>
+          <p class="transform-origin__description md-font">
+            <b>(Z)</b> Координата по оси Z. Может задаваться только в любых
+            корректных единицах для измерения длины (исключая проценты).
+          </p>
+          <p class="transform-origin__description md-font">
+            Оси и значения показаны на рис.
+          </p>
+
+          <div class="transform-origin__block-image">
+            <img
+              class="transform-origin__image-origin"
+              src="../assets/images/htmlAcademy/imageOrigin.png"
+              alt=""
+            />
+          </div>
+          <p class="transform-origin__description md-font">
+            Это свойство используется совместно со свойством transform и задаёт
+            точку отсчёта системы координат, в рамках которой будет работать
+            трансформация.
+          </p>
+          <p class="transform-origin__description md-font">
+            Синтаксис transform-origin для двухмерных трансформаций следующий:
+          </p>
+          <p class="transform-origin__description md-font">
+            transform-origin: точка-отсчёта-по-X [точка-отсчёта-по-Y]
+          </p>
+          <p class="transform-origin__description md-font">
+            Значения свойства задаётся в единицах измерения ширины в браузере
+            (px, em...), в %, а также ключевыми словами left, right, top, bottom
+            и center.
+          </p>
+          <p class="transform-origin__description md-font">
+            По умолчанию, значение transform-origin равно 50% 50%, то есть
+            начало системы координат находится в центре объекта. Если не
+            указывать значение точка-отсчёта-по-Y, то оно считается равным 50%.
+          </p>
+          <p class="transform-origin__description md-font"></p>
+          <p class="transform-origin__description md-font"></p>
+          <p class="transform-origin__description md-font"></p>
+          <div class="transform-origin__examples">
+            <!-- __block -->
+            <div class="transform-origin__block">
+              <p class="transform-origin__formula md-font">
+                исходное положение
+              </p>
+
+              <div class="transform-origin__zone">
+                <div class="transform-origin__start">
+                  <div class="transform-origin__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="transform-origin__block">
+              <p class="transform-origin__formula md-font">
+                начало системы координат находится в центре <br />
+                <span class="transform-origin__span md-font">
+                  transform: scale(0.5) rotate(-270deg);<br />
+                  transition: transform 1s ease; <br />
+                </span>
+                по умолчанию.
+              </p>
+              <div class="transform-origin__zone transform-origin__zone_02">
+                <div
+                  class="transform-origin__start transform-origin__position_02"
+                >
+                  <div class="transform-origin__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="transform-origin__block">
+              <p class="transform-origin__formula md-font">
+                начало системы координат вверху слева <br />
+                <span class="transform-origin__span md-font">
+                  transform: scale(0.5) rotate(-270deg); <br />
+                  transform-origin: top left; <br />
+                  transition: transform 1s ease;</span
+                >
+              </p>
+              <div class="transform-origin__zone transform-origin__zone_03">
+                <div
+                  class="transform-origin__start transform-origin__position_03"
+                >
+                  <div class="transform-origin__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="transform-origin__block">
+              <p class="transform-origin__formula md-font">
+                начало системы координат вверху справа <br />
+                <span class="transform-origin__span md-font">
+                  transform: scale(0.5) rotate(-270deg); <br />
+                  transform-origin: top right; <br />
+                  transition: transform 1s ease;</span
+                >
+              </p>
+              <div class="transform-origin__zone transform-origin__zone_04">
+                <div
+                  class="transform-origin__start transform-origin__position_04"
+                >
+                  <div class="transform-origin__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+
+            <!-- __block -->
+            <div class="transform-origin__block">
+              <p class="transform-origin__formula md-font">
+                начало системы координат в центре правой стороны
+                <span class="transform-origin__span md-font">
+                  transform: scale(0.5) rotate(-270deg); <br />
+                  transform-origin: 100% 50%; <br />
+                  transition: transform 1s ease;
+                </span>
+              </p>
+              <div class="transform-origin__zone transform-origin__zone_05">
+                <div
+                  class="transform-origin__start transform-origin__position_05"
+                >
+                  <div class="transform-origin__icon"></div>
+                </div>
+              </div>
+            </div>
+            <!-- __block -->
+          </div>
+        </section>
+        <!-- transform-origin  -->
+      </article>
+
+      <!-- menu-mobile -->
+      <div class="menu-mobile">
+        <img
+          src="../assets/logotype/smallLogo.svg"
+          class="menu-mobile__logo-small"
+        />
+        <div class="menu-mobile__dots">
+          <div class="menu-mobile__dots_item"></div>
+          <div class="menu-mobile__dots_item"></div>
+          <div class="menu-mobile__dots_item"></div>
+        </div>
+      </div>
+      <!-- menu-mobile -->
+    </main>
+    <!-- main -->
+
+    <!-- menu -->
+    <nav class="menu">
+      <!-- transform-list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/transformations.html">
+          Двумерные трансформации</a
+        >
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#transformations"
+            >Трансформация элемента</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#translate-x"
+            >Сдвиг по горизонтали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#translate-y"
+            >Сдвиг по вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#translate"
+            >Сдвиг по горизонтали и вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#scale"
+            >Изменение масштаба элемента</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#scale-x"
+            >Изменение масштаба по горизонтали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#scale-y"
+            >Изменение масштаба по вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#rotate">Поворот элемента</a>
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#skew-x"
+            >Наклон элемента по горизонтали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#skew-y"
+            >Наклон элемента по вертикали</a
+          >
+        </li>
+        <li class="menu__item menu__transform">
+          <a class="menu__item_link md-font" href="#transform-origin"
+            >Координаты трансформации элемента.</a
+          >
+        </li>
+      </ul>
+      <!-- transform-list -->
+
+      <!-- transitions_list -->
+      <ul class="menu__list">
+        <a
+          class="menu__link h2-font"
+          href="../templates/smoothTransitions.html"
+        >
+          Плавные переходы
+        </a>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition"
+            >Универсальное свойство</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-duration"
+            >Длительность перехода</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-property"
+            >Какие свойства плавно изменять</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-delay"
+            >Задержка перехода
+          </a>
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#transition-timing-function"
+            >Скорость и ускорение переходов
+          </a>
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#example"
+            >примеры timing-function переходов</a
+          >
+        </li>
+        <li class="menu__item menu__transitions">
+          <a class="menu__item_link md-font" href="#graphics-transition"
+            >Графики переходов</a
+          >
+        </li>
+      </ul>
+      <!-- transitions_list -->
+
+      <!-- gradient_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/linearGradient.html">
+          Линейный градиент</a
+        >
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#linear-gradient"
+            >Линейный градиент</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#examples"
+            >Примеры прямых и диогональных переходов</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#angled-gradients"
+            >Градиенты под углом</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#sample-flower"
+            >Градиенты под углом, пример:</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#sample"
+            >Множество градиентов</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#color-stop">
+            Пропорции цветов и колорстопы</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#color-stop-sample"
+            >Примеры колор стопов</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#repeating-gradient">
+            Повторяющийся линейный градиент</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#stylish-buttons"
+            >Стильные кнопки</a
+          >
+        </li>
+        <li class="menu__item menu__gradient">
+          <a class="menu__item_link md-font" href="#footer">Рекомендации</a>
+        </li>
+      </ul>
+      <!-- gradient_list -->
+
+      <!-- shadow_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/boxShadow.html">
+          Тени box-shadow
+        </a>
+
+        <li class="menu__item menu__shadow">
+          <a class="menu__item_link md-font" href="#box-shadow">
+            Тени box-shadow</a
+          >
+        </li>
+      </ul>
+      <!-- shadow_list -->
+
+      <!-- stuff_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/coolStuff.html"
+          >Крутые вещи</a
+        >
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#custom-shadows"
+            >Нестандартные тени</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#hover-active">
+            Эффекты при наведении на кнопки</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#active-gallery">
+            Эффекты при наведении на галерею</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#stack-cards"
+            >"Стопка" карт</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#centering"
+            >Центрирование изображений
+          </a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#aspect-ratio">
+            Свойство CSS aspect-ratio: X / Y</a
+          >
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href="#after-before"
+            >::after и ::before</a
+          >
+        </li>
+
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+        <li class="menu__item menu__stuff">
+          <a class="menu__item_link md-font" href=""></a>
+        </li>
+      </ul>
+      <!-- stuff_list -->
+
+      <!-- forms_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/forms.html">
+          Форма "form"
+        </a>
+
+        <li class="menu__item menu__forms">
+          <a class="menu__item_link md-font" href="#box-shadow">
+            Форма "form"</a
+          >
+        </li>
+      </ul>
+      <!-- forms_list -->
+
+      <!-- table_list -->
+      <ul class="menu__list">
+        <a class="menu__link h2-font" href="../templates/table.html">
+          Таблица
+        </a>
+
+        <li class="menu__item menu__table">
+          <a class="menu__item_link md-font" href="#table"> Таблица</a>
+        </li>
+      </ul>
+      <!-- table_list -->
+    </nav>
+    <!-- menu -->
+    <!-- header -->
+    <header class="header"></header>
+    <!-- header -->
+  </body>
+</html>
