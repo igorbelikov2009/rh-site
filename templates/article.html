@@ -14,34 +14,31 @@
     <!-- menu -->
     <nav class="menu">
       <img
-        class="menu__logotype-wide"
+        class="menu__logo"
         src="../assets/logotype/wideLogotype.svg"
         alt=""
       />
-      <img
-        src="../assets/logotype/smallLogo.svg"
-        class="menu__logotype-small"
-      />
-      <form class="menu-item" method="post" action=" ">
-        <img src="../assets/images/menuDaria.jpg" class="menu-item__icon" />
-        <p class="menu-item__label md-font">Дарья Иванова</p>
-      </form>
+      <img class="menu__logo-small" src="../assets/logotype/smallLogo.svg" />
+      <div class="menu__sector">
+        <img src="../assets/images/menuDaria.jpg" class="menu__icon" />
+        <p class="menu__title">Дарья Иванова</p>
+      </div>
 
-      <a class="sub-header primary-link" href="">Страховки</a>
+      <a class="menu__sub sub-header" href="#">Страховки</a>
 
-      <a class="menu-item" href="">
-        <img src="../assets/icons/mediscinckaia.svg" class="menu-item__icon" />
-        <p class="menu-item__label md-font">Медицинская</p></a
+      <a class="menu__sector" href="#">
+        <img src="../assets/icons/mediscinckaia.svg" class="menu__icon" />
+        <p class="menu__title">Медицинская</p></a
       >
 
-      <a class="menu-item" href="">
-        <img src="../assets/icons/departure.svg" class="menu-item__icon" />
-        <p class="menu-item__label md-font">Для выезда за рубеж</p>
+      <a class="menu__sector" href="#">
+        <img src="../assets/icons/departure.svg" class="menu__icon" />
+        <p class="menu__title">Для выезда за рубеж</p>
       </a>
 
-      <a class="menu-item" href="">
-        <img src="../assets/icons/aPlus.svg" class="menu-item__icon" />
-        <p class="menu-item__label md-font">Добавить</p>
+      <a class="menu__sector" href="#">
+        <img src="../assets/icons/plus.svg" class="menu__icon" />
+        <p class="menu__title">Добавить</p>
       </a>
     </nav>
     <!-- menu -->
@@ -61,125 +58,224 @@
           class="menu-mobile__logo-small"
         />
         <div class="menu-mobile__dots">
-          <div class="menu-mobile__dots_item"></div>
-          <div class="menu-mobile__dots_item"></div>
-          <div class="menu-mobile__dots_item"></div>
+          <div class="menu-mobile__dot"></div>
+          <div class="menu-mobile__dot"></div>
+          <div class="menu-mobile__dot"></div>
         </div>
       </div>
       <!-- menu-mobile -->
 
       <!-- article -->
       <article class="article">
-        <h1 class="article__title h1-font">Джозеф Листер и антисептик</h1>
+        <div class="article__container">
+          <h1 class="article__heading">Джозеф Листер и антисептик</h1>
+        </div>
         <div
-          class="article__image-dhsosefLister"
+          class="article__image article__image_first"
           style="
-            background-image: url(../assets/images/articles/dhsosefLister1.jpg);
+            background-image: url(../assets/images/articles/antiseptic.jpg);
           "
         ></div>
-
-        <p class="article__paragraph article__paragraph_first md-font">
-          Использование антисептика сейчас кажется таким же элементарным
-          действием, как и ежедневная чистка зубов. Многие хранят в тумбочке
-          санитайзер.
-        </p>
-        <p class="article__paragraph article__paragraph_second sm-font">
-          Психосоматика устойчиво отчуждает гендерный тест, следовательно
-          основной закон психофизики: ощущение изменяется пропорционально
-          логарифму раздражителя . С феноменологической точки зрения, субъект
-          представляет собой объект. Скиннер, однако, настаивал, что онтогенез
-          речи притягивает экзистенциальный интеллект. Психе мгновенно понимает
-          материалистический аутотренинг. Здесь автор сталкивает два таких
-          достаточно далёких друг от друга явления как поведенческая терапия
-          конфронтально отчуждает ролевой.
-        </p>
+        <div class="article__container">
+          <p class="article__box article__box_first md-font">
+            Использование антисептика сейчас кажется таким же элементарным
+            действием, как и ежедневная чистка зубов. Многие хранят в тумбочке
+            санитайзер.
+          </p>
+          <p class="article__box article__box_second">
+            Психосоматика устойчиво отчуждает гендерный тест, следовательно
+            основной закон психофизики: ощущение изменяется пропорционально
+            логарифму раздражителя . С феноменологической точки зрения, субъект
+            представляет собой объект. Скиннер, однако, настаивал, что онтогенез
+            речи притягивает экзистенциальный интеллект. Психе мгновенно
+            понимает материалистический аутотренинг. Здесь автор сталкивает два
+            таких достаточно далёких друг от друга явления как поведенческая
+            терапия конфронтально отчуждает ролевой.
+          </p>
+        </div>
         <div
-          class="article__image-dhsosefLister"
-          style="
-            background-image: url(../assets/images/articles/dhsosefLister2.jpg);
-          "
+          class="article__image article__image_second"
+          style="background-image: url(../assets/images/articles/doctor.jpg)"
         ></div>
-        <h2 class="article__paragraph article__paragraph_third h2-font">
-          Заголовок второго уровня
-        </h2>
-        <p class="article__paragraph article__paragraph_fourth sm-font">
-          Психосоматика устойчиво отчуждает гендерный тест, следовательно
-          основной закон психофизики: ощущение изменяется пропорционально
-          логарифму раздражителя . С феноменологической точки зрения, субъект
-          представляет собой объект. Скиннер, однако, настаивал, что онтогенез
-          речи притягивает экзистенциальный интеллект. Психе мгновенно понимает
-          материалистический аутотренинг. Здесь автор сталкивает два таких
-          достаточно далёких друг от друга явления как поведенческая терапия
-          конфронтально отчуждает ролевой.
-        </p>
-        <p class="article__paragraph article__paragraph_fifth sm-font">
-          Примерно до середины XIX века дезинфекция не проводилась даже перед
-          операцией. Разумеется, часто случались серьезные заражения, и
-          смертность от хирургических вмешательств просто зашкаливала. Впрочем,
-          большинство врачей воспринимали такой ход событий как данность:
-          считалось, что человек просто не предназначен для вскрытия, поэтому
-          плохо переносит всякие там надрезы.
-        </p>
-        <p class="article__paragraph article__paragraph_sixth sm-font">
-          Результат работы Листера был мгновенно оценен: смертность после
-          операций снизилась в разы. А имя Джозефа Листера увековечили, назвав в
-          его честь бренд ополаскивателей для полости рта.
-        </p>
+        <div class="article__container">
+          <h2 class="article__subhead">Заголовок второго уровня</h2>
+          <p class="article__box article__box_third">
+            Психосоматика устойчиво отчуждает гендерный тест, следовательно
+            основной закон психофизики: ощущение изменяется пропорционально
+            логарифму раздражителя . С феноменологической точки зрения, субъект
+            представляет собой объект. Скиннер, однако, настаивал, что онтогенез
+            речи притягивает экзистенциальный интеллект. Психе мгновенно
+            понимает материалистический аутотренинг. Здесь автор сталкивает два
+            таких достаточно далёких друг от друга явления как поведенческая
+            терапия конфронтально отчуждает ролевой.
+          </p>
+          <p class="article__box article__box_fourth">
+            Примерно до середины XIX века дезинфекция не проводилась даже перед
+            операцией. Разумеется, часто случались серьезные заражения, и
+            смертность от хирургических вмешательств просто зашкаливала.
+            Впрочем, большинство врачей воспринимали такой ход событий как
+            данность: считалось, что человек просто не предназначен для
+            вскрытия, поэтому плохо переносит всякие там надрезы.
+          </p>
+          <p class="article__box article__box_fifth">
+            Результат работы Листера был мгновенно оценен: смертность после
+            операций снизилась в разы. А имя Джозефа Листера увековечили, назвав
+            в его честь бренд ополаскивателей для полости рта.
+          </p>
+        </div>
       </article>
 
+      <!-- articles -->
+      <section class="articles">
+        <div class="articles__heading">Другие материалы</div>
+
+        <div class="articles__bloc">
+          <div class="articles__column">
+            <div class="articles__box">
+              <img
+                class="articles__picture"
+                src="../assets/images/articles/boyCow.jpg"
+                alt=""
+              />
+
+              <div class="articles__subdiv">
+                <p class="articles__subhead articles__subhead_first">
+                  Детское здоровье
+                </p>
+
+                <p class="articles__title">Как защитить себя от клещей?</p>
+
+                <p class="articles__subtitle">
+                  11 советов поведения в лесу и парке
+                </p>
+              </div>
+            </div>
+
+            <div class="articles__box">
+              <div class="articles__subdiv">
+                <p class="articles__subhead articles__subhead_second">
+                  Про здоровье
+                </p>
+
+                <p class="articles__title">6 простых шагов к здоровью</p>
+
+                <p class="articles__subtitle">
+                  Регулярные меры по раннему выявлению и профилактике
+                  заболеваний
+                </p>
+              </div>
+            </div>
+
+            <div class="articles__box">
+              <div class="articles__subdiv">
+                <p class="articles__subhead articles__subhead_third">
+                  Привычки
+                </p>
+
+                <p class="articles__title">
+                  Привычка недели: работать с перерывами
+                </p>
+
+                <p class="articles__subtitle">
+                  В условиях стресса и на рабочем месте часто кажется, что
+                  отдыхать нельзя, нужно поднажать
+                </p>
+              </div>
+            </div>
+
+            <div class="articles__box">
+              <img
+                class="articles__picture"
+                src="../assets/images/articles/bananas.jpg"
+                alt=""
+              />
+
+              <div class="articles__subdiv">
+                <p class="articles__subhead articles__subhead_fourth">
+                  Превентивность
+                </p>
+
+                <p class="articles__title">Логика превентивного мышления</p>
+
+                <p class="articles__subtitle">
+                  Если усвоите эти вещи – считайте, что вы на коне
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="articles__column">
+            <div class="articles__box">
+              <div class="articles__subdiv">
+                <p class="articles__subhead articles__subhead_fifth">Мифы</p>
+
+                <p class="articles__title">
+                  Говорят, многоразовые прокладки — это негигиенично. Правда?
+                </p>
+
+                <p class="articles__subtitle">Разрушение легенд</p>
+              </div>
+            </div>
+
+            <div class="articles__box">
+              <img
+                class="articles__picture"
+                src="../assets/images/articles/lemons.jpg"
+                alt=""
+              />
+
+              <div class="articles__subdiv">
+                <p class="articles__subhead articles__subhead_sixth">ЗОЖ</p>
+
+                <p class="articles__title">
+                  Учимся правильно стирать простыни и разбираться в составе
+                  лекарств
+                </p>
+
+                <p class="articles__subtitle">Причём тут лимон?</p>
+              </div>
+            </div>
+
+            <div class="articles__box">
+              <img
+                class="articles__picture"
+                src="../assets/images/articles/ice.jpg"
+                alt=""
+              />
+
+              <div class="articles__subdiv">
+                <p class="articles__subhead articles__subhead_seventh">
+                  Привычки
+                </p>
+
+                <p class="articles__title">Привычка недели: уходить в офлайн</p>
+
+                <p class="articles__subtitle">Кратко о цифровом детоксе</p>
+              </div>
+            </div>
+
+            <div class="articles__box">
+              <div class="articles__subdiv">
+                <p class="articles__subhead articles__subhead_eighth">
+                  Страхование
+                </p>
+
+                <p class="articles__title">
+                  7 прав пациента, которые полезно знать каждому
+                </p>
+
+                <p class="articles__subtitle">Законы крепкого здоровья</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- articles-->
       <!-- article -->
     </main>
     <!-- main -->
 
     <!-- footer -->
 
-    <footer class="footer">
-      <div class="footer__container">
-        <h2 class="footer__title h2-font">Другие материалы</h2>
-        <div class="footer__row">
-          <div class="footer__column">
-            <!-- article-wrapper__secondary-habits -->
-
-            <div class="articles-wrapper">
-              <div
-                class="articles-wrapper__img"
-                style="background-image: url(../assets/images/articles/ice.jpg)"
-              ></div>
-              <div class="article-item">
-                <div
-                  class="article-item__label article-item__label_secondary-habits label"
-                >
-                  Привычки
-                </div>
-                <h2 class="article-item__title h2-font">
-                  Привычка недели: уходить в офлайн
-                </h2>
-                <div class="sm-font">Кратко о цифровом детоксе</div>
-              </div>
-            </div>
-            <!-- article-wrapper__secondary-habits -->
-          </div>
-          <div class="footer__column">
-            <!-- article-wrapper__insurance -->
-            <div class="articles-wrapper">
-              <div></div>
-              <div class="article-item">
-                <div
-                  class="article-item__label article-item__label_insurance label"
-                >
-                  Страхование
-                </div>
-                <h2 class="article-item__title h2-font">
-                  7 прав пациента, которые полезно знать каждому
-                </h2>
-                <p class="sm-font">Законы крепкого здоровья</p>
-              </div>
-            </div>
-            <!-- article-wrapper__insurance -->
-          </div>
-        </div>
-      </div>
-    </footer>
     <!-- footer -->
   </body>
 </html>
