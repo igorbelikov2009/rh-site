@@ -1,3 +1,11 @@
+body * {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #28323c; }
+
 .main {
   min-height: 100vh; }
 
@@ -14,95 +22,79 @@
       padding-left: 28px;
       padding-right: 28px; } }
 
-.row {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -12px;
-  margin-left: -12px; }
-
-.p-l {
-  padding-left: 12px;
-  box-sizing: border-box; }
-
-.p-r {
-  padding-right: 12px;
-  box-sizing: border-box; }
-
-.page {
-  width: 100%; }
-
 .top-block {
   width: 100%;
+  max-height: 384px;
   display: flex;
   justify-content: flex-end;
-  min-height: 624px;
-  padding-top: 72px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
   .top-block__container {
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding-top: 120px;
+    padding-bottom: 48px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; }
-  .top-block__headering {
+  .top-block__heading {
+    font-size: 18px;
+    line-height: 24px;
     color: #ffffff;
-    margin-bottom: 48px; }
-    .top-block__headering_span {
-      display: block; }
-  .top-block__offer {
+    margin-top: 48px;
+    margin-bottom: 24px; }
+    @media screen and (min-width: 818px) {
+      .top-block__heading {
+        font-size: 34px;
+        line-height: 48px; } }
+    .top-block__heading_span {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit; }
+  .top-block__subhead {
+    font-size: 13px;
     color: #ffffff;
-    margin-bottom: 72px; }
-    .top-block__offer_span {
-      display: block; }
-  .top-block__button {
-    width: 100%; }
-    @media screen and (min-width: 375px) {
-      .top-block__button {
-        width: 300px; } }
-
-.prising-header {
-  margin-bottom: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px; }
-  .prising-header__headering {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-right: -12px;
-    margin-left: -12px;
-    padding-top: 12px;
-    padding-bottom: 12px; }
-  .prising-header__title_span {
-    display: block;
-    text-align: center; }
+    display: block; }
+    @media screen and (min-width: 767px) {
+      .top-block__subhead {
+        font-size: 16px; } }
+    .top-block__subhead_span {
+      font-size: inherit;
+      display: inline;
+      color: inherit; }
+  .top-block__button-container {
+    margin-top: 48px;
+    width: 100%;
+    max-width: 300px; }
 
 .prising {
   width: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  max-width: 944px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding: 60px 24px 48px;
   background: #ffffff;
   border-bottom: 1px solid #d2dce6; }
-  .prising__row {
-    box-sizing: border-box;
+  @media screen and (min-width: 576px) {
+    .prising {
+      padding-left: 28px;
+      padding-right: 28px; } }
+  .prising__heading {
+    font-size: 18px;
+    margin-bottom: 36px;
+    text-align: center; }
+    .prising__heading_span {
+      display: block; }
+  .prising__body {
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    margin-right: -12px;
-    margin-left: -12px;
     justify-content: space-between;
     overflow-x: scroll; }
-    @media screen and (min-width: 576px) {
-      .prising__row {
-        overflow-x: hidden; } }
   .prising__column {
     cursor: pointer;
-    min-width: 280px;
+    min-width: 272px;
     margin-left: 12px;
     margin-right: 12px;
     display: flex;
@@ -118,15 +110,16 @@
       background-color: #50287d; }
   .prising__wrapper {
     padding: 24px; }
-  .prising__time_number {
+  .prising__quantity {
+    font-size: 34px;
+    line-height: 48px;
     padding: 24px 0; }
-  .prising__time_data {
+  .prising__month {
     color: #5a646e; }
   .prising__price {
     margin-bottom: 72px; }
-  .prising__name {
+  .prising__description {
     font-size: 13px;
-    line-height: 24px;
     color: #5a646e; }
   .prising__button {
     border-radius: 0px;
@@ -156,15 +149,10 @@
 .content {
   width: 100%;
   background-color: #ffffff; }
-  .content__container-top {
+  .content__heading {
+    font-size: 34px;
+    line-height: 48px;
     margin-bottom: 48px; }
-  .content__headering {
-    box-sizing: border-box;
-    margin-right: -12px;
-    margin-left: -12px; }
-  .content__title {
-    margin-right: 12px;
-    margin-left: 12px; }
 
 .content-list {
   padding-left: 12px;
@@ -207,33 +195,40 @@
       .content-image__wrapper {
         height: 100%; } }
 
-.policy-form {
+.policy {
   width: 100%;
   background-color: white;
   padding-top: 72px;
   padding-bottom: 72px;
   border-top: 1px solid #d2dce6; }
-  .policy-form__container-top {
+  .policy__head {
     background-color: white;
-    padding-top: 72px; }
-  .policy-form__headering {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 48px; }
-  .policy-form__title {
-    color: #000000; }
-  .policy-form__container {
-    padding-bottom: 72px;
     padding-top: 72px;
+    margin: 0 auto; }
+  .policy__heading {
+    font-size: 34px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 48px;
+    text-align: center; }
+  .policy__body {
+    width: 100%;
+    max-width: 944px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 24px 72px;
     background: #f3f5f7; }
-  .policy-form__wrapper {
+    @media screen and (min-width: 576px) {
+      .policy__body {
+        padding-left: 28px;
+        padding-right: 28px; } }
+  .policy__container {
     max-width: 431px;
     margin: 0 auto; }
-  .policy-form__checkbox {
+  .policy__checkbox {
     margin-top: 36px;
     margin-bottom: 84px; }
-  .policy-form__button {
+  .policy__button {
     background: #d2dce6;
     color: #96a0aa;
     font-size: 16px;

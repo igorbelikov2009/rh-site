@@ -12,9 +12,6 @@ body * {
   width: 100%;
 
   &__label {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 12px;
     color: #78828c;
@@ -31,9 +28,6 @@ body * {
   width: 100%;
 
   &__label {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 21px;
     color: #b5bdc8;
@@ -71,9 +65,6 @@ body * {
   }
 
   &__top-label {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 24px;
     color: #b5bdc8;
@@ -86,9 +77,6 @@ body * {
   }
 
   &__label {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 21px;
     color: #28323c;
@@ -129,9 +117,6 @@ body * {
 
   &__field {
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 34px;
     color: #b5bdc8;
@@ -163,9 +148,6 @@ body * {
 
   &__field {
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 47px;
     color: #b5bdc8;
@@ -181,9 +163,6 @@ body * {
 
   &__field {
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 47px;
     color: #b5bdc8;
@@ -193,7 +172,6 @@ body * {
 
   &__subtitle {
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
     line-height: 24px;
     color: #b5bdc8;
@@ -256,12 +234,8 @@ body * {
 .primary-button {
   cursor: pointer;
 
-  // эти две ширины обеспечивают
   width: 100%;
-  max-width: 365px;
-  // адаптацию ширины кнопки без медиа
   padding: 12px 8px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: white;
@@ -275,17 +249,14 @@ body * {
 // secondary-button
 .secondary-button {
   width: 100%;
-  // max-width: 219px;
   padding: 16px 12px;
   border-radius: 8px;
   box-sizing: border-box;
   border: 1px solid #50287d;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: white;
   text-align: center;
-  // background-color: #50287d;
 }
 // secondary-button
 
@@ -390,6 +361,44 @@ body * {
   }
 }
 // twin-switch  спаренный переключатель *
+
+// triple-switch Тройной переключатель
+.triple-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f5f7;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 36px;
+
+  &__item {
+    cursor: pointer;
+    padding: 19px 27px;
+    margin: 5px;
+    color: #5a646e;
+    background: #f3f5f7;
+    box-sizing: border-box;
+    border-radius: 31px;
+
+    &:hover {
+      box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      background: #ffffff;
+      border: 2px solid #00d2ff;
+    }
+  }
+
+  &__field {
+    display: none;
+  }
+
+  &__title {
+    color: #5a646e;
+  }
+}
+// triple-switch Тройной переключатель
 
 // drop-down выпадающий список *
 .drop-down {
@@ -550,6 +559,71 @@ body * {
 }
 // стилизация ползунка slider-breaker *
 
+// rh-checkbox
+.r-checkbox {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  cursor: pointer;
+
+  &__checker {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #95bef0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    &:hover::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      margin: auto;
+      background-color: transparent;
+    }
+
+    &:active::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      margin: auto;
+      background-color: #00d2ff;
+      transform: scale(1.2);
+      transition: all 0.2s linear;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__agreeLink {
+    line-height: 24px;
+    position: absolute;
+    top: 0;
+    left: 42px;
+  }
+
+  &__link {
+    color: #50287d;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+    outline: 0;
+    text-decoration: none;
+  }
+}
+// rh-checkbox
+
 // checkbox
 .checkbox {
   display: flex;
@@ -623,14 +697,4 @@ body * {
   display: block;
   width: 100%;
   text-decoration: none;
-}
-
-.visible {
-  visibility: visible;
-  // делает элемент страницы видимым (по умолчанию);
-}
-
-.hidden {
-  visibility: hidden;
-  // делает невидимым
 }
